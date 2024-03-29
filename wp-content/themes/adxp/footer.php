@@ -12,7 +12,6 @@
  */
 
 ?>
-
 <section class="subscribe common-padd" id="subscribe_section" >
   <div class="container">
     <div class="row flexW">
@@ -51,24 +50,43 @@
             <li>
               <h3>Industries</h3>
             </li>
-            <li><a href="#" >Public sector</a></li>
-            <li><a href="#" >Law Enforcement</a></li>
-            <li><a href="#" >Healthcare</a></li>
-            <li><a href="#" >Mobility and Transport </a></li>
-            <li><a href="#" >Smart Cities and Technology </a></li>
-            <li><a href="#" >Energy and Utilities </a></li>
-            <li><a href="#" >Arts and Culture </a></li>
-            <li><a href="#" >Financial services</a></li>
+            <?php
+        $ind_args = array(
+            'numberposts' => -1,
+            'post_type'   => 'post-industries',
+            'order'       => 'ASC',
+            'orderby'     => 'title'
+        );
+        $industries = get_posts($ind_args);
+		if ($industries){
+		?>
+            <li><a href="<?php echo get_permalink( $industries_res->ID );?>" ><?php echo $industries_res->post_title;?></a></li>
+            <?php
+		}
+		?>
           </ul>
           <ul>
             <li>
               <h3>Services</h3>
             </li>
-            <li><a href="#" >Strategy</a></li>
-            <li><a href="#" >Governance</a></li>
-            <li><a href="#" >Customer experience </a></li>
-            <li><a href="#" >Data and analytics </a></li>
-            <li><a href="#" >Experts augmentation</a></li>
+            <?php
+			$services_args = array(
+				'numberposts' => -1,
+				'post_type'   => 'post-services',
+				'order'       => 'ASC',
+				'orderby'     => 'title'
+			);
+			$services = get_posts($services_args);
+			
+			if ($services){
+				foreach ($services as $services_res)
+				{
+			?>
+            <li><a href="<?php echo get_permalink( $services_res->ID );?>" ><?php echo $services_res->post_title;?></a></li>
+            <?php
+				}
+			}
+			?>
           </ul>
           <ul>
             <li>
