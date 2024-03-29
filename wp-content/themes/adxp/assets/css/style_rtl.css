@@ -1,0 +1,19 @@
+.service-details {
+    left: inherit;
+    right: 30px;
+}
+.dc-portal {
+    position: absolute;
+    top: 0%;
+    left: 0;
+}
+section.digital-portal ul {
+    border-right: 2px solid var(--primary-color);
+    padding-right: 20px;
+}
+img.head-arrow {
+    margin-left: 25px;
+}
+.ser_img::before {
+    right: -1px;
+}
