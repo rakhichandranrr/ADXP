@@ -601,6 +601,7 @@ section.innovation h3::after {
 }
 .ind-serv-itm .card-header {
     padding: 10px;
+    cursor: pointer;
 }
 h3.inner-heading {
     font-size: 46px;
@@ -627,11 +628,38 @@ section.peoples.inner .paragraph,section.peoples.inner span.designation{
 section.peoples.inner .paragraph{
      color: #001727 !important;font-weight: 400;
 }
-
-
-
-
-
+.card-header1{
+  order: 1;  
+}
+.card-header2{
+  order: 2;   
+}
+.card-header3{
+  order: 3;   
+}
+.card-body1{
+   order: 4 
+}
+.card-body2{
+   order: 5 
+}
+.card-body3{
+   order: 6 
+}
+.insights-grD .paragraph, .service_hover .paragraph, .industries-grid .paragraph, .peoples-grid .paragraph{
+  display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;  
+}
+.ind-serv-itm .card-header .paragraph{
+    display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis; 
+}
 
 
 

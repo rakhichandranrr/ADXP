@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Displays the site navigation.
  *
@@ -15,53 +16,51 @@
   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
     <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
       <?php
-$services_args = array(
-	'numberposts' => -1,
-	'post_type'   => 'post-services',
-	'order'       => 'ASC',
-	'orderby'     => 'title'
-);
-$services = get_posts($services_args);
+      $services_args = array(
+        'numberposts' => -1,
+        'post_type'   => 'post-services',
+        'order'       => 'ASC',
+        'orderby'     => 'title'
+      );
+      $services = get_posts($services_args);
 
-if ($services){
-?>
-      <ul class="dropdown-menu">
-        <?php
-	foreach ($services as $services_res)
-	{
-		?>
-        <li><a class="dropdown-item" href="<?php echo get_permalink( $services_res->ID );?>"><?php echo $services_res->post_title;?></a></li>
-        <?php
-	}
-	?>
-      </ul>
+      if ($services) {
+      ?>
+        <ul class="dropdown-menu">
+          <?php
+          foreach ($services as $services_res) {
+          ?>
+            <li><a class="dropdown-item" href="<?php echo get_permalink($services_res->ID); ?>"><?php echo $services_res->post_title; ?></a></li>
+          <?php
+          }
+          ?>
+        </ul>
       <?php
-} ?>
+      } ?>
     </li>
-    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="<?php echo site_url();?>/industries" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Industries </a>
+    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="<?php echo site_url(); ?>/industries" aria-expanded="false"> Industries </a>
       <?php
-        $ind_args = array(
-            'numberposts' => -1,
-            'post_type'   => 'post-industries',
-            'order'       => 'ASC',
-            'orderby'     => 'title'
-        );
-        $industries = get_posts($ind_args);
-		if ($industries){
-        ?>
-      <ul class="dropdown-menu">
-        <?php
-	    foreach ($industries as $industries_res)
-		{
-		?>
-        <li><a class="dropdown-item" href="<?php echo get_permalink( $industries_res->ID );?>"><?php echo $industries_res->post_title;?></a></li>
-        <?php
-		}
-		?>
-      </ul>
+      $ind_args = array(
+        'numberposts' => -1,
+        'post_type'   => 'post-industries',
+        'order'       => 'ASC',
+        'orderby'     => 'title'
+      );
+      $industries = get_posts($ind_args);
+      if ($industries) {
+      ?>
+        <ul class="dropdown-menu">
+          <?php
+          foreach ($industries as $industries_res) {
+          ?>
+            <li><a class="dropdown-item" href="<?php echo get_permalink($industries_res->ID); ?>"><?php echo $industries_res->post_title; ?></a></li>
+          <?php
+          }
+          ?>
+        </ul>
       <?php
-		}
-		?>
+      }
+      ?>
     </li>
     <li class="nav-item"> <a class="nav-link" href="#">Insights</a> </li>
     <li class="nav-item"> <a class="nav-link" href="#">Digital Advisor</a> </li>

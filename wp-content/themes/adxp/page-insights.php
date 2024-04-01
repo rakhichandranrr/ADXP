@@ -17,25 +17,25 @@ $insight_args = array(
 );
 $insights = get_posts($insight_args);
 
-if ($insights){
+if ($insights) {
 ?>
 
-<ul>
-  <?php
-	foreach ($insights as $insights_res) : setup_postdata($insights);
+	<ul>
+		<?php
+		foreach ($insights as $insights_res) : setup_postdata($insights);
 
-		$imgurl = wp_get_attachment_url(get_post_thumbnail_id($insights_res->ID), 'full');
-?>
-<li>
-<a href="<?php echo get_permalink( $insights_res->ID );?>"><img src="<?php echo $imgurl;?>">
-<?php echo $insights_res->post_title;?>
-<?php echo $insights_res->post_content;?></a>
-</li>
-  <?php
-	endforeach;
-	wp_reset_postdata();
-	?>
-</ul>
+			$imgurl = wp_get_attachment_url(get_post_thumbnail_id($insights_res->ID), 'full');
+		?>
+			<li>
+				<a href="<?php echo get_permalink($insights_res->ID); ?>"><img src="<?php echo $imgurl; ?>">
+					<?php echo $insights_res->post_title; ?>
+					<?php echo $insights_res->post_content; ?></a>
+			</li>
+		<?php
+		endforeach;
+		wp_reset_postdata();
+		?>
+	</ul>
 <?php
 } ?>
 <?php
