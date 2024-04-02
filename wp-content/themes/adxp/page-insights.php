@@ -28,8 +28,9 @@ if ($insights) {
 		?>
 			<li>
 				<a href="<?php echo get_permalink($insights_res->ID); ?>"><img src="<?php echo $imgurl; ?>">
-					<?php echo $insights_res->post_title; ?>
-					<?php echo $insights_res->post_content; ?></a>
+					<p><?php echo $insights_res->post_title; ?></p>
+					<p><?php echo get_field('short_description', $home_insights_res->ID); ?></p>
+				</a>
 			</li>
 		<?php
 		endforeach;

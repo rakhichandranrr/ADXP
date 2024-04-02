@@ -9,31 +9,52 @@ get_header();
 //echo banner_content();
 ?>
 
-<section class="insights common-padd" id="insights_section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="insights-grD text-light d-flex flex-column">
-          <div class="img-ins mb-3"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/abt1.webp" alt="img"> </div>
-          <span>Mobility and Transport</span>
-          <h2 class="mt-2 mb-2">Translating your digital agenda into reality</h2>
-          <div class="paragraph mb-3">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </div>
-          <span>Feb 28, 2024</span>
-        </div>
+<!--INSIGHT STARTS-->
+<?php
+$home_insights = get_field('select_insights');
+if ($home_insights) {
+?>
+  <section class="insights common-padd" id="insights_section">
+    <div class="container">
+      <div class="row">
+
+        <?php foreach ($home_insights as $home_insights_res) {
+
+          $insight_services = get_field('services', $home_insights_res->ID);
+          $insight_industry = get_field('industry', $home_insights_res->ID);
+          if ($insight_services[0]->post_title) {
+            $insight_cat = $insight_services[0]->post_title;
+          } else if ($insight_industry[0]->post_title) {
+            $insight_cat = $insight_industry[0]->post_title;
+          } else {
+            $insight_cat = '';
+          }
+
+        ?>
+
+          <div class="col-lg-6">
+            <div class="insights-grD text-light d-flex flex-column">
+              <div class="img-ins mb-3"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($home_insights_res->ID), 'full'); ?>" alt="img"> </div>
+              <span><?php echo $insight_cat; ?></span>
+              <h2 class="mt-2 mb-2"><?php echo $home_insights_res->post_title; ?></h2>
+              <div class="paragraph mb-3"><?php echo get_field('short_description', $home_insights_res->ID); ?></div>
+              <span><?php echo date('F d, Y', strtotime($home_insights_res->post_date)); ?></span>
+            </div>
+          </div>
+
+        <?php
+        }
+        ?>
+
+        <div class="col-lg-12 mt-4"> <a class="text-light " href="<?php echo site_url(); ?>/insights/">Explore more insights <img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a> </div>
       </div>
-      <div class="col-lg-6">
-        <div class="insights-grD text-light d-flex flex-column">
-          <div class="img-ins mb-3"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/abt2.webp" alt="img"> </div>
-          <span>Mobility and Transport</span>
-          <h2 class="mt-2 mb-2">Translating your digital agenda into reality</h2>
-          <div class="paragraph mb-3">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </div>
-          <span>Feb 28, 2024</span>
-        </div>
-      </div>
-      <div class="col-lg-12 mt-4"> <a class="text-light " href="#">Explore more insights <img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a> </div>
     </div>
-  </div>
-</section>
+  </section>
+<?php
+}
+?>
+
+<!--INSIGHT ENDS-->
 
 <!--SERVICES SECTION STARTS-->
 <?php
@@ -121,18 +142,19 @@ if ($home_industries) {
 ?>
 <!--INDUSTRIES ENDS-->
 
+<!--DIGITAL CONSULTING STARTS-->
+<?php
+$digital_consulting = get_field('digital_consulting_section');
+?>
+
 <section class="digital-portal common-padd" id="digita_portal_section">
   <div class="container">
     <div class="row flexW">
       <div class="col-lg-6">
-        <h1 class="main-tittle mb-5 text-light"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon">ADXP Digital Consulting <i>Portal</i></h1>
-        <div class="paragraph text-light">Our digital consulting portal is seamlessly designed to allow organizations to leverage our tailored tools and resources to enhance their performance.</div>
-        <ul class="text-light my-5">
-          <li>Conduct Maturity Assessments</li>
-          <li>Obtain Advice from our Consultants</li>
-          <li>Gain Access to our Resources</li>
-        </ul>
-        <a class="text-light" href="#">Seek Advice from our experts <img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a>
+        <h1 class="main-tittle mb-5 text-light"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo $digital_consulting['digital_consulting_heading']; ?></h1>
+        <div class="paragraph text-light"><?php echo $digital_consulting['digital_consulting_description']; ?></div>
+
+        <a class="text-light" href="<?php echo $digital_consulting['digital_consulting_link_url']; ?>"><?php echo $digital_consulting['digital_consulting_link_text']; ?> <img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a>
       </div>
       <div class="col-lg-6 dc-img">
         <div class="dc-portal"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dcportal.webp" alt="img"> </div>
@@ -140,6 +162,8 @@ if ($home_industries) {
     </div>
   </div>
 </section>
+
+<!--DIGITAL CONSULTING ENDS-->
 
 <!--PEOPLE STARTS-->
 

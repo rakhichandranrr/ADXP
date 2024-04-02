@@ -4,6 +4,7 @@ get_header();
 $overview = get_field('overview', $post_id);
 $services = get_field('services', $post_id);
 $services_list = $services['services'];
+
 ?>
 
 <section class="p-3">
@@ -114,33 +115,30 @@ if ($services) {
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h3 class="inner-heading text-light mb-4">Client Results</h3>
-        <div class="paragraph"> Lorem ipsum dolor sit amet consectetur. Pellentesque sollicitudin risus tristique dolor. Posuere nibh eleifend quam leo nec pretium. Sem adipiscing et at auctor pellentesque. Morbi arcu lorem morbi odio sed malesuada sit lectus nunc. </div>
+        <h3 class="inner-heading text-light mb-4"><?php echo get_field('client_results_heading', $post_id); ?></h3>
+        <div class="paragraph"> <?php echo get_field('client_results_description', $post_id); ?></div>
       </div>
-      <div class="col-lg-4">
-        <div class="industries-grid">
-          <div class="industries-img"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries1.webp" alt="img"> </div>
-          <span class="designation ">#ServiceName</span>
-          <h4 class="mb-3 mt-4">Public sector</h4>
-          <div class="paragraph">Lorem ipsum dolor sit amet consectetur. Felis dolor mollis cursus sed ultrices eget proin. </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="industries-grid">
-          <div class="industries-img"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries2.webp" alt="img"> </div>
-          <span class="designation ">#ServiceName</span>
-          <h4 class="mb-3 mt-4">Law Enforcement</h4>
-          <div class="paragraph">Lorem ipsum dolor sit amet consectetur. Felis dolor mollis cursus sed ultrices eget proin. </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="industries-grid">
-          <div class="industries-img"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries3.webp" alt="img"> </div>
-          <span class="designation ">#ServiceName</span>
-          <h4 class="mb-3 mt-4">Healthcare</h4>
-          <div class="paragraph">Lorem ipsum dolor sit amet consectetur. Felis dolor mollis cursus sed ultrices eget proin. </div>
-        </div>
-      </div>
+
+
+      <?php
+      $client_results = get_field('select_client_results');
+      if ($client_results) {
+        foreach ($client_results as $client_results_res) {
+      ?>
+          <div class="col-lg-4">
+            <div class="industries-grid">
+              <div class="industries-img"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($client_results_res->ID), 'full'); ?>" alt="img"> </div>
+              <span class="designation ">#ServiceName</span>
+              <h4 class="mb-3 mt-4"><?php echo $client_results_res->post_title; ?></h4>
+              <div class="paragraph"><?php echo get_field('short_description', $client_results_res->ID); ?> </div>
+            </div>
+          </div>
+
+      <?php
+        }
+      }
+      ?>
+
     </div>
   </div>
 </section>
