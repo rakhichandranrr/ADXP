@@ -154,10 +154,24 @@ $digital_consulting = get_field('digital_consulting_section');
         <h1 class="main-tittle mb-5 text-light"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo $digital_consulting['digital_consulting_heading']; ?></h1>
         <div class="paragraph text-light"><?php echo $digital_consulting['digital_consulting_description']; ?></div>
 
+<?php
+if($digital_consulting['digital_consulting_link_text'])
+{
+?>
         <a class="text-light" href="<?php echo $digital_consulting['digital_consulting_link_url']; ?>"><?php echo $digital_consulting['digital_consulting_link_text']; ?> <img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a>
+        <?php
+}
+?>
       </div>
       <div class="col-lg-6 dc-img">
-        <div class="dc-portal"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dcportal.webp" alt="img"> </div>
+        <div class="dc-portal">
+        <?php if ($digital_consulting['digital_consulting_image']['url']) {
+          ?>
+         <img src="<?php echo $digital_consulting['digital_consulting_image']['url'];?>" alt="img">
+         <?php
+		}
+		?>
+          </div>
       </div>
     </div>
   </div>
