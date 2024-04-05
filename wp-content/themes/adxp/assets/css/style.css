@@ -454,9 +454,9 @@ footer a.navbar-brand img {
 }
 
 img.head-arrow {
-	width: 18px;
-	margin-right: 25px;
-	margin-bottom: 10px;
+    width: 18px;
+    margin-right: 25px;
+    margin-top: 14px;
 }
 
 section.digital-portal ul {
@@ -661,16 +661,16 @@ section.peoples.inner .paragraph{
 .card-body3{
    order: 6 
 }
-.insights-grD .paragraph, .service_hover .paragraph, .industries-grid .paragraph, .peoples-grid .paragraph{
+.insights-grD .paragraph,  .industries-grid .paragraph, .peoples-grid .paragraph{
   display: -webkit-box;
--webkit-line-clamp: 2;
+/*-webkit-line-clamp: 4;*/
 -webkit-box-orient: vertical;
 overflow: hidden;
 text-overflow: ellipsis;  
 }
 .ind-serv-itm .card-header .paragraph{
     display: -webkit-box;
--webkit-line-clamp: 3;
+/*-webkit-line-clamp: 4;*/
 -webkit-box-orient: vertical;
 overflow: hidden;
 text-overflow: ellipsis; 
@@ -947,7 +947,10 @@ li.nav-item:first-child, li.nav-item:nth-child(2)  {
 .insights-itm-1 .insights-grD{
    padding: 10px;
 }
-
+img.insight-single-img {
+    height: 445px;
+    object-fit: cover;
+}
 
 
 
