@@ -3,13 +3,10 @@ get_header();
 global $post;
 $post_id = get_the_ID();
 $insight = get_post($post_id);
-
-
-echo the_title();
 ?>
 
 <section class="bg-light common-padd">
-  <div class="container"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_id), 'full'); ?>" alt="img"> </div>
+  <div class="container "> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_id), 'full'); ?>" alt="img" class="insight-single-img" /> </div>
 </section>
 <section class="ins-inner-detail  common-padd bg-light " id="Overview">
   <div class="container b_contents-main flexW inner-banner-content">
