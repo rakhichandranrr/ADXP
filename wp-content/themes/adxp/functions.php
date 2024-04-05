@@ -786,3 +786,35 @@ function banner_content()
 }
 
 /*BANNER CONTENT ENDS*/
+
+/*GET INSIGHT CATEGORIES STARTS*/
+
+function get_insight_categories($insight_id)
+{
+	      $insight_services = get_field('services', $insight_id);
+          $insight_industry = get_field('industry', $insight_id);
+		  $services = array();
+		  $industies = array();
+		  if($insight_services)
+		  {
+			  foreach($insight_services as $insight_ser)
+			  {
+				  $services[] = $insight_ser->post_title;
+			  }
+		  }
+		  
+		  if($insight_industry)
+		  {
+			  foreach($insight_industry as $insight_ind)
+			  {
+				  $industies[] = $insight_ind->post_title;
+			  }
+		  }
+		  
+		  $all_cats = array_merge($services,$industies);
+		  $insight_cats = implode(' | ',$all_cats);
+		  
+          return $insight_cats;
+}
+
+/*GET INSIGHT CATEGORIES ENDS*/
