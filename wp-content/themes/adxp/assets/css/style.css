@@ -343,6 +343,8 @@ section.features {
 
 h1.main-tittle {
 	font-size: 54px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .dc-portal img {
