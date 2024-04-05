@@ -34,7 +34,7 @@ if ($home_insights) {
 
           <div class="col-lg-6">
             <div class="insights-grD text-light d-flex flex-column">
-              <div class="img-ins mb-3"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($home_insights_res->ID), 'full'); ?>" alt="img"> </div>
+              <div class="img-ins mb-3"> <a href="<?php echo get_permalink($home_insights_res->ID); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($home_insights_res->ID), 'full'); ?>" alt="img"> </a></div>
               <span><?php echo $insight_cat; ?></span>
               <h2 class="mt-2 mb-2"><?php echo $home_insights_res->post_title; ?></h2>
               <div class="paragraph mb-3"><?php echo get_field('short_description', $home_insights_res->ID); ?></div>
@@ -68,7 +68,7 @@ if ($home_services) {
         <div class="service-main d-flex justify-content-between g-2">
           <?php foreach ($home_services as $home_services_res) { ?>
             <div class="service-itm">
-              <div class="ser_img"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($home_services_res->ID), 'full'); ?>" alt="img"> </div>
+              <div class="ser_img"><a href="<?php echo get_permalink($home_services_res->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($home_services_res->ID), 'full'); ?>" alt="img"></a> </div>
               <div class="service-details">
                 <h4 class="mb-4"><?php echo $home_services_res->post_title; ?></h4>
                 <div class="service_hover">
@@ -96,7 +96,7 @@ $mission_section = get_field('mission_section');
 
 <section class="mission common-padd" id="mission_section">
   <div class="container">
-    <div class="row"> <span class="upper-heading text-light">OUR MISSION</span>
+    <div class="row"> <!--<span class="upper-heading text-light">OUR MISSION</span>-->
       <h1 class="mission mb-5 text-light"><?php echo $mission_section['mission_title']; ?></h1>
     </div>
   </div>
@@ -126,7 +126,7 @@ if ($home_industries) {
         <?php foreach ($home_industries as $home_industries_res) { ?>
           <div class="col-lg-4">
             <div class="industries-grid">
-              <div class="industries-img"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($home_industries_res->ID), 'full'); ?>" alt="img"> </div>
+              <div class="industries-img"> <a href="<?php echo get_permalink($home_industries_res->ID); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($home_industries_res->ID), 'full'); ?>" alt="img"> </a></div>
               <h4 class="mb-3 mt-4"><?php echo $home_industries_res->post_title; ?></h4>
               <div class="paragraph"><?php echo $home_industries_res->post_content; ?></div>
             </div>
@@ -154,24 +154,23 @@ $digital_consulting = get_field('digital_consulting_section');
         <h1 class="main-tittle mb-5 text-light"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo $digital_consulting['digital_consulting_heading']; ?></h1>
         <div class="paragraph text-light"><?php echo $digital_consulting['digital_consulting_description']; ?></div>
 
-<?php
-if($digital_consulting['digital_consulting_link_text'])
-{
-?>
-        <a class="text-light" href="<?php echo $digital_consulting['digital_consulting_link_url']; ?>"><?php echo $digital_consulting['digital_consulting_link_text']; ?> <img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a>
         <?php
-}
-?>
+        if ($digital_consulting['digital_consulting_link_text']) {
+        ?>
+          <a class="text-light" href="<?php echo $digital_consulting['digital_consulting_link_url']; ?>"><?php echo $digital_consulting['digital_consulting_link_text']; ?> <img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a>
+        <?php
+        }
+        ?>
       </div>
       <div class="col-lg-6 dc-img">
         <div class="dc-portal">
-        <?php if ($digital_consulting['digital_consulting_image']['url']) {
+          <?php if ($digital_consulting['digital_consulting_image']['url']) {
           ?>
-         <img src="<?php echo $digital_consulting['digital_consulting_image']['url'];?>" alt="img">
-         <?php
-		}
-		?>
-          </div>
+            <img src="<?php echo $digital_consulting['digital_consulting_image']['url']; ?>" alt="img">
+          <?php
+          }
+          ?>
+        </div>
       </div>
     </div>
   </div>

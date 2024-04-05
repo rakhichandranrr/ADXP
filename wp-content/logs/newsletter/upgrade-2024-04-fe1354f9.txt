@@ -1,0 +1,38 @@
+03-04-2024 05:39:58 - INFO  - 8.2.7 - 48.8 MB/1 GB - admin@adxp > Start upgrade from 0.0.0
+03-04-2024 05:39:58 - INFO  - 8.2.7 - 49.2 MB/1 GB - admin@adxp > Array
+(
+    [`adxp_newsletter_emails`] => Created table `adxp_newsletter_emails`
+)
+
+03-04-2024 05:39:58 - INFO  - 8.2.7 - 49.2 MB/1 GB - admin@adxp > Array
+(
+    [`adxp_newsletter_sent`] => Created table `adxp_newsletter_sent`
+)
+
+03-04-2024 05:39:58 - INFO  - 8.2.7 - 49.2 MB/1 GB - admin@adxp > Array
+(
+    [`adxp_newsletter`] => Created table `adxp_newsletter`
+)
+
+03-04-2024 05:39:58 - INFO  - 8.2.7 - 49.2 MB/1 GB - admin@adxp > Array
+(
+    [`adxp_newsletter_user_logs`] => Created table `adxp_newsletter_user_logs`
+)
+
+03-04-2024 05:39:58 - INFO  - 8.2.7 - 49.2 MB/1 GB - admin@adxp > Array
+(
+    [`adxp_newsletter_user_meta`] => Created table `adxp_newsletter_user_meta`
+)
+
+03-04-2024 05:39:58 - INFO  - 8.2.7 - 49.2 MB/1 GB - admin@adxp > Array
+(
+    [`adxp_newsletter_stats`] => Created table `adxp_newsletter_stats`
+)
+
+03-04-2024 05:39:58 - INFO  - 8.2.7 - 49.2 MB/1 GB - admin@adxp > Array
+(
+    [`adxp_newsletter_logs`] => Created table `adxp_newsletter_logs`
+)
+
+03-04-2024 05:39:58 - INFO  - 8.2.7 - 49.2 MB/1 GB - admin@adxp > Backing up options of 0.0.0
+03-04-2024 05:39:58 - INFO  - 8.2.7 - 49.2 MB/1 GB - admin@adxp > End

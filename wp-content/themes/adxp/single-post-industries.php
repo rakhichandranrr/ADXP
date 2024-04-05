@@ -7,7 +7,7 @@ $services_list = $services['services'];
 
 ?>
 
-<section class="p-3">
+<section class="p-3 submenu">
   <div class="container">
     <ul class="submenu text-light d-flex">
       <li><a href="#Overview">Overview</a></li>
@@ -82,6 +82,23 @@ if ($services) {
                   <div class="card-body col-lg-12 card-body<?php echo $j; ?>" id="cardBody<?php echo $i; ?>" style="display: none;">
                     <h4 class="text-light"><?php echo $services_click_block['service_click_block_title']; ?></h4>
                     <div class="paragraph mt-3"> <?php echo $services_click_block['service_click_block_description']; ?></div>
+                    <?php
+
+                    $service_click_block_sub_items = $services_click_block['service_click_block_sub_items'];
+                    if ($service_click_block_sub_items) {
+                      foreach ($service_click_block_sub_items as $service_click_block_sub_items_res) {
+                    ?>
+                        <div class="framework">
+                          <h5><?php echo $service_click_block_sub_items_res['service_click_block_sub_title']; ?>
+                            <mg src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg"></mg>
+                          </h5>
+                          <div class="paragraph"> <?php echo $service_click_block_sub_items_res['service_click_block_sub_description']; ?> </div>
+                        </div>
+                    <?php
+
+                      }
+                    }
+                    ?>
                   </div>
             <?php
                 }
@@ -118,27 +135,33 @@ if ($services) {
         <h3 class="inner-heading text-light mb-4"><?php echo get_field('client_results_heading', $post_id); ?></h3>
         <div class="paragraph"> <?php echo get_field('client_results_description', $post_id); ?></div>
       </div>
-
-
       <?php
       $client_results = get_field('select_client_results');
       if ($client_results) {
         foreach ($client_results as $client_results_res) {
+
+          $insight_services = get_field('services', $client_results_res->ID);
+          $insight_industry = get_field('industry', $client_results_res->ID);
+          if ($insight_services[0]->post_title) {
+            $insight_cat = $insight_services[0]->post_title;
+          } else if ($insight_industry[0]->post_title) {
+            $insight_cat = $insight_industry[0]->post_title;
+          } else {
+            $insight_cat = '';
+          }
       ?>
           <div class="col-lg-4">
             <div class="industries-grid">
-              <div class="industries-img"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($client_results_res->ID), 'full'); ?>" alt="img"> </div>
-              <span class="designation ">#ServiceName</span>
+              <div class="industries-img"> <a href="<?php echo get_permalink($client_results_res->ID); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($client_results_res->ID), 'full'); ?>" alt="img"> </a></div>
+              <span class="designation "><?php echo $insight_cat; ?></span>
               <h4 class="mb-3 mt-4"><?php echo $client_results_res->post_title; ?></h4>
               <div class="paragraph"><?php echo get_field('short_description', $client_results_res->ID); ?> </div>
             </div>
           </div>
-
       <?php
         }
       }
       ?>
-
     </div>
   </div>
 </section>
