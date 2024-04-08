@@ -1,32 +1,7 @@
 <?php
 /*Template Name: Home*/
 get_header();
-
-//echo banner_image();
-
-//echo banner_title();
-
-//echo banner_content();
 ?>
-
-<div class="row">
-    <?php
-                $menu_items = wp_get_menu_array('Header');
-                foreach ($menu_items as $item) : ?>
-                    <div class="col-md-3">
-                      <strong><a href="<?= $item['url'] ?>" title="<?= $item['title'] ?>"><?= $item['title'] ?></a></strong>
-                      <?php if( !empty($item['children']) ):?>
-                      <ul>
-                        <?php foreach($item['children'] as $child): ?>
-                          <li>
-                            <a href="<?= $child['url'] ?>" title="<?= $child['title'] ?>"><?= $child['title'] ?></a>
-                          </li>
-                        <?php endforeach; ?>
-                      </ul>
-                      <?php endif; ?>
-                    </div>
-                  <?php endforeach; ?>  
-</div>
 
 <!--INSIGHT STARTS-->
 <?php
