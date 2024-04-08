@@ -33,9 +33,9 @@ get_header();
                       $checked = '';
                     }
                 ?>
-                    <label class="custom-dropdown-item custom-dropdown-item1">
-                      <input type="checkbox" value="<?php echo $industries_res->ID; ?>" name="industry[]" class="check_<?php echo $industries_res->ID; ?>" <?php echo $checked; ?>>
-                      <?php echo $industries_res->post_title; ?></label>
+                <label class="custom-dropdown-item custom-dropdown-item1">
+                  <input type="checkbox" value="<?php echo $industries_res->ID; ?>" name="industry[]" class="check_<?php echo $industries_res->ID; ?>" <?php echo $checked; ?>>
+                  <?php echo $industries_res->post_title; ?></label>
                 <?php
                   }
                 }
@@ -67,9 +67,9 @@ get_header();
                       $checked = '';
                     }
                 ?>
-                    <label class="custom-dropdown-item custom-dropdown-item2">
-                      <input type="checkbox" value="<?php echo $services_res->ID; ?>" name="services[]" class="check_<?php echo $services_res->ID; ?>" <?php echo $checked; ?>>
-                      <?php echo $services_res->post_title; ?></label>
+                <label class="custom-dropdown-item custom-dropdown-item2">
+                  <input type="checkbox" value="<?php echo $services_res->ID; ?>" name="services[]" class="check_<?php echo $services_res->ID; ?>" <?php echo $checked; ?>>
+                  <?php echo $services_res->post_title; ?></label>
                 <?php
                   }
                 }
@@ -83,38 +83,37 @@ get_header();
       <?php
       if (!empty($_POST['industry']) || !empty($_POST['services'])) {
       ?>
-        <div class="col-lg-12 mb-4">
-          <div class="d-flex filter-list">
-            <?php
+      <div class="col-lg-12 mb-4">
+        <div class="d-flex filter-list">
+          <?php
             if ($_POST['industry']) {
               foreach ($_POST['industry'] as $ind) {
             ?>
-                <div class="filter-listing me-3"> <span><?php echo get_the_title($ind); ?></span>
-                  <button onclick="refresh_search_ind('<?php echo $ind; ?>')"><i class="bi bi-x"></i></button>
-                </div>
-              <?php
+          <div class="filter-listing me-3"> <span><?php echo get_the_title($ind); ?></span>
+            <button onclick="refresh_search_ind('<?php echo $ind; ?>')"><i class="bi bi-x"></i></button>
+          </div>
+          <?php
               }
             } else if ($_POST['services']) {
               foreach ($_POST['services'] as $serv) {
               ?>
-                <div class="filter-listing me-3"> <span><?php echo get_the_title($serv); ?></span>
-                  <button onclick="refresh_search_ser('<?php echo $serv; ?>')"><i class="bi bi-x"></i></button>
-                </div>
-            <?php
+          <div class="filter-listing me-3"> <span><?php echo get_the_title($serv); ?></span>
+            <button onclick="refresh_search_ser('<?php echo $serv; ?>')"><i class="bi bi-x"></i></button>
+          </div>
+          <?php
               }
             }
             ?>
-          </div>
         </div>
-
-        <!--DISPLAY SEARCH RESULTS STARTS HERE-->
-
-        <div class="insights-list-wrapper paragraph search-result-box">
+      </div>
+      
+      <!--DISPLAY SEARCH RESULTS STARTS HERE-->
+      
+      <div class="insights-list-wrapper paragraph search-result-box"> 
         
-
-          <!--   INDUSTRY SEARCH STARTS-->
-
-          <?php
+        <!--   INDUSTRY SEARCH STARTS-->
+        
+        <?php
           if ($_POST['industry']) {
             foreach ($_POST['industry'] as $ind) {
 
@@ -147,19 +146,17 @@ get_header();
                     $insight_cat = '';
                   }
 
-          ?><div class="insights-search-res">
-                  
-                    <div class="insights-grD text-light d-flex flex-column" id="<?php echo $i; ?>">
-                      <div class="img-ins mb-3"><a href="<?php echo get_permalink($search_ind_res->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($search_ind_res->ID), 'full'); ?>" alt="img"></a> </div>
-                      <div class="res-details"> <span><?php echo get_insight_categories($search_ind_res->ID); ?></span>
-                        <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($search_ind_res->ID); ?>"><?php echo $search_ind_res->post_title; ?></a></h2>
-                        <div class="paragraph mb-3"><?php echo get_field('short_description', $search_ind_res->ID); ?></div>
-                        <span><?php echo date('F d, Y', strtotime($search_ind_res->post_date)); ?></span>
-                      </div>
-                    </div>
-                    </div>
-                 
-          <?php
+          ?>
+        <div class="insights-search-res">
+          <div class="insights-grD text-light d-flex flex-column" id="<?php echo $i; ?>">
+            <div class="img-ins mb-3"><a href="<?php echo get_permalink($search_ind_res->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($search_ind_res->ID), 'full'); ?>" alt="img"></a> </div>
+            <div class="res-details"> <span><?php echo get_insight_categories($search_ind_res->ID); ?></span>
+              <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($search_ind_res->ID); ?>"><?php echo $search_ind_res->post_title; ?></a></h2>
+              <div class="paragraph mb-3"><?php echo get_field('short_description', $search_ind_res->ID); ?></div>
+              <span><?php echo date('F d, Y', strtotime($search_ind_res->post_date)); ?></span> </div>
+          </div>
+        </div>
+        <?php
 
 
                 }
@@ -167,11 +164,11 @@ get_header();
             }
           }
           ?>
-          <!--   INDUSTRY SEARCH ENDS-->
-
-          <!--   SERVICE SEARCH STARTS-->
-
-          <?php
+        <!--   INDUSTRY SEARCH ENDS--> 
+        
+        <!--   SERVICE SEARCH STARTS-->
+        
+        <?php
           if ($_POST['services']) {
             foreach ($_POST['services'] as $serv) {
 
@@ -193,34 +190,31 @@ get_header();
                 foreach ($search_serv_insights as $search_serv_res) {
 
 
-          ?><div class="insights-search-res">
-                  <div class="insights-search-res">
-                    <div class="insights-grD text-light d-flex flex-column">
-                      <div class="img-ins mb-3"><a href="<?php echo get_permalink($search_serv_res->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($search_serv_res->ID), 'full'); ?>" alt="img"> </a></div>
-                      <div class="res-details"> <span><?php echo get_insight_categories($search_serv_res->ID); ?></span>
-                        <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($search_serv_res->ID); ?>"><?php echo $search_serv_res->post_title; ?></a></h2>
-                        <div class="paragraph mb-3"><?php echo get_field('short_description', $search_serv_res->ID); ?></div>
-                        <span><?php echo date('F d, Y', strtotime($search_serv_res->post_date)); ?></span>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-          <?php
+          ?>
+        <div class="insights-search-res">
+          <div class="insights-grD text-light d-flex flex-column">
+            <div class="img-ins mb-3"><a href="<?php echo get_permalink($search_serv_res->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($search_serv_res->ID), 'full'); ?>" alt="img"> </a></div>
+            <div class="res-details"> <span><?php echo get_insight_categories($search_serv_res->ID); ?></span>
+              <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($search_serv_res->ID); ?>"><?php echo $search_serv_res->post_title; ?></a></h2>
+              <div class="paragraph mb-3"><?php echo get_field('short_description', $search_serv_res->ID); ?></div>
+              <span><?php echo date('F d, Y', strtotime($search_serv_res->post_date)); ?></span> </div>
+          </div>
+        </div>
+        <?php
                 }
               }
             }
           }
           ?>
-          <!--   SERVICE SEARCH ENDS-->
-           </div>
-
-
-        <!--DISPLAY SEARCH RESULTS ENDS HERE-->
-
+        <!--   SERVICE SEARCH ENDS--> 
+      </div>
+      
+      <!--DISPLAY SEARCH RESULTS ENDS HERE-->
+      
       <?php
       } else {
       ?>
-        <?php
+      <?php
         $pinned_insights = get_field('select_top_3_insights');
         if (!$pinned_insights) {
           $pinnedinsight_args = array(
@@ -233,34 +227,33 @@ get_header();
         }
 
         ?>
-
-        <!--PINNED INSIGHT 1 STARTS-->
-        <?php
+      
+      <!--PINNED INSIGHT 1 STARTS-->
+      <?php
         if ($pinned_insights[0]) {
 
         ?>
-          <div class="col-lg-8 mb-5">
-            <div class="insights-grD text-light d-flex flex-column">
-              <div class="img-ins mb-3"><a href="<?php echo get_permalink($pinned_insights[0]->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($pinned_insights[0]->ID), 'full'); ?>" class="pin-insight" alt="img"></a> </div>
-              <span><?php echo get_insight_categories($pinned_insights[0]->ID); ?></span> <a href="insight_details.html">
-                <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($pinned_insights[0]->ID); ?>"><?php echo $pinned_insights[0]->post_title; ?></a></h2>
-              </a>
-              <div class="paragraph mb-3"><?php echo get_field('short_description', $pinned_insights[0]->ID); ?></div>
-              <span><?php echo date('F d, Y', strtotime($pinned_insights[0]->post_date)); ?></span>
-            </div>
-          </div>
-
-          <!--PINNED INSIGHT 1 ENDS-->
-        <?php
+      <div class="col-lg-8 mb-5">
+        <div class="insights-grD text-light d-flex flex-column">
+          <div class="img-ins mb-3"><a href="<?php echo get_permalink($pinned_insights[0]->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($pinned_insights[0]->ID), 'full'); ?>" class="pin-insight" alt="img"></a> </div>
+          <span><?php echo get_insight_categories($pinned_insights[0]->ID); ?></span> <a href="insight_details.html">
+          <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($pinned_insights[0]->ID); ?>"><?php echo $pinned_insights[0]->post_title; ?></a></h2>
+          </a>
+          <div class="paragraph mb-3"><?php echo get_field('short_description', $pinned_insights[0]->ID); ?></div>
+          <span><?php echo date('F d, Y', strtotime($pinned_insights[0]->post_date)); ?></span> </div>
+      </div>
+      
+      <!--PINNED INSIGHT 1 ENDS-->
+      <?php
         }
         ?>
-
-        <!--Recent Insights STARTS-->
-
-        <div class="col-lg-4">
-          <div class="Recent-Insights">
-            <h3>Recent Insights</h3>
-            <?php
+      
+      <!--Recent Insights STARTS-->
+      
+      <div class="col-lg-4">
+        <div class="Recent-Insights">
+          <h3>Recent Insights</h3>
+          <?php
             $recentinsight_args = array(
               'numberposts' => 4,
               'post_type'   => 'post-insights',
@@ -271,74 +264,72 @@ get_header();
 
             if ($recent_insights) {
             ?>
-              <ol>
-                <?php
+          <ol>
+            <?php
                 foreach ($recent_insights as $recent_insights_res) {
                 ?>
-                  <li>
-                    <h5><a href="<?php echo get_permalink($recent_insights_res->ID); ?>"><?php echo $recent_insights_res->post_title; ?></a></h5>
-                    <div class="paragraph"> <?php echo get_field('short_description', $recent_insights_res->ID); ?></div>
-                  </li>
-                <?php
+            <li>
+              <h5><a href="<?php echo get_permalink($recent_insights_res->ID); ?>"><?php echo $recent_insights_res->post_title; ?></a></h5>
+              <div class="paragraph"> <?php echo get_field('short_description', $recent_insights_res->ID); ?></div>
+            </li>
+            <?php
                 }
                 ?>
-              </ol>
-            <?php
+          </ol>
+          <?php
             }
             ?>
-          </div>
         </div>
-
-        <!--Recent Insights ENDS-->
-
-        <!--PINNED INSIGHT 2 STARTS-->
-
-        <?php
+      </div>
+      
+      <!--Recent Insights ENDS--> 
+      
+      <!--PINNED INSIGHT 2 STARTS-->
+      
+      <?php
         if ($pinned_insights[1]) {
 
          
         ?>
-          <div class="col-lg-6 pin2">
-            <div class="insights-grD text-light d-flex flex-column">
-              <div class="img-ins mb-3"> <a href="<?php echo get_permalink($pinned_insights[1]->ID); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($pinned_insights[1]->ID), 'full'); ?>" alt="img"> </a></div>
-              <div class="res-details"> <span><?php echo get_insight_categories($pinned_insights[1]->ID); ?></span>
-                <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($pinned_insights[1]->ID); ?>"><?php echo $pinned_insights[1]->post_title; ?></a></h2>
-                <div class="paragraph mb-3"><?php echo get_field('short_description', $pinned_insights[1]->ID); ?></div>
-                <span><?php echo date('F d, Y', strtotime($pinned_insights[1]->post_date)); ?></span>
-              </div>
-            </div>
-          </div>
-        <?php
+      <div class="col-lg-6 pin2">
+        <div class="insights-grD text-light d-flex flex-column">
+          <div class="img-ins mb-3"> <a href="<?php echo get_permalink($pinned_insights[1]->ID); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($pinned_insights[1]->ID), 'full'); ?>" alt="img"> </a></div>
+          <div class="res-details"> <span><?php echo get_insight_categories($pinned_insights[1]->ID); ?></span>
+            <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($pinned_insights[1]->ID); ?>"><?php echo $pinned_insights[1]->post_title; ?></a></h2>
+            <div class="paragraph mb-3"><?php echo get_field('short_description', $pinned_insights[1]->ID); ?></div>
+            <span><?php echo date('F d, Y', strtotime($pinned_insights[1]->post_date)); ?></span> </div>
+        </div>
+      </div>
+      <?php
         }
         ?>
-
-        <!--PINNED INSIGHT 2 ENDS-->
-
-        <!--PINNED INSIGHT 3 STARTS-->
-        <?php
+      
+      <!--PINNED INSIGHT 2 ENDS--> 
+      
+      <!--PINNED INSIGHT 3 STARTS-->
+      <?php
         if ($pinned_insights[2]) {
 
           
         ?>
-          <div class="col-lg-6 pin2">
-            <div class="insights-grD text-light d-flex flex-column">
-              <div class="img-ins mb-3"><a href="<?php echo get_permalink($pinned_insights[2]->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($pinned_insights[2]->ID), 'full'); ?>" alt="img"> </a></div>
-              <div class="res-details"> <span><?php echo get_insight_categories($pinned_insights[2]->ID); ?></span>
-                <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($pinned_insights[2]->ID); ?>"><?php echo $pinned_insights[2]->post_title; ?></a></h2>
-                <div class="paragraph mb-3"><?php echo get_field('short_description', $pinned_insights[2]->ID); ?></div>
-                <span><?php echo date('F d, Y', strtotime($pinned_insights[2]->post_date)); ?></span>
-              </div>
-            </div>
-          </div>
-        <?php
+      <div class="col-lg-6 pin2">
+        <div class="insights-grD text-light d-flex flex-column">
+          <div class="img-ins mb-3"><a href="<?php echo get_permalink($pinned_insights[2]->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($pinned_insights[2]->ID), 'full'); ?>" alt="img"> </a></div>
+          <div class="res-details"> <span><?php echo get_insight_categories($pinned_insights[2]->ID); ?></span>
+            <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($pinned_insights[2]->ID); ?>"><?php echo $pinned_insights[2]->post_title; ?></a></h2>
+            <div class="paragraph mb-3"><?php echo get_field('short_description', $pinned_insights[2]->ID); ?></div>
+            <span><?php echo date('F d, Y', strtotime($pinned_insights[2]->post_date)); ?></span> </div>
+        </div>
+      </div>
+      <?php
         }
         ?>
-        <!--PINNED INSIGHT 3 ENDS-->
-
-        <!--INSIGHT LISTINGS STARTS-->
-
-        <div class="insights-list-wrapper paragraph">
-          <?php
+      <!--PINNED INSIGHT 3 ENDS--> 
+      
+      <!--INSIGHT LISTINGS STARTS-->
+      
+      <div class="insights-list-wrapper paragraph">
+        <?php
           $insight_args = array(
             'numberposts' => -1,
             'post_type'   => 'post-insights',
@@ -350,7 +341,7 @@ get_header();
 
           if ($insights) {
           ?>
-            <?php
+        <?php
             $i = 0;
             foreach ($insights as $insights_res) {
               $i++;
@@ -362,15 +353,14 @@ get_header();
 
 
             ?>
-              <div class="insights-grD text-light d-flex flex-column" id="<?php echo $i; ?>">
-                <div class="img-ins mb-3"><a href="<?php echo get_permalink($insights_res->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($insights_res->ID), 'full'); ?>" alt="img"></a> </div>
-                <div class="res-details"> <span><?php echo get_insight_categories($pinned_insights[0]->ID); ?></span>
-                  <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($insights_res->ID); ?>"><?php echo $insights_res->post_title; ?></a></h2>
-                  <div class="paragraph mb-3"><?php echo get_field('short_description', $insights_res->ID); ?></div>
-                  <span><?php echo date('F d, Y', strtotime($insights_res->post_date)); ?></span>
-                </div>
-              </div>
-              <?php
+        <div class="insights-grD text-light d-flex flex-column" id="<?php echo $i; ?>">
+          <div class="img-ins mb-3"><a href="<?php echo get_permalink($insights_res->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($insights_res->ID), 'full'); ?>" alt="img"></a> </div>
+          <div class="res-details"> <span><?php echo get_insight_categories($pinned_insights[0]->ID); ?></span>
+            <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($insights_res->ID); ?>"><?php echo $insights_res->post_title; ?></a></h2>
+            <div class="paragraph mb-3"><?php echo get_field('short_description', $insights_res->ID); ?></div>
+            <span><?php echo date('F d, Y', strtotime($insights_res->post_date)); ?></span> </div>
+        </div>
+        <?php
 
               if ($i % 7 == 0) {
                 echo '</div>';
@@ -378,8 +368,8 @@ get_header();
             }
             if ($i % 7 != 0) {
               ?>
-        </div>
-  <?php
+      </div>
+      <?php
 
             }
           }
