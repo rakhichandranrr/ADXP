@@ -109,7 +109,8 @@ get_header();
 
         <!--DISPLAY SEARCH RESULTS STARTS HERE-->
 
-        <div class="insights-list-wrapper paragraph">
+        <div class="insights-list-wrapper paragraph search-result-box">
+        
 
           <!--   INDUSTRY SEARCH STARTS-->
 
@@ -146,8 +147,8 @@ get_header();
                     $insight_cat = '';
                   }
 
-          ?>
-                  <div class="insights-search-res">
+          ?><div class="insights-search-res">
+                  
                     <div class="insights-grD text-light d-flex flex-column" id="<?php echo $i; ?>">
                       <div class="img-ins mb-3"><a href="<?php echo get_permalink($search_ind_res->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($search_ind_res->ID), 'full'); ?>" alt="img"></a> </div>
                       <div class="res-details"> <span><?php echo get_insight_categories($search_ind_res->ID); ?></span>
@@ -156,7 +157,8 @@ get_header();
                         <span><?php echo date('F d, Y', strtotime($search_ind_res->post_date)); ?></span>
                       </div>
                     </div>
-                  </div>
+                    </div>
+                 
           <?php
 
 
@@ -191,7 +193,7 @@ get_header();
                 foreach ($search_serv_insights as $search_serv_res) {
 
 
-          ?>
+          ?><div class="insights-search-res">
                   <div class="insights-search-res">
                     <div class="insights-grD text-light d-flex flex-column">
                       <div class="img-ins mb-3"><a href="<?php echo get_permalink($search_serv_res->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($search_serv_res->ID), 'full'); ?>" alt="img"> </a></div>
@@ -202,6 +204,7 @@ get_header();
                       </div>
                     </div>
                   </div>
+                  </div>
           <?php
                 }
               }
@@ -209,8 +212,8 @@ get_header();
           }
           ?>
           <!--   SERVICE SEARCH ENDS-->
+           </div>
 
-        </div>
 
         <!--DISPLAY SEARCH RESULTS ENDS HERE-->
 
