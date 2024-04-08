@@ -189,7 +189,7 @@ li.nav-item {
 }
 
 .banner-content {
-	z-index: 2;
+	z-index: 1;
 }
 
 .banner-content h1 {
@@ -216,6 +216,7 @@ header {
 	width: 100%;
 	display: flex;
 	align-items: center;
+    z-index: 999;
 }
 
 .container.b_contents-main {
@@ -241,7 +242,7 @@ section.mobile-header {
 
 .sticky {
 	background: var(--secondary-color);
-	z-index: 999999999999;
+	z-index: 9;
 	transition: .5s;
 }
 
@@ -721,6 +722,7 @@ section.innovation ul {
 }
 .framework h5 {
     color: #fff;
+
 }
 .framework h5 {
     margin-bottom: 10px;
@@ -963,6 +965,55 @@ img.insight-single-img {
     /* gap: 10px; */
     padding-left: 0px;
 }
+.dropdown, .dropdown-center, .dropend, .dropstart, .dropup, .dropup-center, .navbar {
+    position: inherit;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+        z-index: 99;
+    padding: 60px 0px;
+    border-radius: 0px;
+    background: var(--secondary-color);
+    border: 0;
+}
+.dropdown-menu.mega-menu h2 {
+    margin-bottom: 20px;
+}
+
+.dropdown-menu.mega-menu .usefull-links a {
+    font-weight: 300;
+    font-size: 17px;
+}
+.col-md-8.usefull-links.mega-link ul li {
+    width: calc(100% / 2);
+}
+.col-md-8.usefull-links.mega-link ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-------------media css start---------------*/
 
@@ -1413,6 +1464,27 @@ img.head-arrow {
     height: 100vh;
     top: 0;
 }
+    .col-lg-8 .insights-grD {
+    flex-direction: column !important;
+}
+ .dropdown-menu.mega-menu {
+    background: var(--secondary-color);
+     display: none !important;
+}  
+  .dropdown-menu.mega-menu.show {
+    display: block !important;
+}  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 

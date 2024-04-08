@@ -14,59 +14,40 @@
 <button class="Search mobile-search d-none" type="submit"><i class="bi bi-search"></i></button>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="<?php echo site_url(); ?>/services/" aria-expanded="false"> Services </a>
+    <?php
+  $menu_items = wp_get_menu_array('Header');
+                foreach ($menu_items as $item)
+				{
+				?>
+    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="<?php echo $item['url']; ?>" role="button"  aria-expanded="false"> <?php echo $item['title']; ?> </a>
+      <?php if( !empty($item['children']) ){?>
+      <div class="dropdown-menu mega-menu" aria-labelledby="megaMenuDropdown">
+        <div class="container">
+          <div class="row text-light">
+            <div class="col-md-4 pe-4">
+              <h2><?php echo $item['title']; ?></h2>
+              <div class="paragraph"> <?php echo $item['description']; ?> </div>
+              <!-- Add your content for column 1 --> 
+            </div>
+            <div class="col-md-8 usefull-links mega-link">
+              <ul>
+                <?php foreach($item['children'] as $child){ ?>
+                <li><a href="<?php echo $child['url']; ?>" ><?php echo $child['title'];?></a></li>
+                <?php
+			  }
+			  ?>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <?php
-      $services_args = array(
-        'numberposts' => -1,
-        'post_type'   => 'post-services',
-        'order'       => 'ASC',
-        'orderby'     => 'title'
-      );
-      $services = get_posts($services_args);
-
-      if ($services) {
-      ?>
-        <ul class="dropdown-menu">
-          <?php
-          foreach ($services as $services_res) {
-          ?>
-            <li><a class="dropdown-item" href="<?php echo get_permalink($services_res->ID); ?>"><?php echo $services_res->post_title; ?></a></li>
-          <?php
-          }
-          ?>
-        </ul>
-      <?php
-      } ?>
+							  }
+							  ?>
     </li>
-    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="<?php echo site_url(); ?>/industries/" aria-expanded="false"> Industries </a>
-      <?php
-      $ind_args = array(
-        'numberposts' => -1,
-        'post_type'   => 'post-industries',
-        'order'       => 'ASC',
-        'orderby'     => 'title'
-      );
-      $industries = get_posts($ind_args);
-      if ($industries) {
-      ?>
-        <ul class="dropdown-menu">
-          <?php
-          foreach ($industries as $industries_res) {
-          ?>
-            <li><a class="dropdown-item" href="<?php echo get_permalink($industries_res->ID); ?>"><?php echo $industries_res->post_title; ?></a></li>
-          <?php
-          }
-          ?>
-        </ul>
-      <?php
-      }
-      ?>
-    </li>
-    <li class="nav-item"> <a class="nav-link" href="<?php echo site_url(); ?>/insights/">Insights</a> </li>
-    <li class="nav-item"> <a class="nav-link" href="<?php echo site_url(); ?>/digital-advisor/">Digital Advisor</a> </li>
-    <li class="nav-item"> <a class="nav-link" href="<?php echo site_url(); ?>/about/">About</a> </li>
-    <li class="nav-item"> <a class="nav-link" href="<?php echo site_url(); ?>/careers/">Careers</a> </li>
-    <li class="nav-item"> <a class="nav-link" href="<?php echo site_url(); ?>/contact/">Contact</a> </li>
+    <?php
+				}
+				?>
   </ul>
   <form class="d-flex" role="search">
     <button class="Search" type="submit"><i class="bi bi-search"></i></button>
