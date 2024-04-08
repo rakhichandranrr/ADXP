@@ -672,7 +672,7 @@ text-overflow: ellipsis;
 }
 .ind-serv-itm .card-header .paragraph{
     display: -webkit-box;
-/*-webkit-line-clamp: 4;*/
+-webkit-line-clamp: 3;
 -webkit-box-orient: vertical;
 overflow: hidden;
 text-overflow: ellipsis; 
@@ -953,8 +953,16 @@ img.insight-single-img {
     height: 445px;
     object-fit: cover;
 }
-
-
+.search-result-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.insights-search-res {
+    width: calc(100% / 2);
+    padding: 20px;
+    /* gap: 10px; */
+    padding-left: 0px;
+}
 
 /*-------------media css start---------------*/
 
@@ -1384,10 +1392,27 @@ img.pin-insight {
     font-size: 14px;
     font-weight: 100;
 }  
-    
-    
-    
-
+   .container.filter-section {
+    display: flex;
+       align-items: center;
+       padding: 0;
+} 
+ .container.filter-section label {
+    font-size: 12px;
+}   
+   .insights-grD {
+    display: flex;
+    flex-direction: row !important;
+} .insights-itm-1 .paragraph, .insights-itm-2 .paragraph, .insights-itm-3 .paragraph {
+    display: none;
+} 
+img.head-arrow {
+    margin-top: 8px;
+}
+    .video-banner {
+    height: 100vh;
+    top: 0;
+}
 }
 
 
