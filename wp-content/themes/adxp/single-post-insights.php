@@ -86,6 +86,7 @@ $thumb_id = get_post_thumbnail_id($post_id);
       $recentinsight_args = array(
         'numberposts' => 3,
         'post_type'   => 'post-insights',
+		'suppress_filters' => false,
         'post__not_in' => array(get_the_ID()),
         'order'       => 'DESC',
         'orderby'     => 'ID'
