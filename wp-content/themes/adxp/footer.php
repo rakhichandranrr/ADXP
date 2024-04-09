@@ -128,7 +128,7 @@
       foreach ($menu_items as $item) {
       ?>
         <?php if (!empty($item['children'])) { ?>
-          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false"> <?php echo $item['title']; ?> </a>
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <?php echo $item['title']; ?> </a>
 
             <div class="dropdown-menu mega-menu" aria-labelledby="megaMenuDropdown">
               <div class="container">
