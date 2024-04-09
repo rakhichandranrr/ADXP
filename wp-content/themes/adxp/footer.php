@@ -60,6 +60,7 @@
             $ind_args = array(
               'numberposts' => -1,
               'post_type'   => 'post-industries',
+			  'suppress_filters' => false,
               'order'       => 'ASC',
               'orderby'     => 'title'
             );
@@ -82,6 +83,7 @@
               'numberposts' => -1,
               'post_type'   => 'post-services',
               'order'       => 'ASC',
+			  'suppress_filters' => false,
               'orderby'     => 'title'
             );
             $services = get_posts($services_args);
