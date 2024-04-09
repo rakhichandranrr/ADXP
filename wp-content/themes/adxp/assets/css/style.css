@@ -1518,7 +1518,9 @@ img.head-arrow {
  ul.submenu.text-light.d-flex li a {
     font-size: 15px;
 }   
-    
+.col-md-8.usefull-links.mega-link ul li {
+    width: 100%;
+}    
     
     
     
