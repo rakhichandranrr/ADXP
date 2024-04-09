@@ -124,6 +124,9 @@ if ($services) {
   </section>
 <?php
 }
+
+$client_results = get_field('select_client_results');
+      if ($client_results) {
 ?>
 
 <!--SERVICES ENDS-->
@@ -136,8 +139,7 @@ if ($services) {
         <div class="paragraph"> <?php echo get_field('client_results_description', $post_id); ?></div>
       </div>
       <?php
-      $client_results = get_field('select_client_results');
-      if ($client_results) {
+      
         foreach ($client_results as $client_results_res) {
 
           $insight_services = get_field('services', $client_results_res->ID);
@@ -159,12 +161,14 @@ if ($services) {
             </div>
           </div>
       <?php
-        }
       }
       ?>
     </div>
   </div>
 </section>
+<?php
+	  }
+	  ?>
 
 <!--PEOPLE STARTS-->
 <?php
