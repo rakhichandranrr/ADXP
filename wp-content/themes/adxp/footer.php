@@ -125,24 +125,24 @@
                
                
                <?php
-  $menu_items = wp_get_menu_array('Header');
-                foreach ($menu_items as $item)
+  $menu_items_mob = wp_get_menu_array('Header');
+                foreach ($menu_items_mob as $item_mob)
 				{
 				?>
-    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="<?php echo $item['url']; ?>" role="button"  aria-expanded="false"> <?php echo $item['title']; ?> </a>
-      <?php if( !empty($item['children']) ){?>
+    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="<?php echo $item_mob['url']; ?>" role="button"  aria-expanded="false"> <?php echo $item_mob['title']; ?> </a>
+      <?php if( !empty($item_mob['children']) ){?>
       <div class="dropdown-menu mega-menu" aria-labelledby="megaMenuDropdown">
         <div class="container">
           <div class="row text-light">
             <div class="col-md-4 pe-4">
-              <h2><?php echo $item['title']; ?></h2>
-              <div class="paragraph"> <?php echo $item['description']; ?> </div>
+              <h2><?php echo $item_mob['title']; ?></h2>
+              <div class="paragraph"> <?php echo $item_mob['description']; ?> </div>
               <!-- Add your content for column 1 --> 
             </div>
             <div class="col-md-8 usefull-links mega-link">
               <ul>
-                <?php foreach($item['children'] as $child){ ?>
-                <li><a href="<?php echo $child['url']; ?>" ><?php echo $child['title'];?></a></li>
+                <?php foreach($item_mob['children'] as $child_mob){ ?>
+                <li><a href="<?php echo $child_mob['url']; ?>" ><?php echo $child_mob['title'];?></a></li>
                 <?php
 			  }
 			  ?>
