@@ -112,35 +112,7 @@
         ADXP Consultancy. All rights reserved.</span><?php echo do_action('wpml_add_language_selector');?> </div>
   </div>
 </footer>
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <button type="button" class="menu-close" data-bs-dismiss="offcanvas"><i class="bi bi-x-lg"></i></button>
-    <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.webp" alt="logo"> </a>
-  </div>
-  <div class="offcanvas-body">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Industries </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </li>
-      <li class="nav-item"> <a class="nav-link" href="#">Insights</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="#">Digital Advisor</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="#">Careers</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="#">Insights</a> </li>
-    </ul>
-  </div>
-</div>
+
 <?php wp_footer(); ?>
 </body>
 
