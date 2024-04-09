@@ -1018,11 +1018,21 @@ a.wpml-ls-link img {
 .wpml-ls-statics-shortcode_actions.wpml-ls.wpml-ls-legacy-list-horizontal {
     width: fit-content;
 }
-
-
-
-
-
+h1.main-tittle.mb-5.text-light.mt-4.insight-head {
+    display: flex;
+}
+section.banner-vw.about-banner.detail_page {
+    background: none;
+}
+section.banner-vw.about-banner.detail_page::before {
+    display: none;
+}
+.pdl-1{
+    padding-left: 10%;
+}
+.pdr-1{
+    padding-right: 10%;
+}
 
 
 
@@ -1118,6 +1128,7 @@ a.wpml-ls-link img {
 		line-height: 48px;
 		margin-top: 20px;
 	}
+
 
 	.features .flexW.flex-column.w-70 {
 		width: 90% !important;
@@ -1504,7 +1515,9 @@ img.head-arrow {
     margin-bottom: 0px !important;
     margin-top: 0px !important;
 }   
-    
+ ul.submenu.text-light.d-flex li a {
+    font-size: 15px;
+}   
     
     
     
