@@ -107,7 +107,7 @@
     </div>
     <div class="row py-4 copyright"> <span class="text-light">Copyright ©
         <?php echo date('Y'); ?>
-        ADXP Consultancy. All rights reserved.</span> </div>
+        ADXP Consultancy. All rights reserved.</span><?php echo do_action('wpml_add_language_selector');?> </div>
   </div>
 </footer>
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
