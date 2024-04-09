@@ -90,7 +90,7 @@ if ($banner_video['url']) {
                 <?php
                 if (is_page('insights')) {
                 ?>
-                  <h1 class="main-tittle mb-5 text-light mt-4"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo $title; ?></h1>
+                  <h1 class="main-tittle mb-5 text-light mt-4 insight-head"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo $title; ?></h1>
                   <div class="paragraph"> <?php echo banner_content(); ?> </div>
                 <?php
                 } else {
