@@ -459,7 +459,7 @@ footer a.navbar-brand img {
 img.head-arrow {
     width: 18px;
     margin-right: 25px;
-    margin-top: -13px;
+    margin-top: 17px;
 }
 
 section.digital-portal ul {
@@ -721,6 +721,7 @@ section.innovation ul {
     margin: 10px 0px;
     display: flex;
 }
+
 .framework h5 {
     color: #fff;
 }
@@ -996,10 +997,7 @@ img.insight-single-img {
 .otgs-development-site-front-end {
     display: none;
 }
-h1.main-tittle.mb-5.text-light.digital-head img {
-    margin-bottom: 0px !important;
-    margin-top: 0px !important;
-}
+
 h1.main-tittle.mb-5.text-light.digital-head {
     display: flex;
     align-items: flex-start;
@@ -1502,7 +1500,10 @@ img.head-arrow {
     display: flex;
     flex-direction: column !important;
 }   
-    
+ h1.main-tittle.mb-5.text-light.digital-head img {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+}   
     
     
     
