@@ -118,7 +118,7 @@
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
          <div class="offcanvas-header">
             <button type="button" class="menu-close" data-bs-dismiss="offcanvas" ><i class="bi bi-x-lg"></i></button>
-            <a class="navbar-brand" href="#"><img src="assets/img/logo.webp" alt="logo" > </a>
+            <a class="navbar-brand" href="<?php echo site_url();?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.webp" alt="logo" > </a>
          </div>
          <div class="offcanvas-body">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
