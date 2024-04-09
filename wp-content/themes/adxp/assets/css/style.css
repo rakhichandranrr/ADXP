@@ -995,9 +995,21 @@ img.insight-single-img {
 .otgs-development-site-front-end {
     display: none;
 }
-
-
-
+h1.main-tittle.mb-5.text-light.digital-head img {
+    margin-bottom: 20px !important;
+    margin-top: 18px;
+}
+h1.main-tittle.mb-5.text-light.digital-head {
+    display: flex;
+}
+a.wpml-ls-link {
+    color: #ffffff !important;
+    background-color: #ffffff00 !important;
+}
+a.wpml-ls-link img {
+    width: 30px;
+    height: 30px;
+}
 
 
 
@@ -1129,6 +1141,7 @@ img.insight-single-img {
 		position: absolute;
 		left: 10px;
 		background: none;
+
 		color: #fff;
 		border: 0;
 	}
