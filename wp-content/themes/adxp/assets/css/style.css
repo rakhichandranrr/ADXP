@@ -1228,7 +1228,7 @@ img.insight-single-img {
 	img.head-arrow {
 		width: 13px;
 		margin-right: 15px;
-		margin-bottom: 6px;
+		margin-bottom: 14px;
 	}
 
 	.row.py-4.copyright span {
@@ -1459,7 +1459,7 @@ img.pin-insight {
     display: none;
 } 
 img.head-arrow {
-    margin-top: 8px;
+    margin-top: 9px;
 }
   .video-banner {
     height: 100vh;
