@@ -344,7 +344,7 @@ section.features {
 
 h1.main-tittle {
 	font-size: 54px;
-    display: flex;
+/*    display: flex;*/
     align-items: flex-start;
 }
 
@@ -459,7 +459,7 @@ footer a.navbar-brand img {
 img.head-arrow {
     width: 18px;
     margin-right: 25px;
-    margin-top: 14px;
+    margin-top: -13px;
 }
 
 section.digital-portal ul {
@@ -722,7 +722,6 @@ section.innovation ul {
 }
 .framework h5 {
     color: #fff;
-
 }
 .framework h5 {
     margin-bottom: 10px;
@@ -993,7 +992,9 @@ img.insight-single-img {
     display: flex;
     flex-wrap: wrap;
 }
-
+.otgs-development-site-front-end {
+    display: none;
+}
 
 
 
@@ -1474,7 +1475,10 @@ img.head-arrow {
   .dropdown-menu.mega-menu.show {
     display: block !important;
 }  
-    
+ .insights .insights-grD {
+    display: flex;
+    flex-direction: column !important;
+}   
     
     
     
