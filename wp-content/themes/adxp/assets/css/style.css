@@ -1461,9 +1461,12 @@ img.pin-insight {
 img.head-arrow {
     margin-top: 8px;
 }
-    .video-banner {
+  .video-banner {
     height: 100vh;
     top: 0;
+    bottom: 0;
+    left: inherit;
+    transform: inherit;
 }
     .col-lg-8 .insights-grD {
     flex-direction: column !important;
