@@ -123,6 +123,7 @@ get_header();
               $search_ind_args = array(
                 'post_type' => 'post-insights',
                 'post_status' => 'publish',
+				'suppress_filters' => false,
                 'meta_query' => array(
                   array(
                     'key' => 'industry',
@@ -179,6 +180,7 @@ get_header();
               $search_serv_args = array(
                 'post_type' => 'post-insights',
                 'post_status' => 'publish',
+				'suppress_filters' => false,
                 'meta_query' => array(
                   array(
                     'key' => 'services',

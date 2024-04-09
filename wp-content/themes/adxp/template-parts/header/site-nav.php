@@ -56,6 +56,8 @@
     ?>
   </ul>
   <form class="d-flex" role="search">
+  
+    <?php //echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
     <button class="Search" type="submit"><i class="bi bi-search"></i></button>
   </form>
 </div>
