@@ -80,7 +80,7 @@ $insight = get_post($post_id);
       if ($recent_insights) {
         foreach ($recent_insights as $recent_insights_res) {
 
-          
+
       ?>
           <div class="col-lg-4">
             <div class="industries-grid">

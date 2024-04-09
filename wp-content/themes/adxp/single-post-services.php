@@ -67,7 +67,7 @@ if ($services) {
               if ($i % 3 == 1) {
                 echo '<div class="ind-serv-itm row">';
               }
-			  
+
           ?>
               <div class="card-header col-lg-4 card-header<?php echo $j; ?>" onClick="showCardBody(<?php echo $i; ?>)">
                 <div class="wrp-grd">

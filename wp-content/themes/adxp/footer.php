@@ -60,7 +60,7 @@
             $ind_args = array(
               'numberposts' => -1,
               'post_type'   => 'post-industries',
-			  'suppress_filters' => false,
+              'suppress_filters' => false,
               'order'       => 'ASC',
               'orderby'     => 'title'
             );
@@ -83,7 +83,7 @@
               'numberposts' => -1,
               'post_type'   => 'post-services',
               'order'       => 'ASC',
-			  'suppress_filters' => false,
+              'suppress_filters' => false,
               'orderby'     => 'title'
             );
             $services = get_posts($services_args);
@@ -109,60 +109,65 @@
     </div>
     <div class="row py-4 copyright"> <span class="text-light">Copyright ©
         <?php echo date('Y'); ?>
-        ADXP Consultancy. All rights reserved.</span><?php echo do_action('wpml_add_language_selector');?> </div>
+        ADXP Consultancy. All rights reserved.</span><?php echo do_action('wpml_add_language_selector'); ?> </div>
   </div>
 </footer>
 
 <!--MOBILE MENU STARTS-->
 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-         <div class="offcanvas-header">
-            <button type="button" class="menu-close" data-bs-dismiss="offcanvas" ><i class="bi bi-x-lg"></i></button>
-            <a class="navbar-brand" href="<?php echo site_url();?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.webp" alt="logo" > </a>
-         </div>
-         <div class="offcanvas-body">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-               
-               
-               <?php
-  $menu_items_mob = wp_get_menu_array('Header');
-                foreach ($menu_items_mob as $item_mob)
-				{
-				?>
-    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="<?php echo $item_mob['url']; ?>" role="button"  aria-expanded="false"> <?php echo $item_mob['title']; ?> </a>
-      <?php if( !empty($item_mob['children']) ){?>
-      <div class="dropdown-menu mega-menu" aria-labelledby="megaMenuDropdown">
-        <div class="container">
-          <div class="row text-light">
-            <div class="col-md-4 pe-4">
-              <h2><?php echo $item_mob['title']; ?></h2>
-              <div class="paragraph"> <?php echo $item_mob['description']; ?> </div>
-              <!-- Add your content for column 1 --> 
-            </div>
-            <div class="col-md-8 usefull-links mega-link">
-              <ul>
-                <?php foreach($item_mob['children'] as $child_mob){ ?>
-                <li><a href="<?php echo $child_mob['url']; ?>" ><?php echo $child_mob['title'];?></a></li>
-                <?php
-			  }
-			  ?>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="offcanvas-header">
+    <button type="button" class="menu-close" data-bs-dismiss="offcanvas"><i class="bi bi-x-lg"></i></button>
+    <a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.webp" alt="logo"> </a>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
       <?php
-							  }
-							  ?>
-    </li>
-    <?php
-				}
-				?>
-            </ul>
-         </div>
-      </div>
-      
-      <!--MOBILE MENU ENDS-->
+      $menu_items = wp_get_menu_array('Header');
+      foreach ($menu_items as $item) {
+      ?>
+        <?php if (!empty($item['children'])) { ?>
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="<?php echo $item['url']; ?>" role="button" aria-expanded="false"> <?php echo $item['title']; ?> </a>
+
+            <div class="dropdown-menu mega-menu" aria-labelledby="megaMenuDropdown">
+              <div class="container">
+                <div class="row text-light">
+                  <div class="col-md-4 pe-4">
+                    <h2><?php echo $item['title']; ?></h2>
+                    <div class="paragraph"> <?php echo $item['description']; ?> </div>
+                    <!-- Add your content for column 1 -->
+                  </div>
+                  <div class="col-md-8 usefull-links mega-link">
+                    <ul>
+                      <?php foreach ($item['children'] as $child) { ?>
+                        <li><a href="<?php echo $child['url']; ?>"><?php echo $child['title']; ?></a></li>
+                      <?php
+                      }
+                      ?>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </li>
+        <?php
+        } else {
+
+        ?>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo $item['url']; ?>"><?php echo $item['title']; ?> </a>
+          </li>
+      <?php
+        }
+      }
+      ?>
+    </ul>
+  </div>
+</div>
+
+<!--MOBILE MENU ENDS-->
 <?php wp_footer(); ?>
 </body>
 

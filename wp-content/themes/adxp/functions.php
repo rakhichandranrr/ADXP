@@ -791,60 +791,57 @@ function banner_content()
 
 function get_insight_categories($insight_id)
 {
-	      $insight_services = get_field('services', $insight_id);
-          $insight_industry = get_field('industry', $insight_id);
-		  $services = array();
-		  $industies = array();
-		  if($insight_services)
-		  {
-			  foreach($insight_services as $insight_ser)
-			  {
-				  $services[] = $insight_ser->post_title;
-			  }
-		  }
-		  
-		  if($insight_industry)
-		  {
-			  foreach($insight_industry as $insight_ind)
-			  {
-				  $industies[] = $insight_ind->post_title;
-			  }
-		  }
-		  
-		  $all_cats = array_merge($services,$industies);
-		  $insight_cats = implode(' | ',$all_cats);
-		  
-          return $insight_cats;
+	$insight_services = get_field('services', $insight_id);
+	$insight_industry = get_field('industry', $insight_id);
+	$services = array();
+	$industies = array();
+	if ($insight_services) {
+		foreach ($insight_services as $insight_ser) {
+			$services[] = $insight_ser->post_title;
+		}
+	}
+
+	if ($insight_industry) {
+		foreach ($insight_industry as $insight_ind) {
+			$industies[] = $insight_ind->post_title;
+		}
+	}
+
+	$all_cats = array_merge($services, $industies);
+	$insight_cats = implode(' | ', $all_cats);
+
+	return $insight_cats;
 }
 
 /*GET INSIGHT CATEGORIES ENDS*/
 
-function wp_get_menu_array($current_menu) {
-    $menu_name = $current_menu;
-    $locations = get_nav_menu_locations();
-    $menu = wp_get_nav_menu_object($current_menu );
-    $array_menu = wp_get_nav_menu_items( $menu->term_id); 
-    $menu = array();
-    foreach ($array_menu as $m) {
-        if (empty($m->menu_item_parent)) {
-            $menu[$m->ID] = array();
-            $menu[$m->ID]['ID']      =   $m->ID;
-            $menu[$m->ID]['title']       =   $m->title;
+function wp_get_menu_array($current_menu)
+{
+	$menu_name = $current_menu;
+	$locations = get_nav_menu_locations();
+	$menu = wp_get_nav_menu_object($current_menu);
+	$array_menu = wp_get_nav_menu_items($menu->term_id);
+	$menu = array();
+	foreach ($array_menu as $m) {
+		if (empty($m->menu_item_parent)) {
+			$menu[$m->ID] = array();
+			$menu[$m->ID]['ID']      =   $m->ID;
+			$menu[$m->ID]['title']       =   $m->title;
 			$menu[$m->ID]['description']       =   $m->description;
-            $menu[$m->ID]['url']         =   $m->url;
-            $menu[$m->ID]['children']    =   array();
-        }
-    }
-    $submenu = array();
-    foreach ($array_menu as $m) {
-        if ($m->menu_item_parent) {
-            $submenu[$m->ID] = array();
-            $submenu[$m->ID]['ID']       =   $m->ID;
-            $submenu[$m->ID]['title']    =   $m->title;
+			$menu[$m->ID]['url']         =   $m->url;
+			$menu[$m->ID]['children']    =   array();
+		}
+	}
+	$submenu = array();
+	foreach ($array_menu as $m) {
+		if ($m->menu_item_parent) {
+			$submenu[$m->ID] = array();
+			$submenu[$m->ID]['ID']       =   $m->ID;
+			$submenu[$m->ID]['title']    =   $m->title;
 			$submenu[$m->ID]['description']    =   $m->description;
-            $submenu[$m->ID]['url']  =   $m->url;
-            $menu[$m->menu_item_parent]['children'][$m->ID] = $submenu[$m->ID];
-        }
-    }
-    return $menu;
+			$submenu[$m->ID]['url']  =   $m->url;
+			$menu[$m->menu_item_parent]['children'][$m->ID] = $submenu[$m->ID];
+		}
+	}
+	return $menu;
 }
