@@ -19,6 +19,7 @@ get_header();
                   'numberposts' => -1,
                   'post_type'   => 'post-industries',
                   'order'       => 'ASC',
+				  'suppress_filters' => false,
                   'orderby'     => 'title'
                 );
                 $industries = get_posts($ind_args);
@@ -53,6 +54,7 @@ get_header();
                   'numberposts' => -1,
                   'post_type'   => 'post-services',
                   'order'       => 'ASC',
+				  'suppress_filters' => false,
                   'orderby'     => 'title'
                 );
                 $services = get_posts($services_args);
@@ -220,6 +222,7 @@ get_header();
           $pinnedinsight_args = array(
             'numberposts' => 3,
             'post_type'   => 'post-insights',
+			'suppress_filters' => false,
             'order'       => 'DESC',
             'orderby'     => 'ID'
           );
@@ -257,6 +260,7 @@ get_header();
             $recentinsight_args = array(
               'numberposts' => 4,
               'post_type'   => 'post-insights',
+			  'suppress_filters' => false,
               'order'       => 'DESC',
               'orderby'     => 'ID'
             );
@@ -335,6 +339,7 @@ get_header();
             'post_type'   => 'post-insights',
             'post__not_in' => array($pinned_insights[0]->ID, $pinned_insights[1]->ID, $pinned_insights[2]->ID),
             'order'       => 'ASC',
+			'suppress_filters' => false,
             'orderby'     => 'title'
           );
           $insights = get_posts($insight_args);

@@ -11,6 +11,7 @@ get_header();
         'numberposts' => -1,
         'post_type'   => 'post-industries',
         'order'       => 'ASC',
+		'suppress_filters' => false,
         'orderby'     => 'title'
       );
       $industries = get_posts($ind_args);
