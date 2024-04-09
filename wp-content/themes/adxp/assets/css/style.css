@@ -527,8 +527,9 @@ section#digita_portal_section {
 }
 
 .row.py-4.copyright span {
-	font-size: 14px;
-	font-weight: 200;
+    font-size: 14px;
+    font-weight: 200;
+    width: fit-content;
 }
 
 .usefull-links a:hover,
@@ -1010,8 +1011,14 @@ a.wpml-ls-link img {
     width: 30px;
     height: 30px;
 }
-
-
+.row.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wpml-ls-statics-shortcode_actions.wpml-ls.wpml-ls-legacy-list-horizontal {
+    width: fit-content;
+}
 
 
 
@@ -1141,7 +1148,6 @@ a.wpml-ls-link img {
 		position: absolute;
 		left: 10px;
 		background: none;
-
 		color: #fff;
 		border: 0;
 	}
