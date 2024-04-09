@@ -134,7 +134,7 @@
               <div class="container">
                 <div class="row text-light">
                   <div class="col-md-4 pe-4">
-                    <h2><?php echo $item['title']; ?></h2>
+                    <h2><a href="<?php echo $item['url']; ?>"><?php echo $item['title']; ?></a></h2>
                     <div class="paragraph"> <?php echo $item['description']; ?> </div>
                     <!-- Add your content for column 1 -->
                   </div>
