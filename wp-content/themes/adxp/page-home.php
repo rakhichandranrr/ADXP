@@ -58,7 +58,7 @@ if ($home_services) {
   <section class="service common-padd" id="service_section">
     <div class="container">
       <div class="row">
-        <h1 class="main-tittle mb-5 text-light"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"> Our <i>Services</i></h1>
+        <h1 class="main-tittle mb-5 text-light"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo get_field('service_heading'); ?> </h1>
         <div class="service-main d-flex justify-content-between g-2">
           <?php foreach ($home_services as $home_services_res) { ?>
             <div class="service-itm">
@@ -115,7 +115,7 @@ if ($home_industries) {
 ?>
   <section class="indistries common-padd" id="industries_section">
     <div class="container">
-      <h1 class="main-tittle mb-5 text-light"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><i>Industries</i> we serve</h1>
+      <h1 class="main-tittle mb-5 text-light"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo get_field('industries_heading'); ?></h1>
       <div class="row">
         <?php foreach ($home_industries as $home_industries_res) { ?>
           <div class="col-lg-4">
@@ -180,7 +180,7 @@ if ($home_people) {
 ?>
   <section class="peoples common-padd" id="peoples_section">
     <div class="container">
-      <h1 class="main-tittle mb-5 text-light"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"> Our <i> People</i></h1>
+      <h1 class="main-tittle mb-5 text-light"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"> <?php echo get_field('people_heading'); ?></h1>
       <div class="row">
         <?php foreach ($home_people as $home_people_res) { ?>
           <div class="col-lg-3">
