@@ -3,10 +3,24 @@ get_header();
 global $post;
 $post_id = get_the_ID();
 $insight = get_post($post_id);
+$thumb_id = get_post_thumbnail_id($post_id);
 ?>
 
 <section class="bg-light common-padd">
-  <div class="container "> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_id), 'full'); ?>" alt="img" class="insight-single-img" /> </div>
+  <div class="container ">
+  <?php
+  if($thumb_id ==  242)
+  {
+ ?>
+ <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no_img_insight.png" alt="img" class="insight-single-img" />
+ <?php
+  }
+ else
+ {
+	 ?>
+  <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_id), 'full'); ?>" alt="img" class="insight-single-img" /> <?php
+ }
+ ?></div>
 </section>
 <section class="ins-inner-detail  common-padd bg-light " id="Overview">
   <div class="container b_contents-main flexW inner-banner-content">
