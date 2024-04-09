@@ -997,11 +997,12 @@ img.insight-single-img {
     display: none;
 }
 h1.main-tittle.mb-5.text-light.digital-head img {
-    margin-bottom: 20px !important;
-    margin-top: 18px;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
 }
 h1.main-tittle.mb-5.text-light.digital-head {
     display: flex;
+    align-items: flex-start;
 }
 a.wpml-ls-link {
     color: #ffffff !important;
