@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   $(document).ready(function() {
   // Add class to div when hovering over the Industries link
-  $('.navbar-nav').hover(function() {
+  $('.navbar-expand-lg ').hover(function() {
     $('#myHeader').addClass('sticky');
   }, function() {
     $('#myHeader').removeClass('sticky');
