@@ -191,23 +191,3 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-window.onload = function() {
-    var submenuLinks = document.querySelectorAll('.mega-link a');
-
-    submenuLinks.forEach(function(link)
- {
-      link.addEventListener('click', function() {
-        // Remove 'active' class from all submenu links
-        submenuLinks.forEach(function(link)
- {
-          link.classList.remove('active');
-        });
-
-        // Add 'active' class to clicked submenu link
-        this.classList.add('active');
-
-        // Add 'active' class to Industries link
-        document.querySelector('.nav-link.dropdown-toggle').classList.add('active');
-      });
-    });
-  };
