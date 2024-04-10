@@ -184,9 +184,9 @@ document.addEventListener("DOMContentLoaded", function() {
   $(document).ready(function() {
   // Add class to div when hovering over the Industries link
   $('.navbar-expand-lg ').hover(function() {
-    $('#myHeader').addClass('sticky');
+    $('#myHeader').addClass('blue-sticky');
   }, function() {
-    $('#myHeader').removeClass('sticky');
+    $('#myHeader').removeClass('blue-sticky');
   });
 });
 
