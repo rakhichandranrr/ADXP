@@ -31,6 +31,13 @@ $child_ids =array();
       } else {
         $act_cls = '';
       }
+	  
+	  
+	  if (is_singular('post-insights') && is_page('insights')) {
+		  $act_cls = 'active';
+      } else {
+        $act_cls = '';
+      }
     ?>
       <?php if (!empty($item['children'])) { ?>
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle <?php echo $act_cls; ?>" href="<?php echo $item['url']; ?>" role="button" aria-expanded="false"> <?php echo $item['title']; ?> </a>
