@@ -99,7 +99,7 @@ $mission_section = get_field('mission_section');
   <div class="container">
     <div class="row flexW">
       <div class="flexW flex-column w-70">
-        <h1 class="main-tittle mb-3 text-light text-center"><?php echo $mission_section['mission_image_title']; ?></h1>
+        <h1 class="main-tittle mb-3 text-light text-center mission-title"><?php echo $mission_section['mission_image_title']; ?></h1>
         <div class="paragraph text-light text-center"><?php echo $mission_section['mission_image_description']; ?></div>
       </div>
     </div>
