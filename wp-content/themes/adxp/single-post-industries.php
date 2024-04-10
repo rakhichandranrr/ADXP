@@ -33,12 +33,14 @@ if ($overview) {
           ?>
           <div class="paragraph"><?php echo $overview['overview_description']; ?> </div>
         </div>
-        <div class="col-lg-5">
+        
           <?php if ($overview['overview_image']['url']) {
           ?>
+          <div class="col-lg-5">
             <img src="<?php echo $overview['overview_image']['url']; ?>" alt="img">
+            </div>
           <?php } ?>
-        </div>
+        
       </div>
     </div>
   </section>
