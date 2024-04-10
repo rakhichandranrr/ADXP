@@ -17,9 +17,18 @@
     <?php
     $menu_items = wp_get_menu_array('Header');
     foreach ($menu_items as $item) {
+		
+		if(get_the_ID() == $item['page_id'])
+		{
+			$act_cls = 'active';
+		}
+		else
+		{
+			$act_cls = '';
+		}
     ?>
       <?php if (!empty($item['children'])) { ?>
-        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="<?php echo $item['url']; ?>" role="button" aria-expanded="false"> <?php echo $item['title']; ?> </a>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle <?php echo $act_cls;?>" href="<?php echo $item['url']; ?>" role="button" aria-expanded="false" > <?php echo $item['title']; ?> </a>
 
           <div class="dropdown-menu mega-menu" aria-labelledby="megaMenuDropdown">
             <div class="container">
@@ -31,8 +40,18 @@
                 </div>
                 <div class="col-md-8 usefull-links mega-link">
                   <ul>
-                    <?php foreach ($item['children'] as $child) { ?>
-                      <li><a href="<?php echo $child['url']; ?>"><?php echo $child['title']; ?></a></li>
+                    <?php foreach ($item['children'] as $child) { 
+					if(get_the_ID() == $child['page_id'])
+					{
+						$child_act_cls = 'active';
+					}
+					else
+					{
+						$child_act_cls = '';
+					}
+					
+					?>
+                      <li><a href="<?php echo $child['url']; ?>" class="<?php echo $child_act_cls;?>"><?php echo $child['title']; ?></a></li>
                     <?php
                     }
                     ?>
@@ -48,7 +67,7 @@
 
       ?>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo $item['url']; ?>"><?php echo $item['title']; ?> </a>
+          <a class="nav-link <?php echo $act_cls;?>" href="<?php echo $item['url']; ?>" ><?php echo $item['title']; ?> </a>
         </li>
     <?php
       }

@@ -822,6 +822,7 @@ function wp_get_menu_array($current_menu)
 	$menu = wp_get_nav_menu_object($current_menu);
 	$array_menu = wp_get_nav_menu_items($menu->term_id);
 	$menu = array();
+	print_r($array_menu);
 	foreach ($array_menu as $m) {
 		if (empty($m->menu_item_parent)) {
 			$menu[$m->ID] = array();
@@ -829,6 +830,7 @@ function wp_get_menu_array($current_menu)
 			$menu[$m->ID]['title']       =   $m->title;
 			$menu[$m->ID]['description']       =   $m->description;
 			$menu[$m->ID]['url']         =   $m->url;
+			$menu[$m->ID]['page_id']         =   $m->object_id;
 			$menu[$m->ID]['children']    =   array();
 		}
 	}
@@ -840,6 +842,8 @@ function wp_get_menu_array($current_menu)
 			$submenu[$m->ID]['title']    =   $m->title;
 			$submenu[$m->ID]['description']    =   $m->description;
 			$submenu[$m->ID]['url']  =   $m->url;
+			$submenu[$m->ID]['page_id']         =   $m->object_id;
+			
 			$menu[$m->menu_item_parent]['children'][$m->ID] = $submenu[$m->ID];
 		}
 	}
