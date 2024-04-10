@@ -16,14 +16,16 @@
   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
     <?php
     $menu_items = wp_get_menu_array('Header');
+	//print_r($menu_items);
+	
     foreach ($menu_items as $item) {
-
+$child_ids =array();
       if (!empty($item['children'])) {
         foreach ($item['children'] as $child) {
           $child_ids[] = $child['page_id'];
         }
       }
-
+//print_r($child_ids);
       if (get_the_ID() == $item['page_id'] || in_array(get_the_ID(), $child_ids)) {
         $act_cls = 'active';
       } else {
