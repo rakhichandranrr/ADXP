@@ -67,15 +67,26 @@ if ($services) {
               if ($i % 3 == 1) {
                 echo '<div class="ind-serv-itm row">';
               }
+			  
+			  $services_click_block = $service_res['service_click_block'];
+			  
+			  if($services_click_block['service_click_block_title'] || $services_click_block['service_click_block_description'])
+			  {
+				   $cls = 'card-header-click';
+			  }
+			  else
+			  {
+				$cls = '';  
+			  }
           ?>
-              <div class="card-header col-lg-4 card-header<?php echo $j; ?>" onClick="showCardBody(<?php echo $i; ?>)">
+              <div class="card-header col-lg-4 card-header<?php echo $j; ?> <?php echo $cls;?> " onClick="showCardBody(<?php echo $i; ?>)">
                 <div class="wrp-grd">
                   <h4 class="text-light"><?php echo $service_res['service_title']; ?></h4>
                   <div class="paragraph mt-3"> <?php echo $service_res['service_description']; ?> </div>
                 </div>
               </div>
               <?php
-              $services_click_block = $service_res['service_click_block'];
+              
               if ($services_click_block) {
                 if ($services_click_block['service_click_block_title']) {
               ?>
