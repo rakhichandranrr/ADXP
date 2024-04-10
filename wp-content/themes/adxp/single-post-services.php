@@ -24,7 +24,7 @@ if ($overview) {
 ?>
 <section class="innovation common-padd bg-light " id="Overview">
   <div class="container mt-4">
-    <div class="row">
+    <div class="row overview-block">
       <div class="col-lg-7">
         <?php if ($overview['overview_title']) { ?>
         <h3 class="inner-heading"><?php echo $overview['overview_title']; ?></h3>
