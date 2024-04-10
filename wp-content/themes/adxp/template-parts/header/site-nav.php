@@ -39,7 +39,7 @@
 	  }
     ?>
       <?php if (!empty($item['children'])) { ?>
-        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle <?php echo $act_cls; if($item['title']=='Insights'){ echo $insight_cls; }?>" href="<?php echo $item['url']; ?>" role="button" aria-expanded="false"> <?php echo $item['title']; ?> </a>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle <?php echo $act_cls; ?>" href="<?php echo $item['url']; ?>" role="button" aria-expanded="false"> <?php echo $item['title']; ?> </a>
 
           <div class="dropdown-menu mega-menu" aria-labelledby="megaMenuDropdown">
             <div class="container">
@@ -75,7 +75,7 @@
 
       ?>
         <li class="nav-item">
-          <a class="nav-link <?php echo $act_cls; ?>" href="<?php echo $item['url']; ?>"><?php echo $item['title']; ?> </a>
+          <a class="nav-link <?php echo $act_cls; if($item['title']=='Insights'){ echo $insight_cls; }?>" href="<?php echo $item['url']; ?>"><?php echo $item['title']; ?> </a>
         </li>
     <?php
       }
