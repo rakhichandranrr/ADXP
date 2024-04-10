@@ -822,6 +822,7 @@ function wp_get_menu_array($current_menu)
 	$menu = wp_get_nav_menu_object($current_menu);
 	$array_menu = wp_get_nav_menu_items($menu->term_id);
 	$menu = array();
+	//print_r($array_menu);
 	foreach ($array_menu as $m) {
 		if (empty($m->menu_item_parent)) {
 			$menu[$m->ID] = array();
