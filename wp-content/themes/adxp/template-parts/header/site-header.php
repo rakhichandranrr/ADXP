@@ -20,8 +20,12 @@ if (is_singular('post-insights')) {
 } else if ( is_page('about')) {
   $section_cls = 'detail_page about-banner ';
   $attr = '';
+} else if ( is_page('digital-advisor')) {
+  $section_cls = 'industries Digital_A';
+  $attr = '';
 
-} else {
+
+}else {
   $section_cls = '';
   $attr = 'id="banner_section" style="background: url(' . banner_image() . ');  background-position: center;background-size: cover;"';
 }

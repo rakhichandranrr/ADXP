@@ -142,6 +142,7 @@ a.nav-link {
 .nav-link:focus,
 .nav-link:hover {
 	color: var(--primary-color);
+     border-bottom: 1px solid var(--primary-color);
 }
 
 .navbar-collapse {
@@ -150,7 +151,7 @@ a.nav-link {
 
 section.banner-vw {
 	height: 100vh;
-	background: url(../img/banner.webp);
+/*	background: url(../img/banner.webp);*/
 	background-position: center;
 	background-size: cover;
     background-repeat: no-repeat;
@@ -180,7 +181,11 @@ button.Search {
 }
 
 li.nav-item {
-	margin-right: 30px;
+    margin-right: 30px;
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-nav .nav-link.active,
@@ -286,16 +291,16 @@ section.insights {
 }
 
 .service-details {
-	position: absolute;
-	bottom: -18%;
-	z-index: 99;
-	color: #fff;
-	left: 0;
-	right: 0;
-	transition: all .6s ease-in-out;
-	min-height: 95px;
-	padding: 30px;
-	transform: translateY(0px);
+    position: absolute;
+    bottom: -18%;
+    z-index: 3;
+    color: #fff;
+    left: 0;
+    right: 0;
+    transition: all .6s ease-in-out;
+    min-height: 95px;
+    padding: 30px;
+    transform: translateY(0px);
 }
 
 .service_hover {
@@ -620,6 +625,10 @@ section.innovation h3::after {
 }
 .ind-serv-itm .card-header {
     padding: 10px;
+    display: flex;
+    
+}
+.ind-serv-itm .card-header-click {
     cursor: pointer;
     
 }
@@ -684,7 +693,7 @@ text-overflow: ellipsis;
 .ind-serv-itm .card-header.active{
     position: relative;
 }
-.ind-serv-itm .card-header.active::after {
+.ind-serv-itm .card-header-click.active::after {
     content: "";
     position: absolute;
     width: 32px;
@@ -704,7 +713,7 @@ section.banner-vw.services {
 }
 
 section.p-3.submenu.fixed {
-    z-index: 9999999999;
+    z-index: 0;
     position: fixed;
     top: 100px;
     background: #001727;
@@ -973,8 +982,9 @@ img.insight-single-img {
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
     left: 0;
+    top: 80px;
     right: 0;
-        z-index: 99;
+    z-index: 99;
     padding: 60px 0px;
     border-radius: 0px;
     background: var(--secondary-color);
@@ -1114,17 +1124,80 @@ section.why-us .col-lg-6 {
     margin-bottom: 15px;
 }
 
-.ind-serv-itm .card-header h4 {
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
+h1.main-tittle.mission-title {
+    display: contents !important;
+}
+.detail_page h1.main-tittle i {
+    margin-right: 13px;
 }
 
-
-
-
+a.nav-link.active{
+    border-bottom: 1px solid var(--primary-color);
+}
+.navbar-nav li .nav-link:has(> a.nav-link.active) {
+    
+}
+.mega-link a.active {
+        color: var(--primary-color);
+}
+.blue-sticky{
+       background: var(--secondary-color); 
+}
+.row.overview-block .col-lg-7 {
+    flex: 1 !important;
+}
+section#mission_section {
+    border: 0;
+}
+.col-lg-12.digital-disc .paragraph {
+    margin-bottom: 20px;
+}
+section#banner_section {
+    background: url(../img/DA-img.png);
+        background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.digital-advisor-details {
+    height: 750px !important;
+}
+button.btn.adxp-btn {
+    background: var(--primary-color);
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-weight: 700;
+}
+ul.dig-list li {
+    color: #fff;
+    list-style: disc;
+    font-size: 22px;
+    line-height: 33px;
+        font-weight: 200;
+}
+ul.dig-list {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.digital-advisor-details .paragraph{
+    font-size: 22px;
+    line-height: 33px;
+}
+.digital-advisor-details .banner-content {
+    margin-top: 7%;
+}
+.digital-wap {
+    align-items: center;
+}
+.digital-wap h1.main-tittle {
+    display: inline-block;
+}
+.digital-wap .paragraph{
+    margin-bottom: 20px;
+}
+h5.kyhd {
+    font-weight: 800;
+}
 
 /*-------------media css start---------------*/
 
@@ -1712,10 +1785,17 @@ section.Facts_and_Figures.common-padd .col-lg-6 {
     padding: 10px;
     min-height: 130px;
 } 
-    
-    
-    
-    
+.digital-advisor-details .banner-content.d-flex.flex-column.align-items-center.justify-content-center.pdl-1.pdr-1 {
+    padding: 0px 20px;
+}    
+ .digital-advisor-details .paragraph {
+    font-size: 18px;
+    line-height: 25px;
+}   
+ul.dig-list li {
+    font-size: 18px;
+    line-height: 25px;
+}  
     
     
     
