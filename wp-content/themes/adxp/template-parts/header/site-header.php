@@ -14,7 +14,7 @@ $image = wp_get_attachment_image_src($custom_logo_id, 'full');
 if (is_singular('post-insights')) {
   $section_cls = 'inner-detail detail_page';
   $attr = '';
-} else if (is_single() || is_page('insights')) {
+} else if (is_single() && !is_singular('digital_advisor_asse') || is_page('insights')) {
   $section_cls = 'detail_page';
   $attr = '';
 } else if ( is_page('about')) {
