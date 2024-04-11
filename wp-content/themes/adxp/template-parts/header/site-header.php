@@ -23,7 +23,8 @@ if (is_singular('post-insights')) {
 } else if ( is_page('digital-advisor')) {
   $section_cls = 'industries Digital_A';
   $attr = 'id="banner_section" style="background: url(' . banner_image() . ');  background-position: center;background-size: cover; background-repeat: no-repeat;"';
-}if (is_singular('digital_advisor_asse')) {
+  
+}else if (is_singular('digital_advisor_asse')) {
   $section_cls = 'detail_page digital-advisor-details';
   $attr = '';
 
