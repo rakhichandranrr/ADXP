@@ -23,7 +23,9 @@ if (is_singular('post-insights')) {
 } else if ( is_page('digital-advisor')) {
   $section_cls = 'industries Digital_A';
   $attr = 'id="banner_section" style="background: url(' . banner_image() . ');  background-position: center;background-size: cover; background-repeat: no-repeat;"';
-
+}if (is_singular('digital_advisor_asse')) {
+  $section_cls = 'detail_page digital-advisor-details';
+  $attr = '';
 
 }else {
   $section_cls = '';
@@ -73,7 +75,7 @@ if ($banner_video['url']) {
 
     if (!is_singular('post-insights')) {
 
-      if (is_single() || is_page('insights')) {
+      if (is_single() || is_page('insights') || !is_singular('digital_advisor_asse')) {
         $title = banner_title();
         $result = explode(" ", $title, 2);
         $post_type = get_post_type(get_the_ID());
@@ -126,7 +128,31 @@ if ($banner_video['url']) {
   </div>
   <?php
 	  
-	  
+	   }else if(is_singular('digital_advisor_asse')){
+  ?>
+  
+  <div class="container b_contents-main flexW inner-banner-content digital-wap">
+            <div class="row">
+               <div class="banner-content d-flex flex-column align-items-center justify-content-center pdl-1 pdr-1">
+                  <div class="flex-column" >
+                     <h1 class="main-tittle mb-5 text-light mt-4" ><?php echo get_field('banner_title'); ?></i> </h1>
+                      <div class="paragraph">
+                          <?php echo get_field('banner_content'); ?>
+                      </div>
+                      
+                      <?php
+					  if(get_field('banner_button_text'))
+					  {
+					  ?>
+                      <a href="<?php echo get_field('banner_button_link');?>"><button class="btn adxp-btn" ><?php echo get_field('banner_button_text');?></button></a>
+                      <?php
+					  }
+					  ?>
+                  </div>
+               </div>
+            </div>
+         </div>
+  <?php
       } else {
       ?>
   <div class="container b_contents-main flexW">
