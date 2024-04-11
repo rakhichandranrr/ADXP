@@ -135,7 +135,7 @@ if ($banner_video['url']) {
             <div class="row">
                <div class="banner-content d-flex flex-column align-items-center justify-content-center pdl-1 pdr-1">
                   <div class="flex-column" >
-                     <h1 class="main-tittle mb-5 text-light mt-4" ><?php echo get_field('banner_title'); ?></i> </h1>
+                     <h1 class="main-tittle mb-5 text-light mt-4" ><?php echo get_field('banner_title'); ?></h1>
                       <div class="paragraph">
                           <?php echo get_field('banner_content'); ?>
                       </div>
