@@ -37,6 +37,14 @@
 	  {
 		  $insight_cls = '';
 	  }
+	  
+	  if (is_singular('digital_advisor_asse')) {
+		  $dig_adv_cls = 'active';
+	  }
+	  else
+	  {
+		  $dig_adv_cls = '';
+	  }
     ?>
       <?php if (!empty($item['children'])) { ?>
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle <?php echo $act_cls; ?>" href="<?php echo $item['url']; ?>" role="button" aria-expanded="false"> <?php echo $item['title']; ?> </a>
@@ -75,7 +83,7 @@
 
       ?>
         <li class="nav-item">
-          <a class="nav-link <?php echo $act_cls; if($item['title']=='Insights'){ echo $insight_cls; }?>" href="<?php echo $item['url']; ?>"><?php echo $item['title']; ?> </a>
+          <a class="nav-link <?php echo $act_cls; if($item['title']=='Insights'){ echo $insight_cls; }else if($item['title']=='Digital Advisor'){ echo $dig_adv_cls; }?>" href="<?php echo $item['url']; ?>"><?php echo $item['title']; ?> </a>
         </li>
     <?php
       }
