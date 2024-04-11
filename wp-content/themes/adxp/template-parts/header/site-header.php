@@ -75,7 +75,7 @@ if ($banner_video['url']) {
 
     if (!is_singular('post-insights')) {
 
-      if (is_single() || is_page('insights') || !is_singular('digital_advisor_asse')) {
+      if (is_single() && !is_singular('digital_advisor_asse') || is_page('insights')) {
         $title = banner_title();
         $result = explode(" ", $title, 2);
         $post_type = get_post_type(get_the_ID());
