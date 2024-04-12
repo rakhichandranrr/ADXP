@@ -140,7 +140,7 @@ if ($banner_video['url']) {
     <div class="row">
       <div class="banner-content d-flex flex-column align-items-center justify-content-center">
         <div class="flex-column" >
-          <h1 class="main-tittle mb-3 text-light mt-4" ><img class="head-arrow mt-0" src="assets/img/arrow.svg" alt="img-icon"><?php echo get_field('banner_title'); ?> </h1>
+          <h1 class="main-tittle mb-3 text-light mt-4" ><img class="head-arrow mt-0" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo get_field('banner_title'); ?> </h1>
           <div class="paragraph mb-5"> <?php echo get_field('banner_content'); ?> </div>
           <?php 
                     $banner_address = get_field('banner_address');
