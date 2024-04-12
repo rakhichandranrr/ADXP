@@ -20,6 +20,11 @@ if (is_singular('post-insights')) {
 } else if ( is_page('about')) {
   $section_cls = 'detail_page about-banner ';
   $attr = '';
+
+} else if ( is_page('contact')) {
+  $section_cls = 'detail_page contact-us ';
+  $attr = '';
+
 } else if ( is_page('digital-advisor')) {
 	
   $section_cls = 'industries Digital_A';
@@ -129,31 +134,101 @@ if ($banner_video['url']) {
     </div>
   </div>
   <?php
-	  
+	  } else if ( is_page('contact')) {
+    ?>
+  <div class="container b_contents-main flexW inner-banner-content digital-wap align-items-end">
+    <div class="row">
+      <div class="banner-content d-flex flex-column align-items-center justify-content-center">
+        <div class="flex-column" >
+          <h1 class="main-tittle mb-3 text-light mt-4" ><img class="head-arrow mt-0" src="assets/img/arrow.svg" alt="img-icon"><?php echo get_field('banner_title'); ?> </h1>
+          <div class="paragraph mb-5"> <?php echo get_field('banner_content'); ?> </div>
+          <?php 
+                    $banner_address = get_field('banner_address');
+                     if($banner_address)
+                     {
+                    ?>
+          <div class="row">
+            <?php
+					  foreach($banner_address as $banner_address_res)
+					  {
+					 ?>
+            <div class="col-lg-6">
+              <div class="address-wrp">
+                <h2 class="text-light" ><?php echo $banner_address_res['banner_address_heading'];?></h2>
+                <div class="contact-n d-flex">
+                  <?php
+								  if($banner_address_res['banner_address_phone'])
+								  {
+									  ?>
+                  <div class="c-list"> <span class="text-light" >PHONE NUMBER</span>
+                    <div class="paragraph"> <?php echo $banner_address_res['banner_address_phone'];?> </div>
+                  </div>
+                  <?php
+								  }
+								  if($banner_address_res['banner_address_fax'])
+								  {
+								  ?>
+                  <div class="c-list"> <span class="text-light" >FAX NUMBER</span>
+                    <div class="paragraph"> <?php echo $banner_address_res['banner_address_fax'];?> </div>
+                  </div>
+                  <?php
+								  }
+								  if($banner_address_res['banner_address_po_box'])
+								  {
+								  ?>
+                  <div class="c-list"> <span class="text-light" >P.O.BOX.</span>
+                    <div class="paragraph"> <?php echo $banner_address_res['banner_address_po_box'];?> </div>
+                  </div>
+                </div>
+                <?php
+								  }
+								  if($banner_address_res['banner_address_location'])
+								  {
+								  ?>
+                <div class="location-wrp">
+                  <div class="c-list"> <span class="text-light" >LOCATION</span>
+                    <div class="paragraph"> <?php echo $banner_address_res['banner_address_location'];?> </div>
+                  </div>
+                </div>
+                <?php
+								  }
+								  ?>
+              </div>
+            </div>
+            <?php
+					  }
+					  ?>
+          </div>
+          <?php
+					 }
+					 ?>
+        </div>
+      </div>
+    </div>
+  </div>
+  <?php
 	   }else if(is_singular('digital_advisor_asse')){
   ?>
-  
   <div class="container b_contents-main flexW inner-banner-content digital-wap">
-            <div class="row">
-               <div class="banner-content d-flex flex-column align-items-center justify-content-center pdl-1 pdr-1">
-                  <div class="flex-column" >
-                     <h1 class="main-tittle mb-5 text-light mt-4" ><?php echo get_field('banner_title'); ?></h1>
-                      <div class="paragraph">
-                          <?php echo get_field('banner_content'); ?>
-                      </div>
-                      
-                      <?php
+    <div class="row">
+      <div class="banner-content d-flex flex-column align-items-center justify-content-center pdl-1 pdr-1">
+        <div class="flex-column" >
+          <h1 class="main-tittle mb-5 text-light mt-4" ><?php echo get_field('banner_title'); ?></h1>
+          <div class="paragraph"> <?php echo get_field('banner_content'); ?> </div>
+          <?php
 					  if(get_field('banner_button_text'))
 					  {
 					  ?>
-                      <a href="<?php echo get_field('banner_button_link');?>"><button class="btn adxp-btn" ><?php echo get_field('banner_button_text');?></button></a>
-                      <?php
+          <a href="<?php echo get_field('banner_button_link');?>">
+          <button class="btn adxp-btn" ><?php echo get_field('banner_button_text');?></button>
+          </a>
+          <?php
 					  }
 					  ?>
-                  </div>
-               </div>
-            </div>
-         </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <?php
       } else {
       ?>

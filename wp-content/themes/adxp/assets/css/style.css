@@ -626,7 +626,6 @@ section.innovation h3::after {
 .ind-serv-itm .card-header {
     padding: 10px;
     display: flex;
-    
 }
 .ind-serv-itm .card-header-click {
     cursor: pointer;
@@ -713,7 +712,7 @@ section.banner-vw.services {
 }
 
 section.p-3.submenu.fixed {
-    z-index: 0;
+    z-index: 1;
     position: fixed;
     top: 100px;
     background: #001727;
@@ -1198,6 +1197,155 @@ ul.dig-list {
 h5.kyhd {
     font-weight: 800;
 }
+.c-list {
+    margin-right: 22px;
+}
+.c-list .paragraph {
+    font-size: 16px;
+}
+.address-wrp h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.c-list span {
+    font-size: 13px;
+    font-weight: 100;
+    margin-bottom: 5px;
+    display: flex;
+}
+.c-list .paragraph {
+    line-height: 20px;
+}
+.address-wrp {
+    margin-bottom: 50px;
+}
+section.banner-vw.detail_page.contact-us {
+    height: 850px;
+}
+.i4ewOd-pzNkMb-haAclf {
+    display: none;
+}
+.location-custom iframe{
+    width: 100%;
+    height: 500px;
+}
+div#Map {
+    height: 530px;
+    overflow: hidden;
+}
+.location-custom iframe {
+    width: 100%;
+    height: 600px;
+    margin-top: -80px;
+}
+.click-description p a{
+    position: relative;
+}
+.click-description p a:hover::after {
+    position: absolute;
+    content: "\F285";
+    width: 10px;
+    height: 10px;
+    right: -18px;
+    font-family: bootstrap-icons !important;
+    transition: .5s;
+}
+.off-address {
+    border: 1px solid #fff;
+    display: flex;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+a.direction img {
+    width: 6px;
+    margin-left: 6px;
+}
+a.direction {
+    border: 0;
+}
+.contact-itms h4 {
+    margin-bottom: 18px;
+}
+.contact-itms .paragraph i {
+    margin-right: 10px;
+}
+.loc-date {
+    display: flex;
+    align-items: center;
+}
+.loc-date .paragraph {
+    margin-right: 20px;
+}
+.loc-date i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+button.sec-button {
+    border: 0;
+    background: #cccccc94;
+    padding: 10px 40px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+ul.job-details-points li {
+    list-style: disc;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+ul.job-details-points {
+    margin: 20px 18px;
+}
+input.form-controlnew {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+}
+
+#drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#drop-area.highlight {
+    border-color: #007bff;
+}
+
+.drop-label {
+    cursor: pointer;
+}
+
+/* Hide the file input */
+.file {
+    display: none;
+}
+button.btn.adxp-btn.mw-200 {
+    padding: 15px 80px;
+}
+select.custom-select.country-code.position-absolute {
+    top: 15px;
+    left: 10px;
+    border: 0;
+    width: 76px;
+}
+.position-relative input {
+    padding-left: 100px;
+}
+
+
+
 
 /*-------------media css start---------------*/
 
@@ -1321,8 +1469,12 @@ h5.kyhd {
 	}
 
 	li.nav-item {
-		margin-right: 0px;
-	}
+    margin-right: 30px;
+    height: inherit;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
 
 	.offcanvas-body ul.dropdown-menu.show {
 		position: inherit !important;
@@ -1796,6 +1948,53 @@ ul.dig-list li {
     font-size: 18px;
     line-height: 25px;
 }  
+ section h1.main-tittle {
+    display: flex !important;
+    align-items: center;
+}   
+section img.head-arrow {
+    margin-top: 0px;
+    margin-bottom: 0 !important;
+}
+ section.banner-vw.detail_page.contact-us {
+    height: 100%;
+    background: linear-gradient(270deg, rgb(2 170 135) 31%, rgba(1, 13, 10, 1) 100%);
+}
+  .contact-n.d-flex {
+    flex-direction: column;
+}  
+    
+ section.banner-vw.detail_page.contact-us .banner-content.d-flex.flex-column.align-items-center.justify-content-center {
+    margin-top: 20%;
+}   
+ .off-address {
+    flex-direction: column;
+    align-items: flex-start;
+}   
+ .contact-itms h4 {
+    margin-bottom: 12px;
+}   
+ .contact-itms .paragraph {
+    margin-bottom: 12px;
+}  
+ .extra-padd {
+    padding: 0px 10px;
+}   
+  .loc-date.f-column {
+    flex-direction: column;
+    align-items: flex-start;
+}  
+ button.sec-button {
+    padding: 10px 10px;
+}   
+ button.btn.adxp-btn.mw-200 {
+    width: 100%;
+    margin-bottom: 30px;
+}   
+    
+    
+    
+    
     
     
     
