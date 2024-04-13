@@ -90,8 +90,20 @@
     }
     ?>
   </ul>
+  
+  <form class="d-flex" role="search">    
+    <button class="Search" type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="bi bi-search"></i></button>
+  </form>
+  
+  
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
   <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
-<!--  <form class="d-flex" role="search">    
-    <button class="Search" type="submit"><i class="bi bi-search"></i></button>
-  </form>-->
+  </div>
+</div>
+  
 </div>

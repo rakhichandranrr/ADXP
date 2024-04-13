@@ -20,7 +20,7 @@ else if (is_search()  ) {
   $attr = '';
 }
 
-else if (is_single() && !is_singular('digital_advisor_asse') || is_page('insights')) {
+else if (is_single() && !is_singular('digital_advisor_asse') || is_page('insights') || is_page('careers')) {
   $section_cls = 'detail_page';
   $attr = '';
 } else if ( is_page('about')) {
@@ -142,6 +142,22 @@ if ($banner_video['url']) {
     </div>
   </div>
   <?php
+  } else if ( is_page('careers')) {
+	  ?>
+      <div class="container b_contents-main flexW inner-banner-content">
+            <div class="row">
+               <div class="banner-content d-flex flex-column align-items-center justify-content-center">
+                  <div class="flex-column" >
+<!--                      <span class="upper-heading text-light">INDUSTRY</span>-->
+                     <h1 class="main-tittle mb-5 text-light mt-4  block-d" ><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon" >   <?php echo get_field('banner_title'); ?> </h1>
+                      <div class="paragraph">
+                         <?php echo get_field('banner_content'); ?>
+                      </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <?php
 	  } else if ( is_page('contact')) {
     ?>
   <div class="container b_contents-main flexW inner-banner-content digital-wap align-items-end">
