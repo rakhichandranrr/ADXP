@@ -166,8 +166,8 @@ if($categories)
             <div class=" grid-job-wrp">
               <h5 class="main-tittle ins-tittle  mb-5mt-4" ><?php echo $job_res->post_title;?></h5>
               <div class="loc-date f-column">
-                <div class="paragraph"> <i class="bi bi-geo-alt"></i> <?php echo get_field('job_location');?> </div>
-                <div class="paragraph"> <i class="bi bi-calendar"></i> <?php echo get_field('job_type');?></div>
+                <div class="paragraph"> <i class="bi bi-geo-alt"></i> <?php echo get_field('job_location',$job_res->ID);?> </div>
+                <div class="paragraph"> <i class="bi bi-calendar"></i> <?php echo get_field('job_type',$job_res->ID);?></div>
               </div>
               <div class="loc-date">
              <?php $curr_categories = get_the_category($job_res->ID);
