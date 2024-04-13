@@ -86,7 +86,7 @@ if ($banner_video['url']) {
   
   <?php
 
-    if (!is_singular('post-insights') ||  !is_singular('job_openings') ) {
+    if (!is_singular('post-insights') && !is_singular('job_openings') ) {
 		
 		 if (!is_search() ) {
 
