@@ -37,7 +37,7 @@ $international_ofc = get_field('international_offices');
             <h4 class="text-light" ><?php echo $regional_ofc_res['regional_ofc_heading'];?></h4>
             <div class="paragraph"><i class="bi bi-telephone-fill"></i><?php echo $regional_ofc_res['regional_ofc_phone'];?></div>
           </div>
-          <a href="<?php echo $regional_ofc_res['regional_ofc_direction_url'];?>" class="direction text-light" >Get Directions <img src="assets/img/arrowR.svg" alt="img" > </a> </div>
+          <a href="<?php echo $regional_ofc_res['regional_ofc_direction_url'];?>" class="direction text-light" >Get Directions <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img" > </a> </div>
       </div>
       <?php
 	  }
