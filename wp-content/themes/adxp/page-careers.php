@@ -28,7 +28,7 @@ if($what_we_offer)
         <h3 class="inner-heading" ><?php echo $what_we_offer['what_we_offer_title'];?></h3>
         <div class="paragraph"> <?php echo $what_we_offer['what_we_offer_content'];?> </div>
       </div>
-      <div class="col-lg-5"> <img src="<?php echo $what_we_offer['what_we_offer_title']['url'];?>" alt="img"> </div>
+      <div class="col-lg-5"> <img src="<?php echo $what_we_offer['what_we_offer_image']['url'];?>" alt="img"> </div>
     </div>
   </div>
 </section>
