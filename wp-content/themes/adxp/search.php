@@ -58,7 +58,7 @@ get_header();
 		  ?>
       <div class="col-lg-12">
         <div class="insights-grD search-itm  d-flex flex-column">
-          <div class="img-ins mb-3">
+          <div class="img-ins mb-3 search-img">
             <?php
   if($thumb_id ==  242)
   {
