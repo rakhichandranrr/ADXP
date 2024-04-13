@@ -11,7 +11,7 @@
 $custom_logo_id = get_theme_mod('custom_logo');
 $image = wp_get_attachment_image_src($custom_logo_id, 'full');
 
-if (is_singular('post-insights') ) {
+if (is_singular('post-insights') || is_singular('job_openings')) {
   $section_cls = 'inner-detail detail_page';
   $attr = '';
 } 
@@ -86,7 +86,7 @@ if ($banner_video['url']) {
   
   <?php
 
-    if (!is_singular('post-insights') ) {
+    if (!is_singular('post-insights') ||  !is_singular('job_openings') ) {
 		
 		 if (!is_search() ) {
 
