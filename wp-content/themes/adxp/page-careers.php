@@ -135,7 +135,7 @@ if($categories)
 		 $i++;
 	?>
       <li class="nav-item" role="presentation">
-        <button class="nav-link " id="tab<?php echo $i;?>" data-bs-toggle="tab" data-bs-target="#tab<?php echo $i;?>-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><?php echo $category->name;?></button>
+        <button class="nav-link <?php if($i==1){?>active<?php }?>" id="tab<?php echo $i;?>" data-bs-toggle="tab" data-bs-target="#tab<?php echo $i;?>-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><?php echo $category->name;?></button>
       </li>
       <?php
 }
@@ -147,7 +147,7 @@ if($categories)
      foreach($categories as $category) {
 		 $i++;
 	?>
-      <div class="tab-pane fade show active" id="tab<?php echo $i;?>-pane" role="tabpane<?php echo $i;?>" 
+      <div class="tab-pane fade  <?php if($i==1){?> show active<?php }?>" id="tab<?php echo $i;?>-pane" role="tabpane<?php echo $i;?>" 
       aria-labelledby="tab<?php echo $i;?>" tabindex="0">
         <div class="jobs-wrapper">
           <?php
@@ -190,7 +190,7 @@ if($categories)
 	 else
 	 {
 	?>
-          "Thank you for your interest, but there are no job openings available at this time. Please check back at another time"
+           <div class="job-itm">Thank you for your interest, but there are no job openings available at this time. Please check back at another time</div>
           <?php
        }
        ?>
