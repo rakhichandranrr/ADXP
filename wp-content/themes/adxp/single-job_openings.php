@@ -58,7 +58,43 @@ $job_res = get_post($post_id);
                     </div>
                 </div>
             </div>
-             <?php echo do_shortcode('[contact-form-7 id="c1955e9" title="Careers"]');?>
+             <div class="row">
+                 <div class="col-lg-6">
+                     <div class="form-group">
+                         <input type="text" class="form-controlnew" placeholder="Full name">
+                         
+                     </div>
+                 </div>
+                 <div class="col-lg-6">
+                     <div class="form-group">
+                         <input type="text" class="form-controlnew" placeholder="Email">
+                     </div>
+                 </div>
+                 <div class="col-lg-12">
+                     <div class="form-group">
+                         <div class="position-relative">
+                             <select class="custom-select country-code position-absolute">
+                                <option value="+1">+1 (US)</option>
+                                <option value="+44">+44 (UK)</option>
+                                <option value="+91">+91 (India)</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        <input type="text" class="form-controlnew" id="countryInput" placeholder="Mobile Number">
+                         </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-12">
+                     <label>Upload CV</label>
+                     <div class="form-group" id="drop-area">
+                        <input type="file" id="fileElem" multiple class="file" accept="image/*" onchange="handleFiles(this.files)">
+                        <label for="fileElem" class="drop-label">Drag & Drop here to upload…</label>
+                         <p><i>PDF 5MB max</i></p>
+                    </div>
+                 </div>
+                  <div class="col-lg-12">
+                      <button class="btn adxp-btn mw-200" >Apply</button>
+                 </div>
+             </div>
          </div>
       </section>
 <?php
