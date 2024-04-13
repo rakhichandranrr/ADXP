@@ -55,6 +55,9 @@ get_header();
 			  $post_id = get_the_ID();
 			  $post = get_post($post_id);
               $thumb_id = get_post_thumbnail_id($post_id);
+			  
+			  $postType = get_post_type_object(get_post_type($post_id));
+
 		  ?>
       <div class="col-lg-12">
         <div class="insights-grD search-itm  d-flex flex-column">
@@ -74,7 +77,9 @@ get_header();
  }
  ?>
           </div>
-          <div class="s-list-details" > <span><?php echo $post->post_title;?></span>
+          <div class="s-list-details" > <span><?php if ($postType) {
+    echo esc_html($postType->labels->singular_name);
+}?></span>
             <h2 class="mt-2 mb-2"><?php echo $post->post_title;?></h2>
             <div class="paragraph mb-3"><?php the_excerpt();?> </div>
             <span><?php echo date('F d, Y', strtotime($post->post_date)); ?></span> </div>
