@@ -135,7 +135,7 @@ if($categories)
 		 $i++;
 	?>
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="tab<?php echo $i;?>" data-bs-toggle="tab" data-bs-target="#tab1-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><?php echo $category->name;?></button>
+        <button class="nav-link " id="tab<?php echo $i;?>" data-bs-toggle="tab" data-bs-target="#tab1-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><?php echo $category->name;?></button>
       </li>
       <?php
 }
@@ -158,7 +158,7 @@ if($categories)
 		'posts_per_page' => -1,
 		'post_type'   => 'job_openings',
 		'suppress_filters' => false, 
-		'category'       => 1
+		'category'       =>$category->term_id
 	) );
 
 ?>
