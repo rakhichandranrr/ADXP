@@ -130,12 +130,12 @@ if($categories)
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <?php
 	  $i = 0;
-	  print_r($categories);
+	  //print_r($categories);
      foreach($categories as $category) {
 		 $i++;
 	?>
       <li class="nav-item" role="presentation">
-        <button class="nav-link " id="tab<?php echo $i;?>" data-bs-toggle="tab" data-bs-target="#tab1-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><?php echo $category->name;?></button>
+        <button class="nav-link " id="tab<?php echo $i;?>" data-bs-toggle="tab" data-bs-target="#tab<?php echo $i;?>-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><?php echo $category->name;?></button>
       </li>
       <?php
 }
