@@ -149,42 +149,51 @@ if($categories)
 	?>
       <div class="tab-pane fade show active" id="tab<?php echo $i;?>-pane" role="tabpane<?php echo $i;?>" 
       aria-labelledby="tab<?php echo $i;?>" tabindex="0">
-      
-      
         <div class="jobs-wrapper">
-        
-        <?php
+          <?php
 		$jobs = get_posts( array(
 		'posts_per_page' => -1,
 		'post_type'   => 'job_openings',
 		'suppress_filters' => false, 
 		'category'       =>$category->term_id
 	) );
+	if($jobs ){
+	foreach($jobs  as $job_res)
+	{
 
 ?>
           <div class="job-itm">
             <div class=" grid-job-wrp">
-              <h5 class="main-tittle ins-tittle  mb-5mt-4" >Associate (Supply Chain) - Performance Improvement CoE</h5>
+              <h5 class="main-tittle ins-tittle  mb-5mt-4" ><?php echo $job_res->post_title;?></h5>
               <div class="loc-date f-column">
-                <div class="paragraph"> <i class="bi bi-geo-alt"></i> New Delhi </div>
-                <div class="paragraph"> <i class="bi bi-calendar"></i> Permanent Full time </div>
+                <div class="paragraph"> <i class="bi bi-geo-alt"></i> <?php echo get_field('job_location');?> </div>
+                <div class="paragraph"> <i class="bi bi-calendar"></i> <?php echo get_field('job_type');?></div>
               </div>
               <div class="loc-date">
-                <button class="sec-button" >Business Operations</button>
-                <button class="sec-button" >Management</button>
+             <?php $curr_categories = get_the_category($job_res->ID);
+			 if ( ! empty( $curr_categories ) ) {
+				 foreach($curr_categories as $cat_res)
+				 {
+					 ?>
+                <button class="sec-button" ><?php echo $cat_res->name ;?></button>
+                <?php
+				 }
+			 }
+			 ?>
               </div>
             </div>
-            <button class="apply-btn" >Apply</button>
+            <a href="<?php echo get_permalink($job_res->ID); ?>"><button class="apply-btn" >Apply</button></a>
           </div>
-          
-          
-          
-          
-          
-          
-          
-          
-          
+          <?php
+	}
+	 }
+	 else
+	 {
+	?>
+          "Thank you for your interest, but there are no job openings available at this time. Please check back at another time"
+          <?php
+       }
+       ?>
         </div>
       </div>
       <?php
