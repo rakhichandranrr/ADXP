@@ -51,6 +51,7 @@ get_header();
       <?php
 	  if ( have_posts() ) {
 		  while ( have_posts() ) {
+			  the_post();
 			  $post_id = get_the_ID();
 			  $post = get_post($post_id);
               $thumb_id = get_post_thumbnail_id($post_id);
@@ -62,7 +63,7 @@ get_header();
   if($thumb_id ==  242)
   {
  ?>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/assets/img/no_img_insight.png" alt="img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no_img_insight.png" alt="img">
             <?php
   }
  else
