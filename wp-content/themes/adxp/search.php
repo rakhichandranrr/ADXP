@@ -13,20 +13,24 @@ get_header();
 
 if ( have_posts() ) {
 	?>
-	<header class="page-header alignwide">
-		<h1 class="page-title">
-			<?php
+    
+    
+    <section class="ins-inner-detail  common-padd bg-light " >
+    
+    
+  <div class="container b_contents-main flexW inner-banner-content">
+    <div class="row">
+      <div class="banner-content d-flex flex-column align-items-center justify-content-center extra-padd">
+          <h1 class="main-tittle ins-tittle  mb-5 text-light mt-4"><?php
 			printf(
 				/* translators: %s: Search term. */
 				esc_html__( 'Results for "%s"', 'adxp' ),
 				'<span class="page-description search-term">' . esc_html( get_search_query() ) . '</span>'
 			);
-			?>
-		</h1>
-	</header><!-- .page-header -->
-
-	<div class="search-result-count default-max-width">
-		<?php
+			?></h1>
+          <span class="upper-heading"><?php echo date('F d, Y', strtotime($insight->post_date)); ?></span>
+          <div class="paragraph"> 
+          <?php
 		printf(
 			esc_html(
 				/* translators: %d: The number of search results. */
@@ -40,8 +44,13 @@ if ( have_posts() ) {
 			(int) $wp_query->found_posts
 		);
 		?>
-	</div><!-- .search-result-count -->
-	<?php
+          
+          
+          
+          </div>
+          
+           <div class="paragraph">
+           <?php
 	// Start the Loop.
 	while ( have_posts() ) {
 		the_post();
@@ -56,8 +65,16 @@ if ( have_posts() ) {
 
 	// Previous/next page navigation.
 	adxp_the_posts_navigation();
-
-	// If no content, include the "No posts found" template.
+	?>
+           </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<?php
 } else {
 	get_template_part( 'template-parts/content/content-none' );
 }

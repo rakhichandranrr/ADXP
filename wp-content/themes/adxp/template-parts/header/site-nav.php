@@ -90,10 +90,8 @@
     }
     ?>
   </ul>
-  <form class="d-flex" role="search">
-
-    <?php //echo do_shortcode('[wpdreams_ajaxsearchlite]'); 
-    ?>
+  <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+<!--  <form class="d-flex" role="search">    
     <button class="Search" type="submit"><i class="bi bi-search"></i></button>
-  </form>
+  </form>-->
 </div>
