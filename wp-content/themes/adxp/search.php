@@ -11,16 +11,18 @@
 
 get_header();
 
-if ( have_posts() ) {
+
 	?>
     
     
-    <section class="ins-inner-detail  common-padd bg-light " >
-    
+ <section class="ins-inner-detail  common-padd bg-light " >    
     
   <div class="container b_contents-main flexW inner-banner-content">
     <div class="row">
       <div class="banner-content d-flex flex-column align-items-center justify-content-center extra-padd">
+      <?php
+	  if ( have_posts() ) {
+		  ?>
           <h1 class="main-tittle ins-tittle  mb-5 text-light mt-4"><?php
 			printf(
 				/* translators: %s: Search term. */
@@ -67,7 +69,11 @@ if ( have_posts() ) {
 	adxp_the_posts_navigation();
 	?>
            </div>
-          
+          <?php
+} else {
+	get_template_part( 'template-parts/content/content-none' );
+}
+	  ?>
         </div>
       </div>
     </div>
@@ -75,8 +81,6 @@ if ( have_posts() ) {
 </section>
     
 <?php
-} else {
-	get_template_part( 'template-parts/content/content-none' );
-}
+
 
 get_footer();
