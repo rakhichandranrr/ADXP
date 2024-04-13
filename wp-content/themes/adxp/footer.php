@@ -26,10 +26,10 @@
           <div class="subscrive-sec mt-4">
             <div class="form-group d-flex">
 
-              <?php //echo do_shortcode(' [mailpoet_form id="1"]');
+              <?php echo do_shortcode(' [mailpoet_form id="1"]');
               ?>
-              <input type="text" placeholder="Email address">
-              <input type="submit" class="subscribe-btn" value="Subscribe">
+              <!--<input type="text" placeholder="Email address">
+              <input type="submit" class="subscribe-btn" value="Subscribe">-->
             </div>
           </div>
         </div>
