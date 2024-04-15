@@ -48,6 +48,15 @@ get_header();
 <section class="bg-light common-padd search-result-list  pdl-1 pdr-1">
   <div class="container">
     <div class="row">
+      <div class="col-lg-12">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active"  type="button" >All Results</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
       <?php
 	  if ( have_posts() ) {
 		  while ( have_posts() ) {
@@ -77,11 +86,15 @@ get_header();
  }
  ?>
           </div>
-          <div class="s-list-details" > <span><?php if ($postType) {
+          <div class="s-list-details" > <span>
+            <?php if ($postType) {
     echo esc_html($postType->labels->singular_name);
-}?></span>
+}?>
+            </span>
             <h2 class="mt-2 mb-2"><?php echo $post->post_title;?></h2>
-            <div class="paragraph mb-3"><?php the_excerpt();?> </div>
+            <div class="paragraph mb-3">
+              <?php the_excerpt();?>
+            </div>
             <span><?php echo date('F d, Y', strtotime($post->post_date)); ?></span> </div>
         </div>
       </div>
@@ -104,4 +117,5 @@ get_header();
 
 
 get_footer();
+
 
