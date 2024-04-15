@@ -50,8 +50,9 @@ if ($banner_video['url']) {
 ?>
 
 <section class="banner-vw" id="banner_section">
-<video class="video-banner" autoplay muted loop>
+<video class="video-banner" playsinline autoplay muted loop>
   <source src="<?php echo $banner_video['url']; ?>" type="video/mp4">
+   <source src="<?php echo $banner_video['url']; ?>" type="video/ogg">
   Your browser does not support the video tag. </video>
 <?php
 } else {

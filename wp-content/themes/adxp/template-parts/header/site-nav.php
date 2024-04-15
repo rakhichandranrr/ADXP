@@ -13,7 +13,7 @@
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 <button class="Search mobile-search d-none" type="submit"><i class="bi bi-search"></i></button>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0 main-nav">
     <?php
     $menu_items = wp_get_menu_array('Header');
 
@@ -89,21 +89,8 @@
       }
     }
     ?>
-  </ul>
+  </ul>  
   
-  <form class="d-flex" role="search">    
-    <button class="Search" type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="bi bi-search"></i></button>
-  </form>
-  
-  
-  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-  <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
-  </div>
-</div>
-  
+
+ <button class="Search" ><i class="bi bi-search"></i></button>
 </div>

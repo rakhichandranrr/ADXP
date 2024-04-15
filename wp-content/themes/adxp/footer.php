@@ -164,6 +164,18 @@
 </div>
 
 <!--MOBILE MENU ENDS-->
+  <?php
+$custom_logo_id = get_theme_mod('custom_logo');
+$image = wp_get_attachment_image_src($custom_logo_id, 'full');
+?>
+
+  <div class="searcharea">
+     <div class="search-hrader position-relative">
+          <a class="navbar-brand" href="<?php echo site_url();?>"><img src="<?php echo $image[0]; ?>" alt="logo"> </a>
+        <div><?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?></div>
+        <button class="closearch" ><i class="bi bi-x"></i></button>
+     </div>
+  </div>
 <?php wp_footer(); ?>
 </body>
 

@@ -190,4 +190,13 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-
+$(document).ready(function() {
+  $(".Search").click(function() {
+    $(".searcharea").toggle();
+  });
+});
+$(document).ready(function() {
+  $(".closearch").click(function() {
+    $(".searcharea").toggle();
+  });
+});
