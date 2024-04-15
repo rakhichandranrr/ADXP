@@ -45,6 +45,18 @@ get_header();
               <li class="nav-item" role="presentation">
                 <button class="nav-link active"  type="button" >All Results</button>
               </li>
+              <?php
+			   if ( have_posts() ) {
+		      while ( have_posts() ) {
+			  the_post();
+			  ?>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active"  type="button" ><?php echo get_post_type_object(get_post_type(get_the_ID()));?></button>
+              </li>
+              <?php
+			  }
+			   }
+			  ?>
             </ul>
           </div>
         </div>
@@ -115,6 +127,7 @@ get_header();
 
 
 get_footer();
+
 
 
 
