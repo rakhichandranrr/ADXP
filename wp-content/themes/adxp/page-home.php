@@ -62,7 +62,7 @@ if ($home_services) {
         <div class="service-main d-flex justify-content-between g-2">
           <?php foreach ($home_services as $home_services_res) { ?>
             <div class="service-itm">
-              <div class="ser_img"><a href="<?php echo get_permalink($home_services_res->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($home_services_res->ID), 'full'); ?>" alt="img"></a> </div>
+              <a href="<?php echo get_permalink($home_services_res->ID); ?>"><div class="ser_img"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($home_services_res->ID), 'full'); ?>" alt="img"></div></a> 
               <div class="service-details">
                 <h4 class="mb-4"><?php echo $home_services_res->post_title; ?></h4>
                 <div class="service_hover">
