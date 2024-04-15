@@ -61,8 +61,6 @@
               'numberposts' => -1,
               'post_type'   => 'post-industries',
               'suppress_filters' => false,
-              'order'       => 'ASC',
-              'orderby'     => 'title'
             );
             $industries = get_posts($ind_args);
             if ($industries) {
@@ -82,9 +80,7 @@
             $services_args = array(
               'numberposts' => -1,
               'post_type'   => 'post-services',
-              'order'       => 'ASC',
               'suppress_filters' => false,
-              'orderby'     => 'title'
             );
             $services = get_posts($services_args);
 
