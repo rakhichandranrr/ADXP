@@ -66,16 +66,20 @@ get_header();
                 <button class="nav-link <?php echo $all;?>"  type="button" onclick="filter_post_type('all');" >All Results</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link <?php if (in_array("post-insights", $_REQUEST['customset'])){?>active<?php }?>"  type="button" onclick="filter_post_type('post-insights');" >Insights</button>
+                <button class="nav-link <?php if($_REQUEST['customset'])
+		{if (in_array("post-insights", $_REQUEST['customset'])){?>active<?php }}?>"  type="button" onclick="filter_post_type('post-insights');" >Insights</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link <?php if (in_array("post-industries", $_REQUEST['customset'])){?>active<?php } ?>"  type="button" onclick="filter_post_type('post-industries');" >Industries</button>
+                <button class="nav-link <?php if($_REQUEST['customset'])
+		{if (in_array("post-industries", $_REQUEST['customset'])){?>active<?php }} ?>"  type="button" onclick="filter_post_type('post-industries');" >Industries</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link <?php if (in_array("job_openings", $_REQUEST['customset'])){?>active<?php } ?>"  type="button" onclick="filter_post_type('job_openings');" >Careers</button>
+                <button class="nav-link <?php if($_REQUEST['customset'])
+		{if (in_array("job_openings", $_REQUEST['customset'])){?>active<?php }} ?>"  type="button" onclick="filter_post_type('job_openings');" >Careers</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link <?php if (in_array("post-services", $_REQUEST['customset'])){?>active<?php } ?>"  type="button" onclick="filter_post_type('post-services');" >Services</button>
+                <button class="nav-link <?php if($_REQUEST['customset'])
+		{if (in_array("post-services", $_REQUEST['customset'])){?>active<?php } }?>"  type="button" onclick="filter_post_type('post-services');" >Services</button>
               </li>
             </ul>
           </div>
