@@ -40,7 +40,29 @@ get_header();
 		?>
             </div>
           </div>
-          
+          <div class="col-lg-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active"  type="button" >All Results</button>
+              </li>
+              <?php
+			   if ( have_posts() ) {
+		      while ( have_posts() ) {
+			  the_post();
+			  
+			  $postType = get_post_type_object(get_post_type(get_the_ID()));
+			  ?>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active"  type="button" ><?php if ($postType) {
+    echo esc_html($postType->labels->singular_name);
+}?></button>
+              </li>
+              <?php
+			  }
+			   }
+			  ?>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -60,8 +82,6 @@ get_header();
 			  $postType = get_post_type_object(get_post_type($post_id));
 
 		  ?>
-          
-          
       <div class="col-lg-12">
         <div class="insights-grD search-itm  d-flex flex-column">
           <div class="img-ins mb-3 search-img">
