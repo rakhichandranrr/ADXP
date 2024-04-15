@@ -52,28 +52,7 @@
       </div>
       <div class="col-lg-6">
         <div class="usefull-links text-light d-flex justify-content-between">
-          <ul>
-            <li>
-              <h3>Industries</h3>
-            </li>
-            <li><a href="<?php echo site_url(); ?>/industries/">All Industries</a></li>
-            <?php
-            $ind_args = array(
-              'numberposts' => -1,
-              'post_type'   => 'post-industries',
-              'suppress_filters' => false,
-            );
-            $industries = get_posts($ind_args);
-            if ($industries) {
-              foreach ($industries as $industries_res) {
-            ?>
-                <li><a href="<?php echo get_permalink($industries_res->ID); ?>"><?php echo $industries_res->post_title; ?></a></li>
-            <?php
-              }
-            }
-            ?>
-          </ul>
-          <ul>
+           <ul>
             <li>
               <h3>Services</h3>
             </li>
@@ -95,9 +74,33 @@
             }
             ?>
           </ul>
+          
+          
           <ul>
             <li>
-              <h3>About</h3>
+              <h3>Industries</h3>
+            </li>
+            <li><a href="<?php echo site_url(); ?>/industries/">All Industries</a></li>
+            <?php
+            $ind_args = array(
+              'numberposts' => -1,
+              'post_type'   => 'post-industries',
+              'suppress_filters' => false,
+            );
+            $industries = get_posts($ind_args);
+            if ($industries) {
+              foreach ($industries as $industries_res) {
+            ?>
+                <li><a href="<?php echo get_permalink($industries_res->ID); ?>"><?php echo $industries_res->post_title; ?></a></li>
+            <?php
+              }
+            }
+            ?>
+          </ul>
+         
+          <ul>
+            <li>
+              <h3>Useful Links</h3>
             </li>
             <li><a href="<?php echo site_url(); ?>/insights/">Insights</a></li>
             <li><a href="<?php echo site_url(); ?>/digital-advisor/">Digital Advisor</a></li>
