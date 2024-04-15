@@ -12,8 +12,8 @@ $services_list = $services['services'];
     <ul class="submenu text-light d-flex">
       <li><a href="#Overview">Overview</a></li>
       <li><a href="#Services">Services</a></li>
-      <li><a href="#Results">Results</a></li>
-      <li><a href="#People">Our People</a></li>
+      <li><a href="#Results">Client Results</a></li>
+      <li><a href="#People">People</a></li>
     </ul>
   </div>
 </section>
