@@ -53,6 +53,11 @@ get_header();
 		{
 			$all = 'active';
 		}
+		else
+		{
+			$all = '';
+		}
+		
 		}
 		
 		
@@ -61,23 +66,23 @@ get_header();
           </div>
           <div class="col-lg-12">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
+              <li class="nav-item m-0" role="presentation" >
                 <button class="nav-link <?php echo $all;?>"  type="button" onclick="filter_post_type('all');" >All Results</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link <?php if($_REQUEST['customset'])
+                <button class="nav-link <?php if($_REQUEST['customset'] && $all=='')
 		{if (in_array("post-insights", $_REQUEST['customset'])){?>active<?php }}?>"  type="button" onclick="filter_post_type('post-insights');" >Insights</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link <?php if($_REQUEST['customset'])
+                <button class="nav-link <?php if($_REQUEST['customset'] && $all=='')
 		{if (in_array("post-industries", $_REQUEST['customset'])){?>active<?php }} ?>"  type="button" onclick="filter_post_type('post-industries');" >Industries</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link <?php if($_REQUEST['customset'])
+                <button class="nav-link <?php if($_REQUEST['customset'] && $all=='')
 		{if (in_array("job_openings", $_REQUEST['customset'])){?>active<?php }} ?>"  type="button" onclick="filter_post_type('job_openings');" >Careers</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link <?php if($_REQUEST['customset'])
+                <button class="nav-link <?php if($_REQUEST['customset'] && $all=='')
 		{if (in_array("post-services", $_REQUEST['customset'])){?>active<?php } }?>"  type="button" onclick="filter_post_type('post-services');" >Services</button>
               </li>
             </ul>
