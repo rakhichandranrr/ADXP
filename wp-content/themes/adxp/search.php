@@ -48,10 +48,12 @@ get_header();
 			),
 			(int) $wp_query->found_posts
 		);
-		
+		if($_REQUEST['customset'])
+		{
 		if (in_array("post-insights", $_REQUEST['customset']) && in_array("post-industries", $_REQUEST['customset']) && in_array("job_openings", $_REQUEST['customset']) && in_array("post-services", $_REQUEST['customset']))
 		{
 			$all = 'active';
+		}
 		}
 		
 		
