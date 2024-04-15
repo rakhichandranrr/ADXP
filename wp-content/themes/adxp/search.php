@@ -40,6 +40,13 @@ get_header();
 		?>
             </div>
           </div>
+          <div class="col-lg-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active"  type="button" >All Results</button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -47,15 +54,6 @@ get_header();
 </section>
 <section class="bg-light common-padd search-result-list  pdl-1 pdr-1">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active"  type="button" >All Results</button>
-          </li>
-        </ul>
-      </div>
-    </div>
     <div class="row">
       <?php
 	  if ( have_posts() ) {
@@ -117,5 +115,6 @@ get_header();
 
 
 get_footer();
+
 
 
