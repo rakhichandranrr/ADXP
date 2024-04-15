@@ -24,8 +24,7 @@ get_header();
   <input type="hidden" value="1" name="filters_initial" />
   <input type="hidden" value="0" name="filters_changed" />
 </form>
-
-<section class="ins-inner-detail  common-padd bg-light pb-0" id="Overview">
+<section class="ins-inner-detail job section-apply common-padd bg-light pb-0" id="Overview">
   <div class="container b_contents-main flexW inner-banner-content mb-0">
     <div class="row">
       <div class="banner-content d-flex flex-column align-items-center justify-content-center extra-padd">
