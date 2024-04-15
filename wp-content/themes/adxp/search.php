@@ -59,6 +59,10 @@ get_header();
 		}
 		
 		}
+		else
+		{
+			$all = 'active';
+		}
 		
 		
 		?>
