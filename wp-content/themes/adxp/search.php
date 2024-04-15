@@ -14,6 +14,17 @@ get_header();
 
 	?>
 
+<form role="search" method="get" id="searchform" action="">
+  <input type="hidden" value="<?php echo  get_search_query();?>" name="s" id="s" />
+  <div id="post_field">
+    <input type="hidden" value="" name="customset[]" />
+  </div>
+  <input type="hidden" value="1" name="asl_active" />
+  <input type="hidden" value="1" name="p_asl_data" />
+  <input type="hidden" value="1" name="filters_initial" />
+  <input type="hidden" value="0" name="filters_changed" />
+</form>
+
 <section class="ins-inner-detail  common-padd bg-light pb-0" id="Overview">
   <div class="container b_contents-main flexW inner-banner-content mb-0">
     <div class="row">
@@ -37,30 +48,33 @@ get_header();
 			),
 			(int) $wp_query->found_posts
 		);
+		
+		if (in_array("post-insights", $_REQUEST['customset']) && in_array("post-industries", $_REQUEST['customset']) && in_array("job_openings", $_REQUEST['customset']) && in_array("post-services", $_REQUEST['customset']))
+		{
+			$all = 'active';
+		}
+		
+		
 		?>
             </div>
           </div>
           <div class="col-lg-12">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link active"  type="button" >All Results</button>
+                <button class="nav-link <?php echo $all;?>"  type="button" onclick="filter_post_type('all');" >All Results</button>
               </li>
-              <?php
-			   if ( have_posts() ) {
-		      while ( have_posts() ) {
-			  the_post();
-			  
-			  $postType = get_post_type_object(get_post_type(get_the_ID()));
-			  ?>
               <li class="nav-item" role="presentation">
-                <button class="nav-link active"  type="button" ><?php if ($postType) {
-    echo esc_html($postType->labels->singular_name);
-}?></button>
+                <button class="nav-link <?php if (in_array("post-insights", $_REQUEST['customset'])){?>active<?php }?>"  type="button" onclick="filter_post_type('post-insights');" >Insights</button>
               </li>
-              <?php
-			  }
-			   }
-			  ?>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link <?php if (in_array("post-industries", $_REQUEST['customset'])){?>active<?php } ?>"  type="button" onclick="filter_post_type('post-industries');" >Industries</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link <?php if (in_array("job_openings", $_REQUEST['customset'])){?>active<?php } ?>"  type="button" onclick="filter_post_type('job_openings');" >Careers</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link <?php if (in_array("post-services", $_REQUEST['customset'])){?>active<?php } ?>"  type="button" onclick="filter_post_type('post-services');" >Services</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -89,13 +103,13 @@ get_header();
   if($thumb_id ==  242)
   {
  ?>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no_img_insight.png" alt="img">
+            <a href="<?php echo get_permalink($post_id); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/no_img_insight.png" alt="img"></a>
             <?php
   }
  else
  {
 	 ?>
-            <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_id), 'full'); ?>" alt="img"  />
+            <a href="<?php echo get_permalink($post_id); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_id), 'full'); ?>" alt="img"  /></a>
             <?php
  }
  ?>
@@ -131,7 +145,26 @@ get_header();
 
 
 get_footer();
-
-
-
-
+?>
+<script>
+function filter_post_type(posttype)
+{
+	var html_data = '';
+	
+	if(posttype == 'all')
+	{
+		
+		html_data = '<input type="hidden" value="post-insights" name="customset[]" /><input type="hidden" value="post-industries" name="customset[]" /><input type="hidden" value="job_openings" name="customset[]" /><input type="hidden" value="post-services" name="customset[]" />';
+		
+	}
+	else
+	{
+	   html_data = '<input type="hidden" value="'+posttype+'" name="customset[]" />';
+	}
+	
+	
+	$('#post_field').html(html_data);
+	
+	$('#searchform').submit();
+}
+</script> 
