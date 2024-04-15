@@ -61,17 +61,7 @@ get_header();
 
 		  ?>
           
-          <div class="col-lg-12">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active"  type="button" >All Results</button>
-              </li>             
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active"  type="button" ><?php echo $postType;?></button>
-              </li>
-             
-            </ul>
-          </div>
+          
       <div class="col-lg-12">
         <div class="insights-grD search-itm  d-flex flex-column">
           <div class="img-ins mb-3 search-img">
