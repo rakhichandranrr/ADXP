@@ -129,11 +129,10 @@
             <div class="dropdown-menu mega-menu" aria-labelledby="megaMenuDropdown">
               <div class="container">
                 <div class="row text-light">
-                  <div class="col-md-4 pe-4">
-                    <h2><a href="<?php echo $item['url']; ?>"><?php echo $item['title']; ?></a></h2>
-                    <div class="paragraph"> <?php echo $item['description']; ?> </div>
-                    <!-- Add your content for column 1 -->
-                  </div>
+                  <!--<div class="col-md-4 pe-4">
+                    <h2><a href="<?php //echo $item['url']; ?>"><?php //echo $item['title']; ?></a></h2>
+                    <div class="paragraph"> <?php //echo $item['description']; ?> </div>
+                  </div>-->
                   <div class="col-md-8 usefull-links mega-link">
                     <ul>
                        <li><a href="<?php echo $item['url']; ?>">All <?php echo $item['title']; ?></a></li>
