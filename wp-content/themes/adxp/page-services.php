@@ -7,9 +7,7 @@ get_header();
 $services_args = array(
   'numberposts' => -1,
   'post_type'   => 'post-services',
-  'order'       => 'ASC',
   'suppress_filters' => false,
-  'orderby'     => 'title'
 );
 $services = get_posts($services_args);
 
