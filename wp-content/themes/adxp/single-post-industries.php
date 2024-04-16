@@ -84,7 +84,7 @@ if ($services) {
               <div class="card-header col-lg-4 card-header<?php echo $j; ?> <?php echo $cls;?> " onClick="showCardBody(<?php echo $i; ?>)">
                 <div class="wrp-grd">
                   <h4 class="text-light"><?php echo $service_res['service_title']; ?></h4>
-                  <div class="paragraph mt-3"> <?php echo $service_res['service_description']; ?> </div>
+                 
                 </div>
               </div>
               <?php
