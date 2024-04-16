@@ -62,7 +62,7 @@ if ($services) {
               ?>
         <div class="card-body col-lg-12 card-body<?php echo $j; ?>" id="cardBody<?php echo $i; ?>" style="display: none;">
           <div class="paragraph mt-3"> <?php echo $service_res['service_description']; ?> </div>
-          <h4 class="text-light"><?php echo $services_click_block['service_click_block_title']; ?></h4>
+          <h4 class="text-light sub-head"><?php echo $services_click_block['service_click_block_title']; ?></h4>
           <div class="paragraph mt-3 click-description"> <?php echo $services_click_block['service_click_block_description']; ?></div>
           <?php
 
