@@ -84,15 +84,16 @@ if ($services) {
         <div class="card-header col-lg-4 card-header<?php echo $j; ?> <?php echo $cls;?> " onClick="showCardBody(<?php echo $i; ?>)">
           <div class="wrp-grd">
             <h4 class="text-light"><?php echo $service_res['service_title']; ?></h4>
-            <div class="paragraph mt-3"> <?php echo $service_res['service_description']; ?> </div>
+            
           </div>
         </div>
         <?php
               
-              if ($services_click_block) {
-                if ($services_click_block['service_click_block_title']) {
+              if ($services_click_block || $service_res['service_description']) {
               ?>
         <div class="card-body col-lg-12 card-body<?php echo $j; ?>" id="cardBody<?php echo $i; ?>" style="display: none;">
+        
+        <div class="paragraph mt-3"> <?php echo $service_res['service_description']; ?> </div>
           <h4 class="text-light"><?php echo $services_click_block['service_click_block_title']; ?></h4>
           <div class="paragraph mt-3"> <?php echo $services_click_block['service_click_block_description']; ?></div>
           <?php
@@ -100,6 +101,8 @@ if ($services) {
                     $service_click_block_sub_items = $services_click_block['service_click_block_sub_items'];
                     if ($service_click_block_sub_items) {
                       foreach ($service_click_block_sub_items as $service_click_block_sub_items_res) {
+						  if($service_click_block_sub_items_res['service_click_block_sub_title'])
+						  {
                     ?>
           <div class="framework">
             <h5><?php echo $service_click_block_sub_items_res['service_click_block_sub_title']; ?>
@@ -108,13 +111,13 @@ if ($services) {
             <div class="paragraph"> <?php echo $service_click_block_sub_items_res['service_click_block_sub_description']; ?> </div>
           </div>
           <?php
+						  }
 
                       }
                     }
                     ?>
         </div>
         <?php
-                }
               }
               if ($i % 3 == 0) {
                 echo '</div>';
