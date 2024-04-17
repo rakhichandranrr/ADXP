@@ -71,7 +71,7 @@ if ($services) {
               }
 			  
 			  $services_click_block = $service_res['service_click_block'];
-			  if($services_click_block['service_click_block_title'] || $services_click_block['service_click_block_description'])
+			  if($service_res['service_description'])
 			  {
 				  $cls = 'card-header-click';
 			  }
