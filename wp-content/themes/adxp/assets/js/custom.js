@@ -25,16 +25,21 @@ $('#dynamic'). removeClass('mob-header');
 
 
 function showCardBody(index) {
-    var cardBody = $('#cardBody' + index);
-    var isVisible = cardBody.is(':visible');
+     var cardBody = $('#cardBody' + index);
+    var isVisible = cardBody.is(':visible');	
 
     // Hide all card bodies with slide up effect
     $('.card-body').slideUp();
 
     // If the clicked card body is already visible, hide it
     if (isVisible) {
-        cardBody.slideUp(); // Slide up corresponding card body
+		$('.card-header'+ index).removeClass('active');
+		$('.card-header'+ index).removeClass('card-header-click');
+        cardBody.slideUp(); 
+		// Slide up corresponding card body
     } else {
+		$('.card-header'+ index).addClass('card-header-click');
+		$('.card-header'+ index).addClass('active');
         // Show corresponding card body with slide down effect
         cardBody.slideDown();
     }
@@ -183,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   $(document).ready(function() {
   // Add class to div when hovering over the Industries link
-  $('.navbar-expand-lg ').hover(function() {
+  $('.main-nav li.nav-item').hover(function() {
     $('#myHeader').addClass('blue-sticky');
   }, function() {
     $('#myHeader').removeClass('blue-sticky');
