@@ -56,7 +56,7 @@
             <li>
               <h3>Services</h3>
             </li>
-             <li><a href="<?php echo site_url(); ?>/services/">All Services</a></li>
+             <!--<li><a href="<?php echo site_url(); ?>/services/">All Services</a></li>-->
             <?php
             $services_args = array(
               'numberposts' => -1,
@@ -80,7 +80,7 @@
             <li>
               <h3>Industries</h3>
             </li>
-            <li><a href="<?php echo site_url(); ?>/industries/">All Industries</a></li>
+            <!--<li><a href="<?php echo site_url(); ?>/industries/">All Industries</a></li>-->
             <?php
             $ind_args = array(
               'numberposts' => -1,

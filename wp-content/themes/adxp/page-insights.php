@@ -68,6 +68,7 @@ get_header();
                     } else {
                       $checked = '';
                     }
+					echo count($_POST['services']);
                 ?>
                     <label class="custom-dropdown-item custom-dropdown-item2">
                       <input type="checkbox" value="<?php echo $services_res->ID; ?>" name="services[]" class="check_<?php echo $services_res->ID; ?>" <?php echo $checked; ?>>
@@ -106,6 +107,10 @@ get_header();
               }
             }
             ?>
+            
+            <div class="filter-listing me-3"> <span><a href="<?php echo site_url();?>/insights">Clear All</a></span>
+                  
+                </div>
           </div>
         </div>
 
