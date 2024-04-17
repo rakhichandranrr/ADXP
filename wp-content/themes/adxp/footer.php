@@ -56,7 +56,7 @@
             <li>
               <h3>Services</h3>
             </li>
-             <!--<li><a href="<?php echo site_url(); ?>/services/">All Services</a></li>-->
+             <li><a href="<?php echo site_url(); ?>/services/">All Services</a></li>
             <?php
             $services_args = array(
               'numberposts' => -1,
@@ -80,7 +80,7 @@
             <li>
               <h3>Industries</h3>
             </li>
-            <!--<li><a href="<?php echo site_url(); ?>/industries/">All Industries</a></li>-->
+            <li><a href="<?php echo site_url(); ?>/industries/">All Industries</a></li>
             <?php
             $ind_args = array(
               'numberposts' => -1,
@@ -143,7 +143,6 @@
                   </div>-->
                   <div class="col-md-8 usefull-links mega-link">
                     <ul>
-                       <li><a href="<?php echo $item['url']; ?>">All <?php echo $item['title']; ?></a></li>
                       <?php foreach ($item['children'] as $child) { ?>
                         <li><a href="<?php echo $child['url']; ?>"><?php echo $child['title']; ?></a></li>
                       <?php
