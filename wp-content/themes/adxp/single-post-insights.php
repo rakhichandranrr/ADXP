@@ -77,7 +77,7 @@ $thumb_id = get_post_thumbnail_id($post_id);
 </section>
 <section class="Client-results other common-padd otherinsights" id="Results">
   <div class="container">
-    <div class="row custom-grid-mobile">
+    <div class="row custom-grid-mobile pdl-1 pdr-1">
       <div class="col-lg-12">
         <h3 class="inner-heading text-light mb-4"><?php echo get_field('other_insight_heading', 97); ?></h3>
         <div class="paragraph"> <?php echo get_field('other_insights_description', 97); ?> </div>
