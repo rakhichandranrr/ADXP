@@ -64,7 +64,7 @@ if ($home_services) {
             <div class="service-itm">
               <a href="<?php echo get_permalink($home_services_res->ID); ?>"><div class="ser_img"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($home_services_res->ID), 'full'); ?>" alt="img"></div></a> 
               <div class="service-details">
-                <h4 class="mb-4"><?php echo $home_services_res->post_title; ?></h4>
+                <a href="<?php echo get_permalink($home_services_res->ID); ?>"><h4 class="mb-4"><?php echo $home_services_res->post_title; ?></h4></a>
                 <div class="service_hover">
                   <div class="paragraph mb-3"><?php echo $home_services_res->post_content; ?> </div>
                   <a class="text-light" href="<?php echo get_permalink($home_services_res->ID); ?>">Learn more <img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a>
