@@ -21,14 +21,14 @@ $career_development =  get_field('career_development');
 if($what_we_offer)
 {
 ?>
-<section class="innovation common-padd bg-light " id="Overview">
+<section class="innovation common-padd flexW  ca-bg " id="Overview">
   <div class="container mt-4">
     <div class="row">
-      <div class="col-lg-7">
+      <div class="col-lg-6 col-md-6">
         <h3 class="inner-heading" ><?php echo $what_we_offer['what_we_offer_title'];?></h3>
         <div class="paragraph"> <?php echo $what_we_offer['what_we_offer_content'];?> </div>
       </div>
-      <div class="col-lg-5"> <img src="<?php echo $what_we_offer['what_we_offer_image']['url'];?>" alt="img"> </div>
+      <div class="col-lg-6 car-img-wrp"> <img src="<?php echo $what_we_offer['what_we_offer_image']['url'];?>" alt="img"> </div>
     </div>
   </div>
 </section>
@@ -40,7 +40,7 @@ if($work_culture)
 <section class="ind-services common-padd grd-bg" id="Services">
   <div class="container">
     <div class="row ">
-      <div class="col-lg-12 mb-5">
+      <div class="col-lg-12 mb-5 main-p">
         <h3 class="inner-heading mb-5 text-light"><?php echo $work_culture['work_culture_title'];?></h3>
         <div class="paragraph "> <?php echo $work_culture['work_culture_content'];?> </div>
       </div>
@@ -78,7 +78,7 @@ if($work_culture)
 if($career_development)
 {
 ?>
-<section class="career-dv common-padd" id="Results">
+<section class="career-dv common-padd " id="Results">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 mb-5">
@@ -116,7 +116,7 @@ if($career_development)
 }
 
 ?>
-<section class="job section-apply inner common-padd bg-light" id="People">
+<section class="job section-apply inner common-padd bg-light mob-jov-pt job-detailss" id="People">
   <div class="container">
   <h1 class="inner-headingmb-4" ><?php echo get_field('job_openings_title');?></h1>
   <div class="paragraph mb-3 mt-3 dark-para" ><?php echo get_field('job_openings_content');?></div>
@@ -164,12 +164,12 @@ if($categories)
 ?>
           <div class="job-itm">
             <div class=" grid-job-wrp">
-              <h5 class="main-tittle ins-tittle  mb-5mt-4" ><?php echo $job_res->post_title;?></h5>
+              <h5 class="main-tittle ins-tittle mb-5mt-4" ><?php echo $job_res->post_title;?></h5>
               <div class="loc-date f-column">
-                <div class="paragraph"> <i class="bi bi-geo-alt"></i> <?php echo get_field('job_location',$job_res->ID);?> </div>
-                <div class="paragraph"> <i class="bi bi-calendar"></i> <?php echo get_field('job_type',$job_res->ID);?></div>
+                <div class="paragraph"> <img class="job-icons" src="<?php echo get_template_directory_uri(); ?>/assets/img/Location.svg" alt="img"> <?php echo get_field('job_location',$job_res->ID);?> </div>
+                <div class="paragraph"><img class="job-icons" src="<?php echo get_template_directory_uri(); ?>/assets/img/Calendar.svg" alt="img"><?php echo get_field('job_type',$job_res->ID);?></div>
               </div>
-              <div class="loc-date">
+              <div class="loc-date mt-0 mb-5">
              <?php $curr_categories = get_the_category($job_res->ID);
 			 if ( ! empty( $curr_categories ) ) {
 				 foreach($curr_categories as $cat_res)
@@ -208,3 +208,86 @@ if($categories)
 <?php
 get_footer();
 ?>
+<script>
+
+//      $(function(){
+//     $(window).scroll(function () {
+//         var windscroll = $(window).scrollTop();
+//         $('ul.submenu li a').each(function(i) {
+//             var posTop = $($(this).attr('href')).position().top, 
+//                 h = $($(this).attr('href')).height();
+
+//             if (posTop  <= windscroll && posTop + h > windscroll ) {
+//                 $('ul.submenu li a').removeClass('active');
+//                 $(this).addClass('active');
+//             } else {
+//                 $(this).removeClass('active');
+//             }
+//         });
+//     });
+// });
+
+$(function(){
+    // Function to handle adding/removing active class
+    function setActiveLink(link) {
+        $('ul.submenu li a').removeClass('active');
+        link.addClass('active');
+    }
+
+    // Scroll event handler
+    $(window).scroll(function () {
+        var windowHeight = $(window).height();
+        var windscroll = $(window).scrollTop() + (windowHeight * 0.5); // Adjusted to half the window height
+        
+        $('ul.submenu li a').each(function(i) {
+            var target = $($(this).attr('href'));
+            var posTop = target.offset().top;
+            var posBottom = posTop + target.height();
+
+            if (posTop <= windscroll && posBottom >= windscroll) {
+                setActiveLink($(this));
+            }
+        });
+    });
+
+    // Click event handler for <a> tags
+    $('ul.submenu li a').click(function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        var additionalSpacing = 150; // Additional spacing value
+        $('html, body').animate({
+            scrollTop: $(target).offset().top - additionalSpacing
+        }, 500);
+        setActiveLink($(this));
+    });
+});
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var links = document.querySelectorAll('ul.submenu li a');
+//     links.forEach(function(link) {
+//         link.addEventListener('click', function(event) {
+//             event.preventDefault();
+//             var container = link.closest('ul.submenu');
+//             var containerWidth = container.clientWidth;
+//             var contentWidth = container.scrollWidth;
+//             container.scrollLeft = contentWidth - containerWidth;
+//         });
+//     });
+// });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var links = document.querySelectorAll('ul.submenu li a');
+//     links.forEach(function(link) {
+//         link.addEventListener('click', function(event) {
+//             event.preventDefault();
+//             var container = link.closest('ul.submenu');
+//             var linkRect = link.getBoundingClientRect();
+//             var containerRect = container.getBoundingClientRect();
+//             var isLeft = linkRect.left < containerRect.left + container.clientWidth / 2;
+//             container.scrollLeft = isLeft ? 0 : container.scrollWidth; // Scroll to the left end if link is on the left, otherwise scroll to the right end
+//         });
+//     });
+// });
+
+
+</script>

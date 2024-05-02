@@ -698,7 +698,7 @@ function adxp_enqueue_styles_js()
 
 
 
-	wp_enqueue_script('custom', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), '', true);
+	wp_enqueue_script('custom', get_template_directory_uri() . '/assets/js/custom.js?v=' . time(), array('jquery'), '', true);
 }
 
 add_action('wp_enqueue_scripts', 'adxp_enqueue_styles_js');
@@ -813,6 +813,26 @@ function get_insight_categories($insight_id)
 	return $insight_cats;
 }
 
+function get_insight_tags($insight_id)
+{
+	$posttags = get_the_tags($insight_id);
+	$tag_name =  array();
+		if ($posttags) {
+	      foreach($posttags as $tag) {
+			  $tag_name[] = $tag->name;
+		  }
+		}
+	  if($tag_name)
+	  {
+	  $tags = implode(' | ', $tag_name);
+	  }
+	  else
+	  {
+		  $tags ='';
+	  }
+	  return $tags;
+}
+
 /*GET INSIGHT CATEGORIES ENDS*/
 
 function wp_get_menu_array($current_menu)
@@ -848,4 +868,22 @@ function wp_get_menu_array($current_menu)
 		}
 	}
 	return $menu;
+}
+
+/*FOOTER WIDGET STARTS*/
+
+
+
+add_filter('get_term', 'ucfletter_tags', 10, 2);
+
+function ucfletter_tags($term, $taxonomy) {
+    
+if ($taxonomy == 'post_tag') {
+    
+    $new_name = ucfirst($term->name);
+    $term->name = $new_name;
+    
+}
+
+    return $term;
 }

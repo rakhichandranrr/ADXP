@@ -22,7 +22,7 @@ get_header();
 <?php
 if ($services) {
 ?>
-<section class="ind-services common-padd" id="Services">
+<section class="ind-services common-padd maturityWraper" id="Services">
   <div class="container">
     <div class="row">
       <h3 class="inner-heading text-light mb-4"><?php echo $services['service_block_heading']; ?></h3>
@@ -52,7 +52,7 @@ if ($services) {
           ?>
         <div class="card-header col-lg-4 card-header<?php echo $j; ?> card-header<?php echo $i; ?> <?php echo $cls;?> " onClick="showCardBody(<?php echo $i; ?>)">
           <div class="wrp-grd">
-            <h4 class="text-light"><?php echo $service_res['service_title']; ?></h4>
+            <h4 class="text-light"><?php echo $service_res['service_title']; if($service_res['sub_title']){?><span class="serv-sub-title"><?php echo $service_res['sub_title'];?></span><?php } ?></h4>
             
           </div>
         </div>
@@ -63,7 +63,11 @@ if ($services) {
         <div class="card-body col-lg-12 card-body<?php echo $j; ?>" id="cardBody<?php echo $i; ?>" style="display: none;">
           <div class="paragraph mt-3"> <?php echo $service_res['service_description']; ?> </div>
           <h4 class="text-light sub-head"><?php echo $services_click_block['service_click_block_title']; ?></h4>
-          <div class="paragraph mt-3 click-description"> <?php echo $services_click_block['service_click_block_description']; ?></div>
+          <div class="paragraph mt-3 click-description"> 
+            <div class="descbtn-sty">
+              <?php echo $services_click_block['service_click_block_description']; ?>
+            </div>
+          </div>
           <?php
 
                     $service_click_block_sub_items = $services_click_block['service_click_block_sub_items'];
