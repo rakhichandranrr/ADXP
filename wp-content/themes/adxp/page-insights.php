@@ -15,6 +15,82 @@ get_header();
       <form action="" method="post" id="ind_form">
         <div class="container filter-section">
           <label>Filter by</label>
+          
+          <!--Filter Type Starts-->
+          
+          <div class="offcanvas-overlay0"></div>
+          <div class="custom-dropdown custom-dropdown0 me-3">
+            <button class="custom-dropdown-toggle" type="button" id="customDropdownButton"> Type
+            <?php if($_POST['type_filter']){?>
+            <div class="Count-filter" >(<span><?php echo count($_POST['type_filter']);?></span>)</div>
+            <?php
+
+			 }
+
+			 ?>
+            <span class="dropdown-arrow0"> <i class="bi bi-chevron-down"></i></span> </button>
+            <div class="custom-dropdown-menu custom-dropdown-menu0" aria-labelledby="customDropdownButton">
+                <h4>Type</h4>
+              <?php
+
+                $type_args = array(
+
+                  'numberposts' => -1,
+
+                  'post_type'   => 'type',
+
+                  'order'       => 'ASC',
+
+                  'suppress_filters' => false,
+
+                  'orderby'     => 'title'
+
+                );
+
+                $types = get_posts($type_args);
+
+
+
+                if ($types) {
+
+                  foreach ($types as $types_res) {
+
+
+
+                    if (!empty($_POST['type_filter']) && in_array($types_res->ID, $_POST['type_filter'])) {
+
+
+
+                      $checked = 'checked="checked"';
+
+                    } else {
+
+                      $checked = '';
+
+                    }
+
+                ?>
+              <label class="custom-dropdown-item custom-dropdown-item0">
+                  
+                <input type="checkbox" value="<?php echo $types_res->ID; ?>" name="type_filter[]" class="check_<?php echo $types_res->ID; ?> check" <?php echo $checked; ?>>
+                <?php echo $types_res->post_title; ?> <span class="checkmark"></span> </label>
+              <?php
+
+                  }
+
+                }
+
+                ?>
+              <button type="submit" name="submit" class="custom-button mt-2 custom-button0" id="customFilterButton">Apply Filter</button>
+            </div>
+          </div>
+          
+          
+          <!--filter Type Ends-->
+          
+          
+          
+          
           <div class="offcanvas-overlay1"></div>
           <div class="custom-dropdown custom-dropdown1 me-3">
             <button class="custom-dropdown-toggle" type="button" id="customDropdownButton"> Industry
@@ -51,6 +127,9 @@ get_header();
                 if ($industries) {
 
                   foreach ($industries as $industries_res) {
+					  
+					  
+					  $ind_type = get_field('select_type', $industries_res->ID);
 
 
 
@@ -70,7 +149,7 @@ get_header();
               <label class="custom-dropdown-item custom-dropdown-item1">
                   
                 <input type="checkbox" value="<?php echo $industries_res->ID; ?>" name="industry[]" class="check_<?php echo $industries_res->ID; ?> check" <?php echo $checked; ?>>
-                <?php echo $industries_res->post_title; ?> <span class="checkmark"></span> </label>
+                <?php echo $industries_res->post_title; if($ind_type){ ?><span class="type-cls"> (<?php echo $ind_type->post_title;?>)</span><?php } ?> <span class="checkmark"></span> </label>
               <?php
 
                   }
@@ -113,11 +192,10 @@ get_header();
                 if ($services) {
 
                   foreach ($services as $services_res) {
-
-
+					  
+					  $serv_type = get_field('select_type', $services_res->ID);
 
                     if (!empty($_POST['services']) && in_array($services_res->ID, $_POST['services'])) {
-
 
 
                       $checked = 'checked="checked"';
@@ -131,7 +209,7 @@ get_header();
                 ?>
               <label class="custom-dropdown-item custom-dropdown-item1">
                 <input type="checkbox" value="<?php echo $services_res->ID; ?>" name="services[]" class="check_<?php echo $services_res->ID; ?> " <?php echo $checked; ?>>
-                <?php echo $services_res->post_title; ?> <span class="checkmark"></span> </label>
+                <?php echo $services_res->post_title; if($serv_type){ ?><span class="type-cls"> (<?php echo $serv_type->post_title;?>)</span><?php }?> <span class="checkmark"></span> </label>
               <?php
 
                   }
@@ -147,7 +225,7 @@ get_header();
     </div>
     <?php
 
-      if (!empty($_POST['industry']) || !empty($_POST['services'])) {
+      if (!empty($_POST['industry']) || !empty($_POST['services']) || !empty($_POST['type_filter'])) {
 
       ?>
     <div class="col-lg-12 mb-4">
@@ -179,26 +257,37 @@ get_header();
               }
 
             }
+			if ($_POST['type_filter']) {
+
+              foreach ($_POST['type_filter'] as $typ) {
+
+              ?>
+        <div class="filter-listing me-3"> <span><?php echo get_the_title($typ); ?></span>
+          <button onclick="refresh_search_type('<?php echo $typ; ?>')"><i class="bi bi-x"></i></button>
+        </div>
+        <?php
+
+              }
+
+            }
+
 
             ?>
         <div> <a class="clear-all" href="<?php echo site_url();?>/insights/" >Clear all </a> </div>
       </div>
       
-      <!--DISPLAY SEARCH RESULTS STARTS HERE-->
-      
-      <div class="insights-list-wrapper paragraph search-result-box"> 
+     
         
         <!--   INDUSTRY SEARCH STARTS-->
         
         <?php
+		 $industry_result_ids = array();
+		 $type_result_ids = array();
+		 $service_result_ids = array();
 
-          if ($_POST['industry']) {
+          if ($_POST['industry']) {			  
 
             foreach ($_POST['industry'] as $ind) {
-
-
-
-
 
               $search_ind_args = array(
 
@@ -224,53 +313,15 @@ get_header();
 
               );
 
-
-
               $search_ind_insights = get_posts($search_ind_args);
 
 
-
-
-
               if ($search_ind_insights) {
+				  
 
                 foreach ($search_ind_insights as $search_ind_res) {
-
-
-
-                  $insight_services = get_field('services', $search_ind_res->ID);
-
-                  $insight_industry = get_field('industry', $search_ind_res->ID);
-
-                  if ($insight_services[0]->post_title) {
-
-                    $insight_cat = $insight_services[0]->post_title;
-
-                  } else if ($insight_industry[0]->post_title) {
-
-                    $insight_cat = $insight_industry[0]->post_title;
-
-                  } else {
-
-                    $insight_cat = '';
-
-                  }
-
-
-
-          ?>
-        <div class="insights-search-res">
-          <div class="insights-grD text-light d-flex flex-column" id="<?php echo $i; ?>">
-            <div class="img-ins mb-3"><a href="<?php echo get_permalink($search_ind_res->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($search_ind_res->ID), 'full'); ?>" alt="img"></a> </div>
-            <div class="res-details"> <span class="tags-list"><?php echo get_insight_tags($search_ind_res->ID); ?></span>
-              <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($search_ind_res->ID); ?>"><?php echo $search_ind_res->post_title; ?></a></h2>
-              <span><?php echo date('F d, Y', strtotime($search_ind_res->post_date)); ?></span> </div>
-          </div>
-        </div>
-        <?php
-
-
-
+					
+					$industry_result_ids[] = $search_ind_res->ID;
 
 
                 }
@@ -292,9 +343,6 @@ get_header();
           if ($_POST['services']) {
 
             foreach ($_POST['services'] as $serv) {
-
-
-
 
 
               $search_serv_args = array(
@@ -321,28 +369,13 @@ get_header();
 
               );
 
-
-
               $search_serv_insights = get_posts($search_serv_args);
 
               if ($search_serv_insights) {
 
                 foreach ($search_serv_insights as $search_serv_res) {
-
-
-
-
-
-          ?>
-        <div class="insights-search-res">
-          <div class="insights-grD text-light d-flex flex-column">
-            <div class="img-ins mb-3"><a href="<?php echo get_permalink($search_serv_res->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($search_serv_res->ID), 'full'); ?>" alt="img"> </a></div>
-            <div class="res-details"><span class="tags-list"><?php echo get_insight_tags($search_serv_res->ID); ?></span>
-              <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($search_serv_res->ID); ?>"><?php echo $search_serv_res->post_title; ?></a></h2>
-              <span><?php echo date('F d, Y', strtotime($search_serv_res->post_date)); ?></span> </div>
-          </div>
-        </div>
-        <?php
+					
+					$service_result_ids[] = $search_serv_res->ID;
 
                 }
 
@@ -356,11 +389,94 @@ get_header();
         
         <!--   SERVICE SEARCH ENDS--> 
         
+        
+        <!--   TYPE SEARCH STARTS-->
+        
+        <?php
+
+          if ($_POST['type_filter']) {
+
+            foreach ($_POST['type_filter'] as $type_f) {
+
+
+              $search_type_args = array(
+
+                'post_type' => 'post-insights',
+
+                'post_status' => 'publish',
+
+				'suppress_filters' => false,
+
+                'meta_query' => array(
+
+                  array(
+
+                    'key' => 'select_type',
+
+                    'value' => $type_f,
+
+                    'compare' => 'LIKE'
+
+                  )
+
+                )
+
+              );
+
+
+              $search_type_insights = get_posts($search_type_args);
+
+              if ($search_type_insights) {
+
+                foreach ($search_type_insights as $search_type_res) {
+					
+					$type_result_ids[] = $search_type_res->ID;
+
+                }
+
+              }
+
+            }
+
+          }
+
+          ?>
+        
+        <!--   TYPE SEARCH ENDS--> 
+        
+      <!--DISPLAY SEARCH RESULTS STARTS HERE-->
+      
+      <div class="insights-list-wrapper paragraph search-result-box"> 
+      <?php
+	  $result_ids = array_merge($industry_result_ids, $type_result_ids, $service_result_ids );
+	  $final_result_ids = array_unique($result_ids);
+	  if($final_result_ids)
+	  {
+		  foreach($final_result_ids as $final_result_ids_res)
+		  {
+			  $final_result_insights = get_post($final_result_ids_res);
+			  
+			  ?>
+              <div class="insights-search-res">
+          <div class="insights-grD text-light d-flex flex-column">
+            <div class="img-ins mb-3"><a href="<?php echo get_permalink($final_result_insights->ID); ?>"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($final_result_insights->ID), 'full'); ?>" alt="img"> </a></div>
+            <div class="res-details"><span class="tags-list"><?php echo get_insight_tags($final_result_insights->ID); ?></span>
+              <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($final_result_insights->ID); ?>"><?php echo $final_result_insights->post_title; ?></a></h2>
+              <span><?php echo date('F d, Y', strtotime($final_result_insights->post_date)); ?></span> </div>
+          </div>
+        </div>
+              <?php
+		  }
+	  }
+	  ?>
+	   
+        
       </div>
       
       <!--DISPLAY SEARCH RESULTS ENDS HERE-->
       
       <?php
+	   
 
       } else {
 
@@ -639,6 +755,15 @@ $('input:checkbox').change(function(){
     $('.check_' + val).prop('checked', false);
 
     $('.custom-button2').click();
+
+  }
+  
+  
+  function refresh_search_type(val) {
+
+    $('.check_' + val).prop('checked', false);
+
+    $('.custom-button0').click();
 
   }
 
