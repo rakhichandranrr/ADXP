@@ -1,0 +1,72 @@
+[16-May-2024 23:18:24 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/DB.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/DB.php on line 50
+[16-May-2024 23:18:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/File.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/File.php on line 50
+[16-May-2024 23:18:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Memcache.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Memcache.php on line 57
+[16-May-2024 23:18:26 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Memcached.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Memcached.php on line 58
+[16-May-2024 23:18:27 UTC] PHP Fatal error:  Uncaught Error: Class 'SimplePie_Cache_DB' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/MySQL.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/MySQL.php on line 56
+[16-May-2024 23:18:27 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Redis.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Redis.php on line 27
+[18-May-2024 13:20:10 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/DB.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/DB.php on line 50
+[18-May-2024 13:20:11 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/File.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/File.php on line 50
+[18-May-2024 13:20:11 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Memcache.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Memcache.php on line 57
+[18-May-2024 13:20:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Memcached.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Memcached.php on line 58
+[18-May-2024 13:20:12 UTC] PHP Fatal error:  Uncaught Error: Class 'SimplePie_Cache_DB' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/MySQL.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/MySQL.php on line 56
+[18-May-2024 13:20:13 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Redis.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Redis.php on line 27
+[24-Jun-2024 23:46:51 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/DB.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/DB.php on line 50
+[24-Jun-2024 23:46:52 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/File.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/File.php on line 50
+[24-Jun-2024 23:46:52 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Memcache.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Memcache.php on line 57
+[24-Jun-2024 23:46:53 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Memcached.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Memcached.php on line 58
+[24-Jun-2024 23:46:53 UTC] PHP Fatal error:  Uncaught Error: Class 'SimplePie_Cache_DB' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/MySQL.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/MySQL.php on line 56
+[24-Jun-2024 23:46:54 UTC] PHP Fatal error:  Uncaught Error: Interface 'SimplePie_Cache_Base' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Redis.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Cache/Redis.php on line 27

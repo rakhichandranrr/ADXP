@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-08 14:49:10+0000\n"
+"PO-Revision-Date: 2024-04-29 12:03:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8,6 +8,21 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ar\n"
 "Project-Id-Version: MailPoet - MailPoet\n"
+
+#: lib/EmailEditor/Integrations/MailPoet/Blocks/BlockTypes/email-content/block.json
+msgctxt "block keyword"
+msgid "MailPoet"
+msgstr ""
+
+#: lib/EmailEditor/Integrations/MailPoet/Blocks/BlockTypes/email-content/block.json
+msgctxt "block description"
+msgid "Shows email content within the email editor."
+msgstr ""
+
+#: lib/EmailEditor/Integrations/MailPoet/Blocks/BlockTypes/email-content/block.json
+msgctxt "block title"
+msgid "Email Content"
+msgstr ""
 
 #: views/upgrade_tiers.html:254
 msgid "Read FAQ"
@@ -237,33 +252,33 @@ msgstr "خطتك الحالية"
 
 #: lib/Util/Notices/BlackFridayNotice.php:46
 msgid "For a limited time, get up to 30% off when you switch to or upgrade an annual plan — no coupon required. Offer ends at 3 pm UTC, March 29, 2024."
-msgstr ""
+msgstr "لفترة محدودة، احصل على خصم يصل إلى 30% عند التبديل إلى الخطة السنوية أو الترقية إليها - دون الحاجة إلى قسيمة. ينتهي العرض في تمام الساعة 3 مساءً بالتوقيت العالمي المنسق يوم 29 مارس 2024."
 
-#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:81
+#: lib/Newsletter/NewsletterSaveController.php:491
 msgid "You received this email because you are subscribed to the [site:title]"
-msgstr ""
+msgstr "لقد تلقيت هذا البريد الإلكتروني لأنك مشترك في [site:title]"
 
 #: lib/Automation/Integrations/WooCommerce/Subjects/AbandonedCartSubject.php:66
 msgid "Cart total"
-msgstr "إجمالي عربة التسوق"
+msgstr "مجموع السلة"
 
 #. translators: automation subject (entity entering automation) title
 #: lib/Automation/Integrations/WooCommerce/Subjects/AbandonedCartSubject.php:36
 msgid "WooCommerce abandoned cart"
-msgstr ""
+msgstr "سلة تسوق WooCommerce المهجورة"
 
 #: lib/Automation/Integrations/MailPoet/Templates/TemplatesFactory.php:234
 msgid "Looks like you forgot something"
-msgstr ""
+msgstr "يبدو أنك نسيت شيئا"
 
 #: lib/Automation/Integrations/MailPoet/Templates/TemplatesFactory.php:202
 msgid "Rekindle the relationship with past customers by reminding them of their favorite products and showcasing what’s new, encouraging a return to your brand."
-msgstr ""
+msgstr "قم بإعادة إحياء العلاقة مع العملاء السابقين من خلال تذكيرهم بمنتجاتهم المفضلة وعرض كل ما هو جديد، مما يشجعهم على العودة إلى علامتك التجارية."
 
 #: lib/Automation/Integrations/MailPoet/Templates/TemplatesFactory.php:201
 #: lib/Automation/Integrations/MailPoet/Templates/TemplatesFactory.php:208
 msgid "Win-back customers"
-msgstr ""
+msgstr "استعادة العملاء"
 
 #: views/homepage.html:28
 msgctxt "Link in a task list"
@@ -377,7 +392,7 @@ msgstr "خطط التسوق السنوية"
 
 #: lib/Util/Notices/BlackFridayNotice.php:45
 msgid "Save up to 30% on MailPoet annual plans and upgrades"
-msgstr ""
+msgstr "احصل على خصم يصل إلى 30% على جميع خطط وترقيات MailPoet السنوية"
 
 #: lib/Automation/Engine/Registry.php:61
 msgid "Abandoned Cart"
@@ -2503,7 +2518,7 @@ msgid "Color"
 msgstr "اللون"
 
 #. translators: %s is email address which already exists.
-#: lib/Subscribers/SubscriberSaveController.php:259
+#: lib/Subscribers/SubscriberSaveController.php:273
 msgid "A subscriber with E-mail \"%s\" already exists."
 msgstr "مشترك بالبريد الإلكتروني \"%s\" موجود بالفعل."
 
@@ -7807,7 +7822,7 @@ msgstr "إضافة"
 
 #: views/form/templatesLegacy/settings/segment_selection.hbs:4
 msgid "Select the list that you want to add:"
-msgstr ""
+msgstr "حدد القائمة التي تريد إضافتها:"
 
 #: views/form/templatesLegacy/settings/required.hbs:2
 msgid "Is this field mandatory?"
@@ -7955,7 +7970,7 @@ msgstr "حقل الإدخال يستخدم للحصول على عناوين ال
 
 #: views/form/editor.html:160
 msgid "Select the list that you want to add"
-msgstr ""
+msgstr "حدد القائمة التي تريد إضافتها"
 
 #: views/form/editor.html:159 views/subscribers/importExport/import.html:39
 msgid "Please select at least one list"
@@ -8808,7 +8823,7 @@ msgstr "عرض في المتصفح الخاص بك"
 
 #: views/newsletter/editor.html:1297
 #: lib/Config/PopulatorData/Templates/ConfirmInterestBeforeDeactivation.php:163
-#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:84
+#: lib/Newsletter/NewsletterSaveController.php:494
 #: lib/Newsletter/Shortcodes/ShortcodesHelper.php:102
 msgid "Manage subscription"
 msgstr "إدارة الاشتراك"
@@ -10634,7 +10649,7 @@ msgstr "أفوكادو"
 #: lib/Config/PopulatorData/Templates/WordPressTheme.php:1266
 #: lib/Config/PopulatorData/Templates/WorldCup.php:725
 #: lib/Config/PopulatorData/Templates/YogaStudio.php:699
-#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:84
+#: lib/Newsletter/NewsletterSaveController.php:494
 #: lib/Newsletter/Shortcodes/ShortcodesHelper.php:94
 msgid "Unsubscribe"
 msgstr "إلغاء الاشتراك"
@@ -10737,11 +10752,11 @@ msgid "Newsletter"
 msgstr "الرسالة الإخبارية"
 
 #: lib/Config/Menu.php:225 lib/Config/Menu.php:226
-#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:49
+#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:45
 msgid "Emails"
 msgstr "رسائل البريد الإلكتروني"
 
-#: lib/Config/Initializer.php:227
+#: lib/Config/Initializer.php:233
 msgid "Unable to connect to the database (the database is unable to open a file or folder), the connection is likely not configured correctly. Please read our [link] Knowledge Base article [/link] for steps how to resolve it."
 msgstr "غير قادر على الاتصال بقاعدة البيانات (قاعدة البيانات غير قادرة على فتح ملف أو مجلد) ، من المحتمل أن تكوين الاتصال لم يتم بشكل صحيح. يرجى قراءة [link] مقالة قاعدة المعارف الخاصة بنا [/link] لمعرفة كيفية حلها."
 
@@ -10942,7 +10957,7 @@ msgstr "الإسم"
 #: lib/API/MP/v1/CustomFields.php:27
 #: lib/Automation/Integrations/WordPress/Subjects/UserSubject.php:63
 #: lib/Config/Menu.php:263
-#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:50
+#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:46
 #: lib/Form/Templates/Templates/InitialForm.php:22
 #: lib/Subscribers/ImportExport/ImportExportFactory.php:60
 #: lib/Subscribers/ImportExport/PersonalDataExporters/SubscriberExporter.php:71

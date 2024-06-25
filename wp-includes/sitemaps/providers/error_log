@@ -1,0 +1,36 @@
+[16-May-2024 23:18:38 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Sitemaps_Provider' not found in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-posts.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-posts.php on line 17
+[16-May-2024 23:18:39 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Sitemaps_Provider' not found in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-taxonomies.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-taxonomies.php on line 17
+[16-May-2024 23:18:40 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Sitemaps_Provider' not found in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-users.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-users.php on line 17
+[18-May-2024 13:20:23 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Sitemaps_Provider' not found in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-posts.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-posts.php on line 17
+[18-May-2024 13:20:24 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Sitemaps_Provider' not found in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-taxonomies.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-taxonomies.php on line 17
+[18-May-2024 13:20:24 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Sitemaps_Provider' not found in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-users.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-users.php on line 17
+[24-Jun-2024 23:47:43 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Sitemaps_Provider' not found in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-posts.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-posts.php on line 17
+[24-Jun-2024 23:47:44 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Sitemaps_Provider' not found in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-taxonomies.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-taxonomies.php on line 17
+[24-Jun-2024 23:47:44 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Sitemaps_Provider' not found in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-users.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/sitemaps/providers/class-wp-sitemaps-users.php on line 17

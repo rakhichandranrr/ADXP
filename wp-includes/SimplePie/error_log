@@ -1,0 +1,12 @@
+[16-May-2024 23:14:26 UTC] PHP Fatal error:  Uncaught Error: Class 'SimplePie' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Core.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Core.php on line 53
+[18-May-2024 13:14:57 UTC] PHP Fatal error:  Uncaught Error: Class 'SimplePie' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Core.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Core.php on line 53
+[24-Jun-2024 23:45:13 UTC] PHP Fatal error:  Uncaught Error: Class 'SimplePie' not found in /home/adxpcons/public_html/wp-includes/SimplePie/Core.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/SimplePie/Core.php on line 53

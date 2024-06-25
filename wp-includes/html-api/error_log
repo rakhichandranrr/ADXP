@@ -1,0 +1,12 @@
+[16-May-2024 23:19:45 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_HTML_Tag_Processor' not found in /home/adxpcons/public_html/wp-includes/html-api/class-wp-html-processor.php:139
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/html-api/class-wp-html-processor.php on line 139
+[18-May-2024 13:21:28 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_HTML_Tag_Processor' not found in /home/adxpcons/public_html/wp-includes/html-api/class-wp-html-processor.php:139
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/html-api/class-wp-html-processor.php on line 139
+[24-Jun-2024 23:47:48 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_HTML_Tag_Processor' not found in /home/adxpcons/public_html/wp-includes/html-api/class-wp-html-processor.php:139
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/html-api/class-wp-html-processor.php on line 139

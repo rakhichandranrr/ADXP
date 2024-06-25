@@ -1,0 +1,8 @@
+[16-May-2024 23:25:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/adxpcons/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php on line 8
+[18-May-2024 13:28:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/adxpcons/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php on line 8

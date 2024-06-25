@@ -1,0 +1,328 @@
+[03-May-2024 08:21:26 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[07-May-2024 15:36:24 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[09-May-2024 13:16:43 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[09-May-2024 14:54:57 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[10-May-2024 14:45:43 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[16-May-2024 23:14:33 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-nav-menu-widget.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-nav-menu-widget.php on line 17
+[16-May-2024 23:14:34 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-archives.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-archives.php on line 17
+[16-May-2024 23:14:34 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[16-May-2024 23:14:35 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-calendar.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-calendar.php on line 17
+[16-May-2024 23:14:36 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-categories.php on line 17
+[16-May-2024 23:14:37 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-custom-html.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-custom-html.php on line 17
+[16-May-2024 23:14:37 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-links.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-links.php on line 17
+[16-May-2024 23:14:38 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget_Media' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-audio.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-audio.php on line 18
+[16-May-2024 23:14:39 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget_Media' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-gallery.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-gallery.php on line 18
+[16-May-2024 23:14:40 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget_Media' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-image.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-image.php on line 18
+[16-May-2024 23:14:40 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget_Media' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-video.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-video.php on line 18
+[16-May-2024 23:14:41 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media.php on line 17
+[16-May-2024 23:14:42 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-meta.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-meta.php on line 19
+[16-May-2024 23:14:42 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-pages.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-pages.php on line 17
+[16-May-2024 23:14:43 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-recent-comments.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-recent-comments.php on line 17
+[16-May-2024 23:14:44 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-recent-posts.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-recent-posts.php on line 17
+[16-May-2024 23:14:45 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-rss.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-rss.php on line 17
+[16-May-2024 23:14:45 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-search.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-search.php on line 17
+[16-May-2024 23:14:46 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php on line 17
+[16-May-2024 23:14:47 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-text.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-text.php on line 17
+[17-May-2024 12:51:24 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[17-May-2024 20:38:25 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[18-May-2024 13:15:02 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-nav-menu-widget.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-nav-menu-widget.php on line 17
+[18-May-2024 13:15:03 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-archives.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-archives.php on line 17
+[18-May-2024 13:15:04 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[18-May-2024 13:15:04 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-calendar.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-calendar.php on line 17
+[18-May-2024 13:15:05 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-categories.php on line 17
+[18-May-2024 13:15:05 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-custom-html.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-custom-html.php on line 17
+[18-May-2024 13:15:06 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-links.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-links.php on line 17
+[18-May-2024 13:15:06 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget_Media' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-audio.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-audio.php on line 18
+[18-May-2024 13:15:07 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget_Media' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-gallery.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-gallery.php on line 18
+[18-May-2024 13:15:08 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget_Media' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-image.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-image.php on line 18
+[18-May-2024 13:15:08 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget_Media' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-video.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-video.php on line 18
+[18-May-2024 13:15:09 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media.php on line 17
+[18-May-2024 13:15:09 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-meta.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-meta.php on line 19
+[18-May-2024 13:15:10 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-pages.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-pages.php on line 17
+[18-May-2024 13:15:11 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-recent-comments.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-recent-comments.php on line 17
+[18-May-2024 13:15:11 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-recent-posts.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-recent-posts.php on line 17
+[18-May-2024 13:15:12 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-rss.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-rss.php on line 17
+[18-May-2024 13:15:13 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-search.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-search.php on line 17
+[18-May-2024 13:15:13 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php on line 17
+[18-May-2024 13:15:14 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-text.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-text.php on line 17
+[23-May-2024 23:16:21 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[24-May-2024 13:02:13 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[25-May-2024 19:34:56 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[29-May-2024 06:24:20 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[01-Jun-2024 19:39:17 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[01-Jun-2024 21:42:49 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[05-Jun-2024 11:29:01 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[08-Jun-2024 17:25:52 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[09-Jun-2024 18:31:11 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[13-Jun-2024 10:45:36 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[14-Jun-2024 13:41:35 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[17-Jun-2024 00:54:11 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[20-Jun-2024 02:43:01 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[20-Jun-2024 14:54:17 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[24-Jun-2024 04:49:33 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[24-Jun-2024 23:48:07 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-nav-menu-widget.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-nav-menu-widget.php on line 17
+[24-Jun-2024 23:48:07 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-archives.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-archives.php on line 17
+[24-Jun-2024 23:48:08 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[24-Jun-2024 23:48:09 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-calendar.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-calendar.php on line 17
+[24-Jun-2024 23:48:09 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-categories.php on line 17
+[24-Jun-2024 23:48:10 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-custom-html.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-custom-html.php on line 17
+[24-Jun-2024 23:48:10 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-links.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-links.php on line 17
+[24-Jun-2024 23:48:11 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget_Media' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-audio.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-audio.php on line 18
+[24-Jun-2024 23:48:12 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget_Media' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-gallery.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-gallery.php on line 18
+[24-Jun-2024 23:48:12 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget_Media' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-image.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-image.php on line 18
+[24-Jun-2024 23:48:13 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget_Media' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-video.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media-video.php on line 18
+[24-Jun-2024 23:48:13 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-media.php on line 17
+[24-Jun-2024 23:48:14 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-meta.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-meta.php on line 19
+[24-Jun-2024 23:48:15 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-pages.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-pages.php on line 17
+[24-Jun-2024 23:48:15 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-recent-comments.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-recent-comments.php on line 17
+[24-Jun-2024 23:48:16 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-recent-posts.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-recent-posts.php on line 17
+[24-Jun-2024 23:48:16 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-rss.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-rss.php on line 17
+[24-Jun-2024 23:48:17 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-search.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-search.php on line 17
+[24-Jun-2024 23:48:17 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php on line 17
+[24-Jun-2024 23:48:18 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-text.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/widgets/class-wp-widget-text.php on line 17

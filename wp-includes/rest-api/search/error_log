@@ -1,0 +1,12 @@
+[24-Jun-2024 23:47:36 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/adxpcons/public_html/wp-includes/rest-api/search/class-wp-rest-post-format-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/rest-api/search/class-wp-rest-post-format-search-handler.php on line 17
+[24-Jun-2024 23:47:36 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/adxpcons/public_html/wp-includes/rest-api/search/class-wp-rest-post-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/rest-api/search/class-wp-rest-post-search-handler.php on line 17
+[24-Jun-2024 23:47:37 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/adxpcons/public_html/wp-includes/rest-api/search/class-wp-rest-term-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-includes/rest-api/search/class-wp-rest-term-search-handler.php on line 17

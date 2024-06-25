@@ -1,0 +1,778 @@
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:18:51 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:18:51 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/New_ADXP/wp-includes/functions.php on line 6078
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:18:51 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:18:51 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/New_ADXP/wp-includes/functions.php on line 6078
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:18:51 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:18:51 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/New_ADXP/wp-includes/functions.php on line 6078
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:18:51 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:18:51 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:18:51 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/New_ADXP/wp-includes/functions.php on line 6078
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:18:53 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:18:53 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/New_ADXP/wp-includes/functions.php on line 6078
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:18:53 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:18:53 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/New_ADXP/wp-includes/functions.php on line 6078
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:18:53 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:18:53 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/New_ADXP/wp-includes/functions.php on line 6078
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:18:53 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:18:53 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:18:53 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/New_ADXP/wp-includes/functions.php on line 6078
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:18:54 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:18:54 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/New_ADXP/wp-includes/functions.php on line 6078
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:18:54 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:18:54 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/New_ADXP/wp-includes/functions.php on line 6078
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:18:54 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:18:54 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/New_ADXP/wp-includes/functions.php on line 6078
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:18:54 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:18:54 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/New_ADXP/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:18:54 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/New_ADXP/wp-includes/functions.php on line 6078
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:24:55 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:24:55 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/wp-includes/functions.php on line 6078
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:24:55 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:24:55 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/wp-includes/functions.php on line 6078
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:24:55 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:24:55 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/wp-includes/functions.php on line 6078
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:24:55 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:24:55 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:24:55 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/wp-includes/functions.php on line 6078
+[02-May-2024 14:24:56 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:24:56 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:24:56 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:24:56 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:24:57 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:24:57 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/wp-includes/functions.php on line 6078
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:24:57 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:24:57 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/wp-includes/functions.php on line 6078
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:24:57 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:24:57 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/wp-includes/functions.php on line 6078
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:24:57 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:24:57 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:24:57 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/wp-includes/functions.php on line 6078
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 1025
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:24:58 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:24:58 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/wp-includes/functions.php on line 6078
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:24:58 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:24:58 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/wp-includes/functions.php on line 6078
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:24:58 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:24:58 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/wp-includes/functions.php on line 6078
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 294
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: name in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 295
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 402
+[02-May-2024 14:24:58 UTC] PHP Notice:  Undefined index: singular_label in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php on line 403
+[02-May-2024 14:24:58 UTC] PHP Notice:  Array to string conversion in /home/adxpcons/public_html/wp-content/plugins/custom-post-type-ui/inc/utility.php on line 67
+[02-May-2024 14:24:58 UTC] PHP Notice:  Function register_post_type was called incorrectly. Post type names must be between 1 and 20 characters in length. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 4.2.0.) in /home/adxpcons/public_html/wp-includes/functions.php on line 6078
+[03-May-2024 08:20:21 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[03-May-2024 21:35:17 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[04-May-2024 06:11:54 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[05-May-2024 05:33:53 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[05-May-2024 16:57:54 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[05-May-2024 16:58:06 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[06-May-2024 00:56:16 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[06-May-2024 07:14:01 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[07-May-2024 09:22:54 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[07-May-2024 09:24:32 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[07-May-2024 09:46:36 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[08-May-2024 22:20:04 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[08-May-2024 22:20:37 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[10-May-2024 15:56:50 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[10-May-2024 15:57:08 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[12-May-2024 00:43:55 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[12-May-2024 04:54:15 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[12-May-2024 04:54:26 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[14-May-2024 02:00:07 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[15-May-2024 22:00:52 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[15-May-2024 22:01:06 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[16-May-2024 00:15:07 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[18-May-2024 13:47:56 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[19-May-2024 07:49:41 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[19-May-2024 07:49:52 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[20-May-2024 16:13:37 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[20-May-2024 20:23:29 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[22-May-2024 07:03:15 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[22-May-2024 19:39:50 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[22-May-2024 19:40:01 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[24-May-2024 18:55:57 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[24-May-2024 18:56:15 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[27-May-2024 03:04:31 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[28-May-2024 10:22:35 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[28-May-2024 10:23:03 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[28-May-2024 12:07:06 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[28-May-2024 16:27:34 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[29-May-2024 02:06:08 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[29-May-2024 07:37:05 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[29-May-2024 08:06:37 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[29-May-2024 17:16:20 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[29-May-2024 23:16:52 UTC] PHP Warning:  fopen(/home/adxpcons/public_html/wp-content/uploads/wp_dndcf7_uploads/wpcf7-files/index.php): failed to open stream: No such file or directory in /home/adxpcons/public_html/wp-content/plugins/drag-and-drop-multiple-file-upload-contact-form-7/inc/dnd-upload-cf7.php on line 100
+[30-May-2024 06:30:50 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[30-May-2024 06:31:14 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[02-Jun-2024 05:42:36 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[02-Jun-2024 05:42:52 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[06-Jun-2024 10:12:16 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[07-Jun-2024 06:40:22 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query 
+INSERT INTO adxp_actionscheduler_actions ( `hook`, `status`, `scheduled_date_gmt`, `scheduled_date_local`, `schedule`, `group_id`, `priority`, `args` )
+SELECT 'mailpoet/cron/daemon-run', 'pending', '2024-06-07 06:40:22', '2024-06-07 06:40:22', 'O:30:\"ActionScheduler_SimpleSchedule\":2:{s:22:\"\0*\0scheduled_timestamp\";i:1717742422;s:41:\"\0ActionScheduler_SimpleSchedule\0timestamp\";i:1717742422;}', 1, 10, '[]' FROM DUAL
+WHERE ( 
+SELECT action_id FROM adxp_actionscheduler_actions
+WHERE status IN ( 'pending', 'in-progress' )
+AND hook = 'mailpoet/cron/daemon-run'
+AND `group_id` = 1
+ LIMIT 1 ) IS NULL made by do_action('wp_ajax_nopriv_mailpoet-cron-action-scheduler-run'), WP_Hook->do_action, WP_Hook->apply_filters, MailPoet\Cron\ActionScheduler\RemoteExecutorHandler->runActionScheduler, ActionScheduler_QueueRunner->run, do_action('action_scheduler_after_process_queue'), WP_Hook->do_action, WP_Hook->apply_filters, MailPoet\Cron\ActionScheduler\Actions\DaemonRun->afterProcess, MailPoet\Cron\ActionScheduler\ActionScheduler->scheduleImmediateSingleAction, as_schedule_single_action, ActionScheduler_ActionFactory->create, ActionScheduler_ActionFactory->store_unique_action, ActionScheduler_DBStore->save_unique_action, ActionScheduler_DBStore->save_action_to_db
+[07-Jun-2024 14:55:48 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[07-Jun-2024 14:56:12 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[09-Jun-2024 06:00:16 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[09-Jun-2024 06:00:31 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[10-Jun-2024 16:39:39 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[10-Jun-2024 16:39:52 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[12-Jun-2024 10:25:34 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[12-Jun-2024 10:25:51 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[15-Jun-2024 17:17:43 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[15-Jun-2024 17:18:02 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[17-Jun-2024 04:41:54 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[17-Jun-2024 04:42:03 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[18-Jun-2024 04:37:14 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[18-Jun-2024 07:03:09 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[18-Jun-2024 13:18:43 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[19-Jun-2024 09:13:24 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[20-Jun-2024 10:19:58 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[20-Jun-2024 20:27:46 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[20-Jun-2024 21:57:12 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[21-Jun-2024 04:59:11 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[21-Jun-2024 06:40:43 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[22-Jun-2024 11:25:34 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[22-Jun-2024 11:25:47 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[24-Jun-2024 03:42:39 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[24-Jun-2024 03:42:57 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[24-Jun-2024 07:22:59 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[24-Jun-2024 11:01:46 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[24-Jun-2024 16:26:27 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}
+[25-Jun-2024 00:56:58 UTC] Exception: Invalid API endpoint. in /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/API/JSON/API.php:190
+Stack trace:
+#0 /home/adxpcons/public_html/wp-content/plugins/mailpoet/lib/Subscription/Form.php(33): MailPoet\API\JSON\API->processRoute()
+#1 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Subscription\Form->onSubmit(Array)
+#2 /home/adxpcons/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /home/adxpcons/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/adxpcons/public_html/wp-admin/admin-post.php(61): do_action('admin_post_nopr...')
+#5 {main}

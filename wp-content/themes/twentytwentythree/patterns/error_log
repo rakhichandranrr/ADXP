@@ -1,0 +1,48 @@
+[16-May-2024 23:16:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/call-to-action.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/call-to-action.php on line 15
+[16-May-2024 23:16:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html__() in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/footer-default.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/footer-default.php on line 19
+[16-May-2024 23:16:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/hidden-404.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/hidden-404.php on line 13
+[16-May-2024 23:16:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/hidden-comments.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/hidden-comments.php on line 13
+[16-May-2024 23:16:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/hidden-no-results.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/hidden-no-results.php on line 10
+[16-May-2024 23:16:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/post-meta.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/post-meta.php on line 28
+[18-May-2024 13:17:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/call-to-action.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/call-to-action.php on line 15
+[18-May-2024 13:17:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html__() in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/footer-default.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/footer-default.php on line 19
+[18-May-2024 13:17:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/hidden-404.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/hidden-404.php on line 13
+[18-May-2024 13:17:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/hidden-comments.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/hidden-comments.php on line 13
+[18-May-2024 13:17:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/hidden-no-results.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/hidden-no-results.php on line 10
+[18-May-2024 13:17:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/post-meta.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/adxpcons/public_html/wp-content/themes/twentytwentythree/patterns/post-meta.php on line 28
