@@ -193,7 +193,7 @@ if ($home_services) {
 
 
 <section class="features common-padd flexW" id="features_section" style="background: linear-gradient(0deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url('<?php echo $mission_section['mission_background_image']['url']; ?>'); background-position: center;background-size: cover;">
-
+<div id="particles-js"></div>
   <div class="container">
 
     <div class="row flexW">
@@ -381,7 +381,7 @@ if ($home_people) {
               <span class="designation "><?php echo get_field('designation', $home_people_res->ID); ?></span>
 
               <div class="paragraph mb-3 mt-3"><?php echo $home_people_res->post_content; ?></div>
-
+              <a href="#" class="linkdin-link"><i class="bi bi-linkedin"></i></a>
             </div>
 
           </div>

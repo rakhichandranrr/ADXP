@@ -32,6 +32,10 @@ $thumb_id = get_post_thumbnail_id($post_id);
         <div class="flex-column"> <span class="upper-heading tagsDtl full-tag"><?php echo get_insight_tags($post_id); ?></span>
           <h1 class="main-tittle ins-tittle insightDtl-tilte mb-5 text-light mt-4"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"> <?php echo $insight->post_title; ?></h1>
           <span class="upper-heading dates"><?php echo date('F d, Y', strtotime($insight->post_date)); ?></span>
+          <button class="file_dwnD" data-bs-toggle="modal" data-bs-target="#file_download-pop" >
+             <!-- <i class="bi bi-download"></i>  -->
+             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/file_download.svg"" alt="" class="dw_iCon">
+              Download Report </button>
           <div class="smallDescp">
             <?php
             $inner = get_field('insight_content');
@@ -114,6 +118,42 @@ $thumb_id = get_post_thumbnail_id($post_id);
     </div>
   </div>
 </section>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="file_download-pop" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-head_st text-light">Enter details to download report</h5>
+        <div class="paragraph">
+        Your download will start automatically once you’ve submitted this form.
+        </div>
+        <form action="">
+          <div class="form_group-wrapper">
+            <div class="form-group">
+                <input type="text" placeholder="Full Name" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Email Address" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text"  placeholder="Mobile Number" class="form-control">
+            </div>
+          </div>
+          <div class="form_group"></div>
+          <div class="form_group"></div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary submit">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
 <?php
 get_footer();
 ?>
