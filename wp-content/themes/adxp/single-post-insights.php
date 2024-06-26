@@ -6,8 +6,23 @@ $insight = get_post($post_id);
 $thumb_id = get_post_thumbnail_id($post_id);
 $report = get_field('upload_report', $post_id);
 
+
 ?>
 
+<div class="visible-only-if-sent">
+  <div class="alertz">
+    <div class="container">
+      <p><i class="bi bi-check-circle-fill"></i>The report download will start now...</p>
+    </div>
+  </div>
+</div>
+<style>
+.visible-only-if-sent {
+  display: none;
+}
+ 
+
+</style>
 <section class="bg-light common-padd pb-0">
   <div class="container ">
     <?php
@@ -137,3 +152,24 @@ $report = get_field('upload_report', $post_id);
 <?php
 get_footer();
 ?>
+<script>
+var wpcf7Elm = document.querySelector( '.wpcf7' );
+ 
+wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
+	
+  
+  $('#file_download-pop').modal('hide');
+  var scroll_pos=(0);          
+  $('html, body').animate({scrollTop:(scroll_pos)}, '2000');
+  $('.visible-only-if-sent').css('display','block');
+  
+   window.setTimeout(function(){
+        // Move to a new location or you can do something else
+        window.location.href = '<?php echo $report['url'];?>';
+
+    }, 3000); 
+  
+  $('.visible-only-if-sent').delay(3000).fadeOut('slow');
+ // alert( "Fire!" );
+}, false );
+</script> 
