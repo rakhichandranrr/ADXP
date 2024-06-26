@@ -245,14 +245,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
 
-    
-
-
-
-   
-
-
-
     // Close dropdown on Apply Filter button click
 
     filterButton.addEventListener('click', function(e) {
@@ -333,15 +325,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
 
-    
-
-    
-
-
-
    
-
-
 
     // Close dropdown on Apply Filter button click
 
@@ -380,6 +364,88 @@ document.addEventListener("DOMContentLoaded", function() {
 		$('.offcanvas-overlay2').css('display','none');
 
         document.querySelector('.dropdown-arrow2').style.borderTopColor = 'transparent'; // Change arrow color
+
+      }
+
+    });
+	
+	
+	
+	///////////////////////////////////////////////TYPE/////////////////////////////
+	
+	
+	
+	var dropdown0 = document.querySelector('.custom-dropdown0');
+
+    var dropdownMenu0 = document.querySelector('.custom-dropdown-menu0');
+
+    var filterButton0 = document.querySelector('.custom-button0');
+
+
+
+    // Toggle dropdown on button click
+
+    dropdown0.addEventListener('click', function() {
+
+      if (dropdownMenu0.style.display === 'none' || dropdownMenu0.style.display === '') {
+
+		$('.offcanvas-overlay0').css('display','block');
+
+        dropdownMenu0.style.display = 'block';
+
+        document.querySelector('.dropdown-arrow0').style.borderTopColor = 'transparent'; // Change arrow color
+
+      } else {
+
+        dropdownMenu0.style.display = 'none';
+
+		$('.offcanvas-overlay0').css('display','none');
+
+        document.querySelector('.dropdown-arrow0').style.borderTopColor = 'transparent'; // Change arrow color
+
+      }
+
+    });
+
+   
+
+    // Close dropdown on Apply Filter button click
+
+    filterButton0.addEventListener('click', function(e) {
+
+      e.stopPropagation(); // Prevents closing the dropdown when clicking Apply Filter
+
+      dropdownMenu0.style.display = 'none';
+
+	  $('.offcanvas-overlay0').css('display','none');
+
+      document.querySelector('.dropdown-arrow0').style.borderTopColor = 'transparent'; // Change arrow color
+
+    });
+
+
+
+    // Prevent dropdown menu from closing when clicking inside the dropdown menu
+
+    dropdownMenu0.addEventListener('click', function(e) {
+
+      e.stopPropagation();
+
+    });
+
+
+
+    // Close dropdown when clicking outside the dropdown menu
+
+    document.addEventListener('click', function(e) {
+
+      if (!dropdown0.contains(e.target)) {
+
+        dropdownMenu0.style.display = 'none';
+
+		$('.offcanvas-overlay0').css('display','none');
+
+        document.querySelector('.dropdown-arrow0').style.borderTopColor = 'transparent'; // Change arrow color
 
       }
 
