@@ -3110,7 +3110,9 @@ a.linkdin-link i {
 a.linkdin-link i:hover {
     color: var(--primary-color);
 }
-
+.insights-grD.text-light.d-flex.flex-column.mobl-vw {
+  margin-bottom: 40px;
+}
 /* web improvement styles end */
 /*-------------media css start---------------*/
 @media (max-width: 1400px) {

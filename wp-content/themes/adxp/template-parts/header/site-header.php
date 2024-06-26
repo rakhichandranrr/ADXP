@@ -109,6 +109,7 @@ if ($banner_video['url']) {
 ?>
 
 <section class="banner-vw" id="banner_section">
+<div id="particles-js"></div>
 <video class="video-banner" playsinline autoplay muted loop>
   <source src="<?php echo $banner_video['url']; ?>" type="video/mp4">
   <source src="<?php echo $banner_video['url']; ?>" type="video/ogg">
@@ -119,6 +120,7 @@ if ($banner_video['url']) {
 
   ?>
 <section class="banner-vw <?php echo $section_cls; ?>" <?php echo $attr; ?>>
+<div id="particles-js"></div>
   <?php
 
   }

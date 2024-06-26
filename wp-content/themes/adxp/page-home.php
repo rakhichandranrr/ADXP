@@ -80,7 +80,7 @@ if ($home_insights) {
 
 
 
-        <div class="col-lg-12 mt-4"> <a class="text-light " href="<?php echo site_url(); ?>/insights/">Explore more insights <img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a> </div>
+        <div class="col-lg-12 "> <a class="text-light " href="<?php echo site_url(); ?>/insights/">Explore more insights <img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a> </div>
 
       </div>
 
@@ -193,7 +193,7 @@ if ($home_services) {
 
 
 <section class="features common-padd flexW" id="features_section" style="background: linear-gradient(0deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url('<?php echo $mission_section['mission_background_image']['url']; ?>'); background-position: center;background-size: cover;">
-<div id="particles-js"></div>
+<div id="particles-js2"></div>
   <div class="container">
 
     <div class="row flexW">
