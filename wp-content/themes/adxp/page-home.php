@@ -14,7 +14,7 @@ get_header();
 
 $home_insights = get_field('select_insights');
 
-if ($home_insights) {
+
 
 ?>
 
@@ -26,7 +26,10 @@ if ($home_insights) {
 
 
 
-        <?php foreach ($home_insights as $home_insights_res) {
+        <?php 
+		
+		if ($home_insights) {
+		foreach ($home_insights as $home_insights_res) {
 
 
 
@@ -75,12 +78,50 @@ if ($home_insights) {
         <?php
 
         }
+		}
+		else
+		{
+		
+		$recentinsight_args = array(
+		
+		  'numberposts' => 4,
+		
+		  'post_type'   => 'post-insights',
+		
+		  'suppress_filters' => false,
+		
+		 
+		
+		);
+		
+		$recent_insights = get_posts($recentinsight_args);
+		if ($recent_insights) {
+			foreach ($recent_insights as $recent_insights_res) {
+		
+		?>
+        <div class="col-lg-6">
 
-        ?>
+            <div class="insights-grD text-light d-flex flex-column mobl-vw">
 
+              <div class="img-ins mb-3"> <a href="<?php echo get_permalink($recent_insights_res->ID); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($recent_insights_res->ID), 'full'); ?>" alt="img"> </a></div>
 
+              <span class="tags-list"><?php echo get_insight_tags($recent_insights_res->ID); ?></span>
 
-        <div class="col-lg-12 "> <a class="text-light " href="<?php echo site_url(); ?>/insights/">Explore more insights <img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a> </div>
+              <h2 class="mt-2 mb-2"><a href="<?php echo get_permalink($recent_insights_res->ID); ?>"><?php echo $recent_insights_res->post_title; ?></a></h2>
+
+              <span><?php echo date('F d, Y', strtotime($recent_insights_res->post_date)); ?></span>
+
+            </div>
+
+          </div>
+		<?php
+			}
+		}
+		}
+		
+		?>
+
+        <div class="col-lg-12 mt-4"> <a class="text-light " href="<?php echo site_url(); ?>/insights/">Explore more insights <img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a> </div>
 
       </div>
 
@@ -88,11 +129,6 @@ if ($home_insights) {
 
   </section>
 
-<?php
-
-}
-
-?>
 
 
 
@@ -353,6 +389,10 @@ $digital_consulting = get_field('digital_consulting_section');
 
 
 <?php
+$display_people = get_field('display_people_section');
+
+if($display_people == 'Yes')
+{
 
 $home_people = get_field('select_people');
 
@@ -381,7 +421,8 @@ if ($home_people) {
               <span class="designation "><?php echo get_field('designation', $home_people_res->ID); ?></span>
 
               <div class="paragraph mb-3 mt-3"><?php echo $home_people_res->post_content; ?></div>
-              <a href="#" class="linkdin-link"><i class="bi bi-linkedin"></i></a>
+              
+              <a href="<?php echo get_field('linkedin_url', $home_people_res->ID); ?>" class="linkdin-link"><i class="bi bi-linkedin"></i></a>
             </div>
 
           </div>
@@ -394,7 +435,7 @@ if ($home_people) {
 
         ?>
 
-        <div class="col-lg-12">
+    <!--    <div class="col-lg-12">
 
               <div class="flexW">
 
@@ -402,7 +443,7 @@ if ($home_people) {
 
               </div>
 
-          </div>
+          </div>-->
 
       </div>
 
@@ -412,6 +453,7 @@ if ($home_people) {
 
 <?php
 
+}
 }
 
 ?>

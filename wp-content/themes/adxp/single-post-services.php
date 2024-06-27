@@ -328,6 +328,7 @@ if ($people) {
           <h4 class="mb-2 mt-3"><?php echo $people_res->post_title; ?></h4>
           <span class="designation "><?php echo get_field('designation', $people_res->ID); ?></span>
           <div class="paragraph mb-3 mt-3"><?php echo $people_res->post_content; ?></div>
+          <a href="<?php echo get_field('linkedin_url', $people_res->ID); ?>" class="linkdin-link"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
       <?php

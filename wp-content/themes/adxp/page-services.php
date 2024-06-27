@@ -41,25 +41,25 @@ if ($services) {
   <div class="container">
     <div class="row flexW">
       <div class="col-lg-7 col-md-7 imgsz livable-wrP">
-        <h1 class="main-tittle mb-5 text-light digital-head live"><img class="head-arrow" src="https://adxp.stocker.team/wp-content/themes/adxp/assets/img/arrow.svg" alt="img-icon"><p>Liveability (adj./n.) <em><br>\li-və-bi-lǝ-tē\</em></p>
+        <h1 class="main-tittle mb-5 text-light digital-head live"><img class="head-arrow" src="https://adxp.stocker.team/wp-content/themes/adxp/assets/img/arrow.svg" alt="img-icon"><p><?php echo get_field('livability_heading');?> <em><br><?php echo get_field('livability_sub_heading');?></em></p>
 </h1>
 <div class="height32" ></div>
-       <h6 class="sub-hd-nw">Variant of liveable</h6>
-       <h6 class="sub-hd-nw fn">adj. (liv’a•bil)</h6>
-       <h6 class="sub-hd-nw">Suitable, fit, or pleasant to live in, habitable.</h6>
-       <h6 class="sub-hd-nw fn">(n.) liv’a•bil’i•ty</h6>
+       <h6 class="sub-hd-nw"><?php echo get_field('livability_sub_title_1');?></h6>
+       <h6 class="sub-hd-nw fn"><?php echo get_field('livability_sub_title_2');?></h6>
+       <h6 class="sub-hd-nw"><?php echo get_field('livability_sub_title_3');?></h6>
+       <h6 class="sub-hd-nw fn"><?php echo get_field('livability_sub_title_4');?></h6>
       <h4 class="livable-desc text-light">
-      The <em>quality of life,</em> where <em>smart </em>choices, <em>safe</em> accessibility to <em>personalized</em> needs, 
-      <em>data-driven</em> government <em>planning,</em> and <em>digitally</em> enabled <em>services</em> (urban living, economic 
-      prosperity, social stability, educational opportunities, cultural and recreation experiences)
-       contributes to <em>competitiveness,prosperity</em>  and overall <em>well-being</em>
-      </h3>
+      <?php echo get_field('livability_content');?>
+      </h4>
       
           
       </div>
       <div class="col-lg-5 col-md-5 dc-img">
         <div class="dc-portal live">
-            <img class="mb" src="../wp-content/themes/adxp/assets/images/LiveabilityM.png" alt="img">
+        <?php
+		$live_img = get_field('livability_image');
+		?>
+            <img class="mb" src="<?php echo $live_img['url'];?>" alt="img">
         </div>
       </div>
     </div>

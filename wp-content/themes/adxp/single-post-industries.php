@@ -16,6 +16,8 @@ $thumb_id = get_post_thumbnail_id($post_id);
 
 $people = get_field('choose_people');
 
+$display_people = get_field('display_people_section');
+
 ?>
 
 <section class="p-3 submenu">
@@ -25,10 +27,13 @@ $people = get_field('choose_people');
       <li><a class="Services" href="#Services">Services</a></li>
       <li><a class="Results" href="#Results">Client Results</a></li>
       <?php
+	  if($display_people == 'Yes')
+	  {
 	  if ($people) {
 	  ?>
       <li><a class="People" href="#People">People</a></li>
       <?php
+	  }
 	  }
 	  ?>
     </ul>
@@ -319,7 +324,8 @@ $client_results = get_field('select_client_results');
 
 <?php
 
-
+if($display_people == 'Yes')
+{
 
 if ($people) {
 
@@ -335,6 +341,7 @@ if ($people) {
           <h4 class="mb-2 mt-3"><?php echo $people_res->post_title; ?></h4>
           <span class="designation "><?php echo get_field('designation', $people_res->ID); ?></span>
           <div class="paragraph mb-3 mt-3"><?php echo $people_res->post_content; ?></div>
+          <a href="<?php echo get_field('linkedin_url', $people_res->ID); ?>" class="linkdin-link"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
       <?php
@@ -347,6 +354,7 @@ if ($people) {
 </section>
 <?php
 
+}
 }
 
 ?>
