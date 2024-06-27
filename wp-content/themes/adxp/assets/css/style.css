@@ -1873,12 +1873,13 @@ span.dropdown-arrow1 i,
 span.dropdown-arrow2 i {
   color: var(--primary-color);
 }
+button.custom-dropdown-toggle.active .dropdown-arrow0,
 button.custom-dropdown-toggle.active .dropdown-arrow1,
 button.custom-dropdown-toggle.active .dropdown-arrow2 {
   transform: rotate(180deg) !important;
 }
 /* The container */
-label.custom-dropdown-item.custom-dropdown-item1 {
+label.custom-dropdown-item.custom-dropdown-item1, label.custom-dropdown-item.custom-dropdown-item0 {
   position: relative;
   padding-left: 28px;
   margin-bottom: 4px;
@@ -1892,6 +1893,13 @@ label.custom-dropdown-item.custom-dropdown-item1 {
 }
 /* Hide the browser's default checkbox */
 label.custom-dropdown-item.custom-dropdown-item1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+label.custom-dropdown-item.custom-dropdown-item0 input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -1914,7 +1922,7 @@ label.custom-dropdown-item.custom-dropdown-item1:hover input ~ .checkmark {
   /*    background-color: #ccc0 !important;*/
 }
 /* When the checkbox is checked, add a blue background */
-label.custom-dropdown-item.custom-dropdown-item1 input:checked ~ .checkmark {
+label.custom-dropdown-item.custom-dropdown-item1 input:checked ~ .checkmark, label.custom-dropdown-item.custom-dropdown-item0 input:checked ~ .checkmark {
   background-color: var(--primary-color);
   border: 0;
 }
@@ -1927,6 +1935,8 @@ label.custom-dropdown-item.custom-dropdown-item1 input:checked ~ .checkmark {
 /* Show the checkmark when checked */
 label.custom-dropdown-item.custom-dropdown-item1
   input:checked
+  ~ .checkmark:after, label.custom-dropdown-item.custom-dropdown-item0
+  input:checked
   ~ .checkmark:after {
   display: block;
 }
@@ -1938,7 +1948,7 @@ label.custom-dropdown-item.custom-dropdown-item1
   /* Bold font weight when input is checked */
 }
 /* Style the checkmark/indicator */
-label.custom-dropdown-item.custom-dropdown-item1 .checkmark:after {
+label.custom-dropdown-item.custom-dropdown-item1 .checkmark:after, label.custom-dropdown-item.custom-dropdown-item0 .checkmark:after {
   left: 7px;
   top: 4px;
   width: 5px;
@@ -1949,6 +1959,7 @@ label.custom-dropdown-item.custom-dropdown-item1 .checkmark:after {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+span.dropdown-arrow0,
 span.dropdown-arrow1,
 span.dropdown-arrow2 {
   margin-left: 10px;
@@ -1958,7 +1969,8 @@ span.dropdown-arrow2 {
   color: red;
 }
 span.dropdown-arrow1,
-span.dropdown-arrow2 {
+span.dropdown-arrow2,
+span.dropdown-arrow0 {
   border: 0 !important;
 }
 .filter-listing {
@@ -2983,6 +2995,10 @@ h4.livable-desc.text-light {
 h4.livable-desc.text-light em, h4.livable-desc.text-light i  {
 	color: var(--primary-color);
 }
+em, i  {
+	color: var(--primary-color);
+}
+
 h1.main-tittle.mb-5.text-light.digital-head.live em {
     font-family: "Hanken Grotesk", sans-serif !important;
     font-style: normal;
@@ -3068,7 +3084,7 @@ h5.modal-head_st.text-light {
     width: 100%;
     padding: 0px 0px;
 }
-button.btn.btn-primary.submit {
+.form_group-wrapper .form-group .submit{
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -3081,6 +3097,16 @@ button.btn.btn-primary.submit {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.form_group-wrapper .form-group .wpcf7-not-valid-tip {
+  color: #00BCD4;
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+.form_group-wrapper .form-group:last-child {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 .form_group-wrapper input.form-control {
     height: 48px;
@@ -3112,6 +3138,61 @@ a.linkdin-link i:hover {
 }
 .insights-grD.text-light.d-flex.flex-column.mobl-vw {
   margin-bottom: 40px;
+}
+.ca-d {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.ca-d.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+#file_download-pop form.wpcf7-form.invalid .wpcf7-response-output:before {
+  color: #001727;
+}
+#file_download-pop form.wpcf7-form.invalid .wpcf7-response-output {
+  border: 1px solid #3ebdab !important;
+  background: #3ebdab;
+  margin-top: 20px !important;
+  transition: .3s;
+}
+#file_download-pop span.wpcf7-spinner {
+  position: absolute;
+  left: 43%;
+  background-color: #fff;
+}
+#file_download-pop .wpcf7-spinner::before {
+  background-color: #3ebdab;
+}
+li.towr-img img {
+  position: absolute;
+  width: 60px;
+  right: 3px;
+  bottom: 3px;
+}
+li.towr-img.abubabi img {
+  width: 82px;
+}
+li.towr-img.riyadh img {
+  width: 29px;
+  right: 10px;
+}
+li.towr-img.uk img {
+  position: absolute;
+  width: 29px;
+  right: 10px;
+  bottom: 3px;
+}
+li.towr-img.uk img {
+  width: 24px;
+  right: 16px;
+  bottom: 6px;
+}
+.dc-portal.live #particless-js {
+  top: 0;
+  left: 70%;
 }
 /* web improvement styles end */
 /*-------------media css start---------------*/
@@ -4919,8 +5000,12 @@ h5.modal-head_st.text-light {
 #file_download-pop .modal-body .paragraph {
     font-size: 12px;
 }
-
-
+.dc-portal {
+  position: relative;
+}
+.dc-portal.live #particless-js {
+  left: 0;
+}
 
 
 

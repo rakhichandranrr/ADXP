@@ -116,6 +116,7 @@ get_header();
 									<ul>
 										<li><a href="tel:<?php echo $uk_tooltip['phone']; ?>" target="_blank"><img class="phnIc" src="<?php echo get_template_directory_uri(); ?>/assets/img/phoneIc.svg" alt="img"> <?php echo $uk_tooltip['phone']; ?> </a></li>
 										<li><a href="<?php echo $uk_tooltip['get_directions_url']; ?>" class="direction text-light">Get Directions <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a></li>
+										<li class="towr-img uk" > <img src="<?php echo get_template_directory_uri(); ?>/assets/img/uk-img.svg" alt="img"> </li>
 									</ul>
 								</div>
 							<?php
@@ -130,6 +131,7 @@ get_header();
 									<ul>
 										<li><a href="tel:<?php echo $riyad_tooltip['phone']; ?>" target="_blank"><img class="phnIc" src="<?php echo get_template_directory_uri(); ?>/assets/img/phoneIc.svg" alt="img"> <?php echo $riyad_tooltip['phone']; ?></a></li>
 										<li><a href="<?php echo $riyad_tooltip['get_directions_url']; ?>" class="direction text-light">Get Directions <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a></li>
+										<li class="towr-img riyadh" > <img src="<?php echo get_template_directory_uri(); ?>/assets/img/riyadh-img.svg" alt="img"> </li>
 									</ul>
 								</div>
 							<?php
@@ -144,6 +146,7 @@ get_header();
 									<ul>
 										<li><a href="tel:<?php echo $abu_dhabi_tooltip['phone']; ?>" target="_blank"><img class="phnIc" src="<?php echo get_template_directory_uri(); ?>/assets/img/phoneIc.svg" alt="img"> <?php echo $abu_dhabi_tooltip['phone']; ?> </a></li>
 										<li><a href="<?php echo $abu_dhabi_tooltip['get_directions_url']; ?>" class="direction text-light">Get Directions <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a></li>
+										<li class="towr-img abubabi" > <img src="<?php echo get_template_directory_uri(); ?>/assets/img/abudabi-img.svg" alt="img"> </li>
 									</ul>
 								</div>
 							<?php
@@ -158,6 +161,7 @@ get_header();
 									<ul>
 										<li><a href="tel:<?php echo $dubai_tooltip['phone']; ?>" target="_blank"><img class="phnIc" src="<?php echo get_template_directory_uri(); ?>/assets/img/phoneIc.svg" alt="img"><?php echo $dubai_tooltip['phone']; ?></a></li>
 										<li><a href="<?php echo $dubai_tooltip['get_directions_url']; ?>" class="direction text-light">Get Directions <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a></li>
+										<li class="towr-img dubai" > <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dubai-img.svg" alt="img"> </li>
 									</ul>
 								</div>
 							<?php

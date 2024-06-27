@@ -192,7 +192,7 @@ $facts_and_figure = get_field('facts_and_figure');
       ?>
       <div class="col-lg-6">
         <div class="facts-grid">
-          <h1><?php echo $facts_and_figure_sub_res['figure']; ?></h1>
+          <h1 id="value" class="value"><?php echo $facts_and_figure_sub_res['figure']; ?></h1>
           <div class="paragraph"><?php echo $facts_and_figure_sub_res['figure_content']; ?></div>
         </div>
       </div>

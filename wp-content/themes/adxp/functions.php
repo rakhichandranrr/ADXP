@@ -687,6 +687,8 @@ function adxp_enqueue_styles_js()
 	wp_enqueue_style('bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
 
 	wp_enqueue_style('fonts.googleapis', 'https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+	
+	wp_enqueue_style('odo-script', 'https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js');
 
 	wp_enqueue_style('parent-style', get_template_directory_uri() . '/assets/css/style.css?v=' . time(), '', '');
 
@@ -697,6 +699,8 @@ function adxp_enqueue_styles_js()
 	wp_enqueue_script('jquery-front', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', array('jquery'), '', true);
 
 	wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js', array('jquery'), '', true);
+	
+	wp_enqueue_script('odo-css', 'https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css', array('jquery'), '', true);
 
 
 
