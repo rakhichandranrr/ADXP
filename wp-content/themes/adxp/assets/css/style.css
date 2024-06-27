@@ -3194,6 +3194,17 @@ li.towr-img.uk img {
   top: 0;
   left: 70%;
 }
+span.type-cls {
+  color: var(--white-ffffff, #FFF);
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+
+
 /* web improvement styles end */
 /*-------------media css start---------------*/
 @media (max-width: 1400px) {
