@@ -60,7 +60,7 @@ function showCardBody(index) {
 
     // Hide all card bodies with slide up effect
 
-    $('.card-body').hide();
+    $('.card-body').hide(800);
 
 
 
@@ -72,7 +72,7 @@ function showCardBody(index) {
 
 		$('.card-header'+ index).removeClass('card-header-click');
 
-        cardBody.hide().slideUp(); 
+        cardBody.hide(2000).slideUp(); 
 
 		// Slide up corresponding card body
 
@@ -707,3 +707,47 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    const value = Math.floor(progress * (end - start) + start);
+    obj.innerHTML = `${value}%`;
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj = document.querySelector(".value");
+animateValue(obj, 0, 100, 5000);
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const elements = document.querySelectorAll('.ca-d');
+  let delay = 0;
+
+  const revealElements = (entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              elements.forEach((element, index) => {
+                  setTimeout(() => {
+                      element.classList.add('revealed');
+                  }, delay);
+                  delay += 500; // Increase delay for each element, 500ms in this example
+              });
+              observer.unobserve(entry.target);
+          }
+      });
+  };
+
+  const options = {
+      threshold: 0.1 // Adjust this value as needed
+  };
+
+  const observer = new IntersectionObserver(revealElements, options);
+  observer.observe(document.getElementById('Results'));
+});

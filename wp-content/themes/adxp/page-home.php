@@ -229,7 +229,7 @@ if ($home_services) {
 
 
 <section class="features common-padd flexW" id="features_section" style="background: linear-gradient(0deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url('<?php echo $mission_section['mission_background_image']['url']; ?>'); background-position: center;background-size: cover;">
-<div id="particles-js2"></div>
+<div id="particless-js"></div>
   <div class="container">
 
     <div class="row flexW">

@@ -55,6 +55,7 @@ if ($services) {
           
       </div>
       <div class="col-lg-5 col-md-5 dc-img">
+        
         <div class="dc-portal live">
         <?php
 		$live_img = get_field('livability_image');
