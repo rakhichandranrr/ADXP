@@ -57,7 +57,7 @@ if ($services) {
       <div class="col-lg-5 col-md-5 dc-img">
         
         <div class="dc-portal live">
-        <div id="particless-js"></div>
+        <div id="particles-js"></div>
         <?php
 		$live_img = get_field('livability_image');
 		?>

@@ -3202,9 +3202,154 @@ span.type-cls {
   line-height: 120%;
   font-family: "Hanken Grotesk", sans-serif;
 }
+ul.list-itm-wraP li a {
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+ul.list-itm-wraP li {
+  margin-bottom: 20px;
+}
+.d-flex.type {
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+ul.list-itm-wraP li a h3{
+  color: #fff;
+  margin-bottom: 12px;
+  font-family: "Recife Display";
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 33.6px */
+}
+ul.list-itm-wraP li a .paragraph{
+  color: var(--white-ffffff, #FFF);
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 16.8px */
+}
+.d-flex.type span{
+  color: #fff;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 16.8px */
+}
+.d-flex.type img {
+  width: 123px;
+  position: absolute;
+  right: 0;
+}
+.location-WrappR {
+  position: relative;
+}
+.contact-map-cu h6 {
+  color: var(--white-ffffff, #FFF);
+  font-family: "Recife Display";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+.f-20 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.contact-map-cu {
+  margin-left: 60px;
+}
+.contact-map-cu .paragraph {
+  color: var(--white-ffffff, #FFF);
+  /* font-family: "HK Grotesk"; */
+  font-size: 12px;
+  font-style: normal;
+  /* font-weight: 400; */
+  line-height: 120%;
+  margin-top: 30px;
+}
+.offcanvas-end {
+  width: 730px !important;
+  background: #121212;
+}
+button.text-reset {
+  background: none;
+  border: 0;
+}
+button.text-reset i {
+  color: #fff;
+}
+.offcanvas-header {
+  justify-content: end;
+}
+.main-map.wrp0vc {
+  position: relative;
+}
+.badge-cons {
+  width: 92px;
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
 
-
-
+span.country-maps {
+  color: #fff;
+  text-align: center;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 16.8px */
+}
+.map-main-loc {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.second-place.map-main-loc {
+  top: 24%;
+  left: 27%;
+}
+.fourth-place.map-main-loc {
+  top: 24%;
+  left: 42%;
+}
+.fist-place.map-main-loc {
+  top: 44%;
+  right: 37%;
+}
+.third-place.map-main-loc {
+  top: inherit;
+  right: 0;
+  bottom: 19%;
+}
+.badge-cons h3 {
+  color: var(--navy-001727, #001727);
+font-size: 28px;
+font-style: italic;
+font-weight: 500;
+line-height: 120%; /* 33.6px */
+}
+.badge-cons span {
+  color: var(--navy-001727, #001727);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 16.8px */
+}
+span.country-maps {
+  margin-top: 12px;
+}
 /* web improvement styles end */
 /*-------------media css start---------------*/
 @media (max-width: 1400px) {
@@ -3259,7 +3404,9 @@ span.type-cls {
 }
 @media only screen and (max-width: 767px) {
 
-
+  .contact-map-cu {
+    margin-left: 0px;
+}
 	
 	img.mb {
 		height: 240px !important;
@@ -5017,9 +5164,67 @@ h5.modal-head_st.text-light {
 .dc-portal.live #particless-js {
   left: 0;
 }
-
-
-
+.badge-cons {
+  width: 48px;
+  height: 48px;
+}
+.badge-cons h3 {
+  color: var(--navy-001727, #001727);
+font-size: 18px;
+font-style: italic;
+font-weight: 500;
+line-height: 120%; /* 21.6px */
+}
+.badge-cons span {
+  color: var(--navy-001727, #001727);
+font-size: 9px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 10.8px */
+}
+span.country-maps {
+  color: #FFF;
+font-size: 9px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 10.8px */
+margin-top: 10px;
+}
+.second-place.map-main-loc {
+  top: 44%;
+  left: 0%;
+}
+.fourth-place.map-main-loc {
+  top: 24%;
+  left: 32%;
+}
+.fist-place.map-main-loc {
+  top: 42%;
+  right: 29%;
+}
+section.contact-us-wrappeR.common-padd .col-lg-3 {
+  order: 2;
+}
+section.contact-us-wrappeR.common-padd  .paragraph.text-light.sub-desc.mb-5.f-20 {
+  margin-bottom: 24px !important;
+}
+.contact-map-cu .paragraph {
+  margin-bottom: 24px;
+}
+section.contact-us-wrappeR.common-padd {
+  padding-top: 0px;
+}
+.offcanvas-header {
+  justify-content: flex-start;
+}
+section.contact-us-wrappeR.common-padd {
+  order: 6;
+}
+.service-main .service-details h4 {
+  font-size: 20px;
+  margin-left: 25px;
+  padding-bottom: 30px;
+}
 }
 
 
