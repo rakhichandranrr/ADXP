@@ -110,13 +110,22 @@ get_header();
 							<?php
 							$uk_tooltip =  get_field('map_uk_tooltip');
 							if ($uk_tooltip) {
+								$lanmark_img = $uk_tooltip['landmark_image']['url'];
 							?>
 								<div class="pin pin-down location1" data-xpos="46" data-ypos="28.8">
 									<h2><?php echo $uk_tooltip['title']; ?></h2>
 									<ul>
 										<li><a href="tel:<?php echo $uk_tooltip['phone']; ?>" target="_blank"><img class="phnIc" src="<?php echo get_template_directory_uri(); ?>/assets/img/phoneIc.svg" alt="img"> <?php echo $uk_tooltip['phone']; ?> </a></li>
 										<li><a href="<?php echo $uk_tooltip['get_directions_url']; ?>" class="direction text-light">Get Directions <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a></li>
-										<li class="towr-img uk" > <img src="<?php echo get_template_directory_uri(); ?>/assets/img/uk-img.svg" alt="img"> </li>
+										<?php
+										if($lanmark_img)
+										{
+										?>
+                                        
+                                        <li class="towr-img uk" > <img src="<?php echo $lanmark_img; ?>" alt="img"> </li>
+                                        <?php
+										}
+										?>
 									</ul>
 								</div>
 							<?php
@@ -125,13 +134,21 @@ get_header();
 							<?php
 							$riyad_tooltip =  get_field('map_riyadh_tooltip');
 							if ($riyad_tooltip) {
+								$lanmark_img = $riyad_tooltip['landmark_image']['url'];
 							?>
 								<div class="pin pin-down location2" data-xpos="58" data-ypos="47.5">
 									<h2><?php echo $riyad_tooltip['title']; ?></h2>
 									<ul>
 										<li><a href="tel:<?php echo $riyad_tooltip['phone']; ?>" target="_blank"><img class="phnIc" src="<?php echo get_template_directory_uri(); ?>/assets/img/phoneIc.svg" alt="img"> <?php echo $riyad_tooltip['phone']; ?></a></li>
 										<li><a href="<?php echo $riyad_tooltip['get_directions_url']; ?>" class="direction text-light">Get Directions <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a></li>
-										<li class="towr-img riyadh" > <img src="<?php echo get_template_directory_uri(); ?>/assets/img/riyadh-img.svg" alt="img"> </li>
+										<?php
+										if($lanmark_img)
+										{
+										?>
+                                        <li class="towr-img riyadh" > <img src="<?php echo $lanmark_img; ?>" alt="img"> </li>
+                                        <?php
+										}
+										?>
 									</ul>
 								</div>
 							<?php
@@ -140,13 +157,21 @@ get_header();
 							<?php
 							$abu_dhabi_tooltip =  get_field('map_abu_dhabi_tooltip');
 							if ($abu_dhabi_tooltip) {
+								$lanmark_img = $abu_dhabi_tooltip['landmark_image']['url'];
 							?>
 								<div class="pin pin-down location3" data-xpos="60.7" data-ypos="48.5">
 									<h2><?php echo $abu_dhabi_tooltip['title']; ?></h2>
 									<ul>
 										<li><a href="tel:<?php echo $abu_dhabi_tooltip['phone']; ?>" target="_blank"><img class="phnIc" src="<?php echo get_template_directory_uri(); ?>/assets/img/phoneIc.svg" alt="img"> <?php echo $abu_dhabi_tooltip['phone']; ?> </a></li>
 										<li><a href="<?php echo $abu_dhabi_tooltip['get_directions_url']; ?>" class="direction text-light">Get Directions <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a></li>
-										<li class="towr-img abubabi" > <img src="<?php echo get_template_directory_uri(); ?>/assets/img/abudabi-img.svg" alt="img"> </li>
+										<?php
+										if($lanmark_img)
+										{
+										?>
+                                        <li class="towr-img abubabi" > <img src="<?php echo $lanmark_img; ?>" alt="img"> </li>
+                                        <?php
+										}
+										?>
 									</ul>
 								</div>
 							<?php
@@ -155,13 +180,21 @@ get_header();
 							<?php
 							$dubai_tooltip =  get_field('map_dubai_tooltip');
 							if ($dubai_tooltip) {
+								$lanmark_img = $dubai_tooltip['landmark_image']['url'];
 							?>
 								<div class="pin pin-down location4" data-xpos="62.2" data-ypos="49">
 									<h2><?php echo $dubai_tooltip['title']; ?></h2>
 									<ul>
 										<li><a href="tel:<?php echo $dubai_tooltip['phone']; ?>" target="_blank"><img class="phnIc" src="<?php echo get_template_directory_uri(); ?>/assets/img/phoneIc.svg" alt="img"><?php echo $dubai_tooltip['phone']; ?></a></li>
 										<li><a href="<?php echo $dubai_tooltip['get_directions_url']; ?>" class="direction text-light">Get Directions <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrowR.svg" alt="img"> </a></li>
-										<li class="towr-img dubai" > <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dubai-img.svg" alt="img"> </li>
+										<?php
+										if($lanmark_img)
+										{
+										?>
+                                        <li class="towr-img dubai" > <img src="<?php echo $lanmark_img; ?>" alt="img"> </li>
+                                        <?php
+										}
+										?>
 									</ul>
 								</div>
 							<?php
