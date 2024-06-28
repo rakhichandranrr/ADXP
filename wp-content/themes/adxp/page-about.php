@@ -259,6 +259,7 @@ get_footer();
 
 ?>
 <script>
+  // Function to animate the value
 function animateValue(obj, start, end, duration) {
   let startTimestamp = null;
   const step = (timestamp) => {
@@ -272,19 +273,30 @@ function animateValue(obj, start, end, duration) {
   };
   window.requestAnimationFrame(step);
 }
+
+// PHP part to generate the animation script
 <?php
  if ($facts_and_figure_sub) {
-		  $i=0;
-
-        foreach ($facts_and_figure_sub as $facts_and_figure_sub_res) {
-			$i++;
-			
-			$int = intval(preg_replace('/[^0-9]+/', '', $facts_and_figure_sub_res['figure']), 10);
-			
-      ?>
-animateValue(document.querySelector("#value<?php echo $i;?>"), 0, <?php echo $int;?>, 5000);
-<?php
-		}
+    $i = 0;
+    foreach ($facts_and_figure_sub as $facts_and_figure_sub_res) {
+        $i++;
+        $int = intval(preg_replace('/[^0-9]+/', '', $facts_and_figure_sub_res['figure']), 10);
+        ?>
+        document.addEventListener('DOMContentLoaded', function() {
+          const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                animateValue(document.querySelector("#value<?php echo $i;?>"), 0, <?php echo $int;?>, 1000);
+                observer.unobserve(entry.target); // Stop observing after animation starts
+              }
+            });
+          }, { threshold: 0.1 });
+          
+          observer.observe(document.querySelector("#value<?php echo $i;?>"));
+        });
+        <?php
+    }
  }
-		?>
-</script> 
+?>
+
+</script>
