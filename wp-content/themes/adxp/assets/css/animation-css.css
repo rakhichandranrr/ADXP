@@ -14,3 +14,7 @@ section#features_section {
   height: 100%;
   z-index: 1;
 }
+.dc-portal.live #particles-js {
+  top: 0;
+  left: 70%;
+}

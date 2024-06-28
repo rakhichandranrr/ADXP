@@ -193,7 +193,7 @@ if ($home_services) {
 
 
 <section class="features common-padd flexW" id="features_section" style="background: linear-gradient(0deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url('<?php echo $mission_section['mission_background_image']['url']; ?>'); background-position: center;background-size: cover;">
-<div id="particless-js"></div>
+<div id="particles-js"></div>
   <div class="container">
 
     <div class="row flexW">
@@ -234,7 +234,7 @@ if ($home_industries) {
 
       <h1 class="main-tittle mb-5 text-light"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo get_field('industries_heading'); ?></h1>
 
-      <div class="paragraph text-light sub-desc mb-5"><?php echo get_field('industries_short_description'); ?></div>
+      <div class="paragraph text-light sub-desc mb-5 f-20"><?php echo get_field('industries_short_description'); ?></div>
 
       <div class="row">
 
@@ -274,7 +274,119 @@ if ($home_industries) {
 
 <!--INDUSTRIES ENDS-->
 
+<!--CONTACT US STARTS-->
+<section class="contact-us-wrappeR common-padd">
+  <div class="container">
+      <h1 class="main-tittle mb-5 text-light"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"> <p>Towards More Competitive and Prosperous 
+      <br><em>Regional Cities</em></p> </h1>
+      <div class="paragraph text-light sub-desc mb-5 f-20">We live in a rich and prosperous region yet our competitiveness on a global level has still a huge toom for improvements especially across our large metropolitan cities.</div>  
+      <div class="row mt-4">
+            <div class="col-lg-3">
+              <ul class="list-itm-wraP">
+                <li>
+                  <a data-bs-toggle="offcanvas" href="#contact" role="button" aria-controls="offcanvasExample">
+                    <div class="location-WrappR">
+                       <div class="d-flex type">
+                          <span>Smart cities</span>
+                          <img class="head-arrowC" src="<?php echo get_template_directory_uri(); ?>/assets/img/c1.svg" alt="img-icon">
+                       </div>
+                       <h3>3 cities</h3>
+                       <div class="paragraph">
+                       Part of the top 50 cities within the IMP smart city index in 2023 (Abu Dhabi, Dubai, Riyadh)
+                       </div>
+                    </div>
+                  </a>
+                </li>
 
+                <li>
+                  <a data-bs-toggle="offcanvas" href="#contact" role="button" aria-controls="offcanvasExample">
+                    <div class="location-WrappR">
+                       <div class="d-flex type">
+                          <span>Safety and Security</span>
+                          <img class="head-arrowC" src="<?php echo get_template_directory_uri(); ?>/assets/img/c2.svg" alt="img-icon">
+                       </div>
+                       <h3>3 cities</h3>
+                       <div class="paragraph">
+                       Part of the top 50 cities within the IMP smart city index in 2023 (Abu Dhabi, Dubai, Riyadh)
+                       </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="offcanvas" href="#contact" role="button" aria-controls="offcanvasExample">
+                    <div class="location-WrappR">
+                       <div class="d-flex type">
+                          <span>Quality of Life</span>
+                          <img class="head-arrowC" src="<?php echo get_template_directory_uri(); ?>/assets/img/c1.svg" alt="img-icon">
+                       </div>
+                       <h3>3 cities</h3>
+                       <div class="paragraph">
+                       Part of the top 50 cities within the IMP smart city index in 2023 (Abu Dhabi, Dubai, Riyadh)
+                       </div>
+                    </div>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="col-lg-9">
+                <div class="contact-map-cu">
+                  <h6>Our regions <em> gross domestic product per capita ranking vs. our regional cities’ competitiveness</em></h6>
+                  <div class="main-map wrp0vc">
+                  <img class="head-arrowC" src="<?php echo get_template_directory_uri(); ?>/assets/img/line-map.png" alt="img-icon">
+                    <div class="second-place map-main-loc">
+                        <div class="badge-cons">
+                          <h3>2nd</h3>
+                          <span>67.83</span>
+                        </div>
+                        <span class="country-maps" >North America</span>
+                    </div>
+
+                    <div class="fourth-place map-main-loc">
+                        <div class="badge-cons">
+                          <h3>4th</h3>
+                          <span>67.83</span>
+                        </div>
+                        <span class="country-maps" >Western <br> Europe</span>
+                    </div>
+
+                    <div class="fist-place map-main-loc">
+                        <div class="badge-cons">
+                          <h3>1st</h3>
+                          <span>67.83</span>
+                        </div>
+                        <span class="country-maps" >The GCC</span>
+                    </div>
+
+                    <div class="third-place map-main-loc">
+                        <div class="badge-cons">
+                          <h3>3rd</h3>
+                          <span>67.83</span>
+                        </div>
+                        <span class="country-maps" >Australia and <br> New Zealand</span>
+                    </div>
+                  </div>
+                  <div class="paragraph">
+                  Source: IMF GDP per capita, current prices - purchasing power parity; international dollars per capita, IMD competitiveness center, the economist, mercer, ADXP analysis
+                  </div>
+                </div>
+            </div>
+      </div>
+    </div>
+</section>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="contact" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class=" text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+  </div>
+  <div class="offcanvas-body">
+  <iframe title="IMD Smart City Index" aria-label="Table" id="datawrapper-chart-meVUu" src="https://datawrapper.dwcdn.net/meVUu/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="2909" data-external="1"></iframe>
+    
+  </div>
+</div>
+
+<!--CONTACT US END-->
 
 <!--DIGITAL CONSULTING STARTS-->
 
@@ -398,7 +510,7 @@ if ($home_people) {
 
               <div class="flexW">
 
-                  <a href="<?php echo site_url();?>/our-people/" class="viewall">View All</a>
+                  <!-- <a href="<?php echo site_url();?>/our-people/" class="viewall">View All</a> -->
 
               </div>
 
