@@ -32,7 +32,7 @@ if($benefits)
 		{
 	 ?>
       <div class="col-lg-4">
-        <div class="values-grid keyareas wc">
+        <div class="values-grid keyareas wc icon-st">
           <?php
 		if($benefits_content['benefits_image']['url'])
 		{

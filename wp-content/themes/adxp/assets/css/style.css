@@ -3350,6 +3350,11 @@ line-height: 120%; /* 33.6px */
 span.country-maps {
   margin-top: 12px;
 }
+.icon-st img{
+  width: 64px;
+  height: 64px;
+
+}
 /* web improvement styles end */
 /*-------------media css start---------------*/
 @media (max-width: 1400px) {
