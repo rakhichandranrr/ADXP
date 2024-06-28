@@ -210,6 +210,11 @@ $facts_and_figure = get_field('facts_and_figure');
 </section>
 <?php
 
+$display_people = get_field('display_people_section');
+
+if($display_people == 'Yes')
+{
+	
 $leadership_team = get_field('select_leadership_team');
 
 if ($leadership_team) {
@@ -228,6 +233,7 @@ if ($leadership_team) {
           <h4 class="mb-2 mt-3"><?php echo $leadership_team_res->post_title; ?></h4>
           <span class="designation "><?php echo get_field('designation', $leadership_team_res->ID); ?></span>
           <div class="paragraph mb-3 mt-3"><?php echo $leadership_team_res->post_content; ?> </div>
+           <a href="<?php echo get_field('linkedin_url', $home_people_res->ID); ?>" class="linkdin-link"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
       <?php
@@ -235,14 +241,15 @@ if ($leadership_team) {
         }
 
         ?>
-      <div class="col-lg-12">
-        <div class="flexW"> <a href="<?php echo site_url();?>/our-people/" class="viewall">View All</a> </div>
-      </div>
+      <!--<div class="col-lg-12">
+        <div class="flexW"> <a href="/our-people/" class="viewall">View All</a> </div>
+      </div>-->
     </div>
   </div>
 </section>
 <?php
 
+}
 }
 
 ?>
