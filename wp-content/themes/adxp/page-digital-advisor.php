@@ -14,6 +14,53 @@ get_header();
   </div>
 </section>
 <?php
+$benefits = get_field('benefits');
+if($benefits)
+{
+?>
+<section class="ind-services common-padd grd-bg" id="Services">
+  <div class="container">
+    <div class="row ">
+      <div class="col-lg-12 mb-5 main-p">
+        <h3 class="inner-heading mb-5 text-light"><?php echo $benefits['benefit_section_heading'];?></h3>
+        <div class="paragraph "> <?php echo $benefits['benefit_section_description'];?> </div>
+      </div>
+      <?php
+	  if($benefits['benefits'])
+	  {
+	    foreach($benefits['benefits'] as $benefits_content)
+		{
+	 ?>
+      <div class="col-lg-4">
+        <div class="values-grid keyareas wc">
+          <?php
+		if($benefits_content['benefits_image']['url'])
+		{
+		?>
+          <img src="<?php echo $benefits_content['benefits_image']['url'];?>" alt="img">
+          <?php
+		}
+		?>
+          <div>
+            <h5 class="kyhd text-light"><?php echo $benefits_content['benefits_title'];?></h5>
+            <div class="paragraph "> <?php echo $benefits_content['benefits_content'];?></div>
+          </div>
+        </div>
+      </div>
+      <?php
+		}
+	  }
+		?>
+    </div>
+  </div>
+</section>
+<?php
+}
+?>
+
+
+
+<?php
 	  $services = get_field('services');
       $services_list = $services['services'];
       ?>

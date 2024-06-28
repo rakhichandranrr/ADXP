@@ -48,13 +48,13 @@ else if (is_search()  ) {
 
 
 
-else if (is_single() && !is_singular('digital_advisor_asse') || is_page('insights') || is_page('careers')) {
+else if (is_single() && !is_singular('digital_advisor_asse') ) {
 
   $section_cls = 'detail_page';
 
   $attr = '';
 
-} else if ( is_page('about') || is_page('our-people')) {
+} else if ( is_page('our-people')) {
 
   $section_cls = 'detail_page about-banner ';
 
@@ -62,11 +62,7 @@ else if (is_single() && !is_singular('digital_advisor_asse') || is_page('insight
 
 
 
-} else if ( is_page('contact')) {
 
-  $section_cls = 'detail_page';
-
-  $attr = '';
 
 
 
@@ -78,7 +74,7 @@ else if (is_single() && !is_singular('digital_advisor_asse') || is_page('insight
 
   $attr = 'style="background: url(' . banner_image() . ');  background-position: center;background-size: cover; background-repeat: no-repeat;"';
   
-}else if (is_page('services') || is_page('industries')) {
+}else if (is_page('services') || is_page('industries') ||  is_page('insights')|| is_page('careers') ||  is_page('contact') || is_page('about')) {
 	
 	 $section_cls = 'banner-overlay';
 	  $attr = 'id="banner_section" style="background: url(' . banner_image() . ');  background-position: center;background-size: cover;"';
@@ -162,7 +158,7 @@ if ($banner_video['url']) {
 
 
 
-      if (is_single() && !is_singular('digital_advisor_asse') || is_page('insights')) {
+      if (is_single() && !is_singular('digital_advisor_asse') ) {
 
         $title = banner_title();
 
@@ -198,39 +194,9 @@ if ($banner_video['url']) {
                 }
 
                 ?>
-          <?php
-
-                if (is_page('insights')) {
-
-                ?>
-          <h1 class="main-tittle mb-5 text-light mt-4 insight-head"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo $title; ?></h1>
-          <div class="paragraph"> <?php echo banner_content(); ?></div>
-          <?php
-
-                } else {
-
-                ?>
+     
           <h1 class="main-tittle mb-5 text-light mt-4"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><i><?php echo $result[0]; ?></i> <?php echo $result[1]; ?></h1>
-          <?php
-
-                }
-
-                ?>
-        </div>
-      </div>
-    </div>
-  </div>
-  <?php
-
-	  }else if(is_page('about')){
-
-	  ?>
-  <div class="container b_contents-main flexW inner-banner-content pdl-1 pdr-1">
-    <div class="row">
-      <div class="banner-content d-flex flex-column align-items-center justify-content-center">
-        <div class="flex-column" > <span class="upper-heading text-light"><?php echo banner_title(); ?></span>
-          <h1 class="main-tittle mb-5 text-light mt-4 about-title" ><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon" ><?php echo get_field('banner_headline'); ?></h1>
-          <div class="paragraph"> <?php echo get_field('banner_short_description'); ?> </div>
+        
         </div>
       </div>
     </div>
@@ -252,39 +218,7 @@ if ($banner_video['url']) {
   </div>
   <?php
 
-  } else if ( is_page('careers')) {
-
-	  ?>
-  <div class="container b_contents-main flexW inner-banner-content">
-    <div class="row">
-      <div class="banner-content d-flex flex-column align-items-center justify-content-center">
-        <div class="flex-column" > 
-          <h1 class="main-tittle mb-5 text-light mt-4 block-d"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo get_field('banner_title'); ?></h1>
-          <div class="paragraph"> <?php echo get_field('banner_content'); ?></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <?php
-
-	  } else if ( is_page('contact')) {
-
-    ?>
- <div class="container b_contents-main flexW inner-banner-content pdl-1 pdr-1">
-    <div class="row">
-      <div class="banner-content d-flex flex-column align-items-center justify-content-center">
-        <div class="flex-column" >
-          <h1 class="main-tittle mb-3 text-light mt-4" ><img class="head-arrow mt-0" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo get_field('banner_title_contact'); ?></h1>
-          <div class="paragraph"> <?php echo get_field('banner_content_contact'); ?> </div>          
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  <?php
-
-	   }else if(is_singular('digital_advisor_asse')){
+  }  else if(is_singular('digital_advisor_asse')){
 
   ?>
   <div class="container b_contents-main flexW inner-banner-content digital-wap">

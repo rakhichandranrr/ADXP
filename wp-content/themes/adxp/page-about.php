@@ -186,13 +186,15 @@ $facts_and_figure = get_field('facts_and_figure');
       $facts_and_figure_sub = $facts_and_figure['facts_and_figure_sub_items'];
 
       if ($facts_and_figure_sub) {
+		  $i=0;
 
         foreach ($facts_and_figure_sub as $facts_and_figure_sub_res) {
+			$i++;
 
       ?>
       <div class="col-lg-6">
         <div class="facts-grid">
-          <h1 id="value" class="value"><?php echo $facts_and_figure_sub_res['figure']; ?></h1>
+          <h1 id="value<?php echo $i;?>" class="value"><?php echo $facts_and_figure_sub_res['figure']; ?></h1>
           <div class="paragraph"><?php echo $facts_and_figure_sub_res['figure_content']; ?></div>
         </div>
       </div>
@@ -249,3 +251,33 @@ if ($leadership_team) {
 get_footer();
 
 ?>
+<script>
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    const value = Math.floor(progress * (end - start) + start);
+    obj.innerHTML = `${value}%`;
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+<?php
+ if ($facts_and_figure_sub) {
+		  $i=0;
+
+        foreach ($facts_and_figure_sub as $facts_and_figure_sub_res) {
+			$i++;
+			
+			$int = intval(preg_replace('/[^0-9]+/', '', $facts_and_figure_sub_res['figure']), 10);
+			
+      ?>
+animateValue(document.querySelector("#value<?php echo $i;?>"), 0, <?php echo $int;?>, 5000);
+<?php
+		}
+ }
+		?>
+</script> 

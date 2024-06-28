@@ -707,22 +707,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-function animateValue(obj, start, end, duration) {
-  let startTimestamp = null;
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    const value = Math.floor(progress * (end - start) + start);
-    obj.innerHTML = `${value}%`;
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
-  window.requestAnimationFrame(step);
-}
 
-const obj = document.querySelector(".value");
-animateValue(obj, 0, 100, 5000);
 
 
 

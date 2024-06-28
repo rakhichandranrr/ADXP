@@ -897,3 +897,18 @@ if ($taxonomy == 'post_tag') {
 
     return $term;
 }
+
+
+add_action('admin_head', 'admin_styles');
+function admin_styles() {
+   // if( get_post_type() == "product" ) {
+	?>
+	<style>
+		.acf-editor-wrap iframe {
+			height: 200px !important;
+			min-height: 200px;
+		}
+	</style>
+	<?php
+	//}
+}
