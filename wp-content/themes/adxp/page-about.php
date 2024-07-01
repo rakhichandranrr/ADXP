@@ -232,7 +232,14 @@ if ($leadership_team) {
           <div class="industries-img"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($leadership_team_res->ID), 'full'); ?>" alt="img"> </div>
           <h4 class="mb-2 mt-3"><?php echo $leadership_team_res->post_title; ?></h4>
           <span class="designation "><?php echo get_field('designation', $leadership_team_res->ID); ?></span>
+          <?php
+		  if($leadership_team_res->post_content)
+		  {
+		  ?>
           <div class="paragraph mb-3 mt-3"><?php echo $leadership_team_res->post_content; ?> </div>
+          <?php
+		  }
+		  ?>
            <a href="<?php echo get_field('linkedin_url', $home_people_res->ID); ?>" class="linkdin-link"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>

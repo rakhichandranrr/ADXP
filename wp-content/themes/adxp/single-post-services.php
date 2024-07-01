@@ -327,7 +327,14 @@ if ($people) {
           <div class="industries-img"> <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($people_res->ID), 'full'); ?>" alt="img"> </div>
           <h4 class="mb-2 mt-3"><?php echo $people_res->post_title; ?></h4>
           <span class="designation "><?php echo get_field('designation', $people_res->ID); ?></span>
+          <?php
+		  if($people_res->post_content)
+		  {
+		  ?>
           <div class="paragraph mb-3 mt-3"><?php echo $people_res->post_content; ?></div>
+          <?php
+		  }
+		  ?>
           <a href="<?php echo get_field('linkedin_url', $people_res->ID); ?>" class="linkdin-link"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
