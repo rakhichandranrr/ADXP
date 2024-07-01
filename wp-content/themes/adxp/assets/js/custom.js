@@ -754,3 +754,88 @@ document.addEventListener("DOMContentLoaded", function() {
   const observer = new IntersectionObserver(revealElements, options);
   observer.observe(document.getElementById('Results'));
 });
+
+
+
+// $(document).ready(function() {
+//   var triggerButton = $('ul.list-itm-wraP li a');
+
+//   $('#contact1').on('show.bs.offcanvas', function () {
+//     triggerButton.addClass('active');
+//   });
+
+
+
+//   $('#contact1').on('hidden.bs.offcanvas', function () {
+//     triggerButton.removeClass('active');
+//   });
+// });
+
+// $(document).ready(function() {
+//   var triggerButton = $('ul.list-itm-wraP li:nth-child(2) a');
+
+//   $('#contact2').on('show.bs.offcanvas', function () {
+//     triggerButton.addClass('active');
+//   });
+
+
+
+//   $('#contact2').on('hidden.bs.offcanvas', function () {
+//     triggerButton.removeClass('active');
+//   });
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('ul.list-itm-wraP li a');
+  const offcanvasItems = document.querySelectorAll('.offcanvas');
+  const closeButtons = document.querySelectorAll('.offcanvas .close');
+
+  // Function to show offcanvas and mark corresponding link active
+  function showOffcanvas(targetId) {
+    const targetOffcanvas = document.getElementById(targetId);
+
+    // Hide all offcanvas items
+    offcanvasItems.forEach(item => item.classList.remove('active'));
+    
+    // Remove active class from all links
+    links.forEach(link => link.classList.remove('active'));
+
+    // Show the target offcanvas item
+    targetOffcanvas.classList.add('active');
+
+    // Add active class to the corresponding link
+    const correspondingLink = document.querySelector(`a[href="#${targetId}"]`);
+    if (correspondingLink) {
+      correspondingLink.classList.add('active');
+    }
+  }
+
+  // Add click event listeners to links
+  links.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      
+      const targetId = link.getAttribute('href').substring(1);
+      showOffcanvas(targetId);
+    });
+  });
+
+  // Add click event listeners to close buttons
+  closeButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const offcanvas = button.closest('.offcanvas');
+
+      // Get the ID of the offcanvas to be closed
+      const targetId = offcanvas.id;
+
+      // Hide the offcanvas item
+      offcanvas.classList.remove('active');
+
+      // Remove active class from the corresponding link
+      const correspondingLink = document.querySelector(`a[href="#${targetId}"]`);
+      if (correspondingLink) {
+        correspondingLink.classList.remove('active');
+      }
+    });
+  });
+});

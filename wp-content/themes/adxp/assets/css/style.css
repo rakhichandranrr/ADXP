@@ -3211,6 +3211,7 @@ ul.list-itm-wraP li a {
   align-items: flex-start;
   gap: 12px;
   align-self: stretch;
+  transition: .2s;
 }
 ul.list-itm-wraP li {
   margin-bottom: 20px;
@@ -3377,6 +3378,19 @@ section.ind-services.common-padd.grd-bg.d-cust-adv h3.inner-heading {
 .values-grid.keyareas.wc.icon-st.dg-nw {
   margin-bottom: 0px;
 }
+.ind-serv-itm .card-body {
+  width: 100%;
+  min-width: 98%;
+}
+ul.list-itm-wraP li a:hover{
+  border: 2px solid #fff;
+}
+ul.list-itm-wraP li a.active{
+  border: 2px solid #fff;
+}
+
+
+
 /* web improvement styles end */
 /*-------------media css start---------------*/
 @media (max-width: 1400px) {
