@@ -5255,7 +5255,7 @@ section.contact-us-wrappeR.common-padd  .paragraph.text-light.sub-desc.mb-5.f-20
 section.contact-us-wrappeR.common-padd {
   padding-top: 0px;
 }
-.offcanvas-header {
+.list-itm-wraP .offcanvas-header {
   justify-content: flex-start;
 }
 section.contact-us-wrappeR.common-padd {
@@ -5281,10 +5281,19 @@ section.ind-services.common-padd.grd-bg.d-cust-adv h3.inner-heading {
 .values-grid.keyareas.wc.icon-st.dg-nw {
   margin-bottom: 24px;
 }
-
-
-
-
+h1.main-tittle.mb-5.text-light.d-block {
+  display: block !important;
+}
+section#banner_section {
+  order: inherit;
+}
+.custom-dropdown.custom-dropdown0.me-3,
+.custom-dropdown.custom-dropdown1.me-3 {
+  margin-right: 5px !important;
+}
+.ind-serv-itm .card-body {
+  min-width: 87%;
+}
 
 }
 
