@@ -18,10 +18,10 @@ $benefits = get_field('benefits');
 if($benefits)
 {
 ?>
-<section class="ind-services common-padd grd-bg" id="Services">
+<section class="ind-services common-padd grd-bg d-cust-adv" id="Services">
   <div class="container">
     <div class="row ">
-      <div class="col-lg-12 mb-5 main-p">
+      <div class="col-lg-12 mb-5 main-p bg-adv-nw-aQ">
         <h3 class="inner-heading mb-5 text-light"><?php echo $benefits['benefit_section_heading'];?></h3>
         <div class="paragraph "> <?php echo $benefits['benefit_section_description'];?> </div>
       </div>
@@ -32,7 +32,7 @@ if($benefits)
 		{
 	 ?>
       <div class="col-lg-4">
-        <div class="values-grid keyareas wc icon-st">
+        <div class="values-grid keyareas wc icon-st dg-nw">
           <?php
 		if($benefits_content['benefits_image']['url'])
 		{
