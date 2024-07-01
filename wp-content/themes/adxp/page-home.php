@@ -233,7 +233,7 @@ $right_block = $cities_block['right_block'];
               <div class="paragraph"> <?php echo $cites['description'];?> </div>
             </div>
             </a> </li>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="contact<?php echo $i;?>" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas offcanvas-end"  tabindex="-1" id="contact<?php echo $i;?>" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
               <button type="button" class=" text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
             </div>

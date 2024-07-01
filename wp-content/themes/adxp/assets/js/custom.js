@@ -788,7 +788,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener('DOMContentLoaded', function() {
   const links = document.querySelectorAll('ul.list-itm-wraP li a');
   const offcanvasItems = document.querySelectorAll('.offcanvas');
-  const closeButtons = document.querySelectorAll('.offcanvas .close');
+  const closeButtons = document.querySelectorAll('.offcanvas .text-reset');
 
   // Function to show offcanvas and mark corresponding link active
   function showOffcanvas(targetId) {
@@ -802,7 +802,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Show the target offcanvas item
     targetOffcanvas.classList.add('active');
-
     // Add active class to the corresponding link
     const correspondingLink = document.querySelector(`a[href="#${targetId}"]`);
     if (correspondingLink) {
@@ -837,5 +836,21 @@ document.addEventListener('DOMContentLoaded', function() {
         correspondingLink.classList.remove('active');
       }
     });
+  });
+});
+
+$(document).ready(function() {
+  var triggerButton = $('ul.list-itm-wraP li a');
+
+
+
+  $('#contact1').on('hidden.bs.offcanvas', function () {
+    triggerButton.removeClass('active');
+  });
+  $('#contact2').on('hidden.bs.offcanvas', function () {
+    triggerButton.removeClass('active');
+  });
+  $('#contact3').on('hidden.bs.offcanvas', function () {
+    triggerButton.removeClass('active');
   });
 });
