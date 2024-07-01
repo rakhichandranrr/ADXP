@@ -194,7 +194,7 @@ $facts_and_figure = get_field('facts_and_figure');
       ?>
       <div class="col-lg-6">
         <div class="facts-grid">
-          <h1 id="value<?php echo $i;?>" class="value"><?php echo $facts_and_figure_sub_res['figure']; ?></h1>
+          <h1 id="value<?php echo $i;?>" class="value"><?php echo $facts_and_figure_sub_res['figure']; ?><?php echo $facts_and_figure_sub_res['figure_suffix']; ?></h1>
           <div class="paragraph"><?php echo $facts_and_figure_sub_res['figure_content']; ?></div>
         </div>
       </div>
@@ -260,13 +260,13 @@ get_footer();
 ?>
 <script>
   // Function to animate the value
-function animateValue(obj, start, end, duration) {
+function animateValue(obj, start, end, duration, figure_suffix) {
   let startTimestamp = null;
   const step = (timestamp) => {
     if (!startTimestamp) startTimestamp = timestamp;
     const progress = Math.min((timestamp - startTimestamp) / duration, 1);
     const value = Math.floor(progress * (end - start) + start);
-    obj.innerHTML = `${value}%`;
+    obj.innerHTML = `${value}`+figure_suffix;
     if (progress < 1) {
       window.requestAnimationFrame(step);
     }
@@ -280,13 +280,13 @@ function animateValue(obj, start, end, duration) {
     $i = 0;
     foreach ($facts_and_figure_sub as $facts_and_figure_sub_res) {
         $i++;
-        $int = intval(preg_replace('/[^0-9]+/', '', $facts_and_figure_sub_res['figure']), 10);
+       // $int = intval(preg_replace('/[^0-9]+/', '', $facts_and_figure_sub_res['figure']), 10);
         ?>
         document.addEventListener('DOMContentLoaded', function() {
           const observer = new IntersectionObserver(function(entries) {
             entries.forEach(entry => {
               if (entry.isIntersecting) {
-                animateValue(document.querySelector("#value<?php echo $i;?>"), 0, <?php echo $int;?>, 1000);
+                animateValue(document.querySelector("#value<?php echo $i;?>"), 0, <?php echo $facts_and_figure_sub_res['figure'];?>, 1000, '<?php echo $facts_and_figure_sub_res['figure_suffix'];?>');
                 observer.unobserve(entry.target); // Stop observing after animation starts
               }
             });
