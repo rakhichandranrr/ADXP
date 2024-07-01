@@ -3355,6 +3355,12 @@ span.country-maps {
   height: 64px;
 
 }
+a.linkdin-link {
+  display: inherit;
+  margin-top: 5px;
+}
+
+
 /* web improvement styles end */
 /*-------------media css start---------------*/
 @media (max-width: 1400px) {
