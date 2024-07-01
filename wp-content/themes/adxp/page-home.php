@@ -213,7 +213,7 @@ $right_block = $cities_block['right_block'];
 <!--CONTACT US STARTS-->
 <section class="contact-us-wrappeR common-padd">
   <div class="container">
-    <h1 class="main-tittle mb-5 text-light"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"> <?php echo $cities_block['heading'];?></h1>
+    <h1 class="main-tittle mb-5 text-light d-block"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"> <?php echo $cities_block['heading'];?></h1>
     <div class="paragraph text-light sub-desc mb-5 f-20"><?php echo $cities_block['description'];?></div>
     <div class="row mt-4">
       <div class="col-lg-3">
