@@ -2995,7 +2995,7 @@ h4.livable-desc.text-light {
 h4.livable-desc.text-light em, h4.livable-desc.text-light i  {
 	color: var(--primary-color);
 }
-em, i  {
+p em, p i  {
 	color: var(--primary-color);
 }
 
