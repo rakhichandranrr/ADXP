@@ -615,6 +615,7 @@ $(document).ready(function() {
     $("#customDropdownButton").click(function() {
         // Remove active class from all dropdown buttons
         $("#customDropdownButton2").removeClass("active");
+		$("#customDropdownButton1").removeClass("active");
         // Add active class to the clicked button
         $(this).toggleClass("active");
     });
@@ -623,6 +624,15 @@ $(document).ready(function() {
     $("#customDropdownButton2").click(function() {
         // Remove active class from all dropdown buttons
         $("#customDropdownButton").removeClass("active");
+		$("#customDropdownButton1").removeClass("active");
+        // Add active class to the clicked button
+        $(this).toggleClass("active");
+    });
+	
+	 $("#customDropdownButton1").click(function() {
+        // Remove active class from all dropdown buttons
+        $("#customDropdownButton").removeClass("active");
+		$("#customDropdownButton2").removeClass("active");
         // Add active class to the clicked button
         $(this).toggleClass("active");
     });
@@ -641,6 +651,14 @@ $(document.body).click(function(event) {
         if (!$(event.target).closest('#customDropdownButton2').length) {
             // Remove active class from all dropdown buttons
             $("#customDropdownButton2").removeClass("active");
+        }
+    });
+	
+	$(document.body).click(function(event) {
+        // Check if the click occurred outside of the dropdown buttons
+        if (!$(event.target).closest('#customDropdownButton1').length) {
+            // Remove active class from all dropdown buttons
+            $("#customDropdownButton1").removeClass("active");
         }
     });
     
