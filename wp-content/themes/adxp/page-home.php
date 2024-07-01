@@ -343,7 +343,7 @@ if ($home_industries) {
                        </div>
                        <h3>3 cities</h3>
                        <div class="paragraph">
-                       Part of the top 50 cities within the IMP smart city index in 2023 (Abu Dhabi, Dubai, Riyadh)
+                       Part of the top 50 cities within the EU safe city index in 2021 (Abu Dhabi, Dubai, Riyadh)
                        </div>
                     </div>
                   </a>
@@ -356,9 +356,9 @@ if ($home_industries) {
                           <span>Quality of Life</span>
                           <img class="head-arrowC" src="<?php echo get_template_directory_uri(); ?>/assets/img/c1.svg" alt="img-icon">
                        </div>
-                       <h3>3 cities</h3>
+                       <h3>0 cities</h3>
                        <div class="paragraph">
-                       Part of the top 50 cities within the IMP smart city index in 2023 (Abu Dhabi, Dubai, Riyadh)
+                       Part of the top 70 cities within the Mercer’s quality of life index in 2023
                        </div>
                     </div>
                   </a>
