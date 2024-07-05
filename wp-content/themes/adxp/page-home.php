@@ -290,7 +290,7 @@ $digital_consulting = get_field('digital_consulting_section');
   <div class="container">
     <div class="row flexW">
       <div class="col-lg-7 col-md-7 imgsz">
-        <h1 class="main-tittle mb-5 text-light digital-head"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo $digital_consulting['digital_consulting_heading']; ?></h1>
+        <h1 class="main-tittle mb-5 text-light digital-head dig-nw"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo $digital_consulting['digital_consulting_heading']; ?></h1>
         <div class="paragraph text-light"><?php echo $digital_consulting['digital_consulting_description']; ?></div>
         <?php
 
