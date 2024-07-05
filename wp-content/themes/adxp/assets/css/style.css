@@ -3388,7 +3388,16 @@ ul.list-itm-wraP li a:hover{
 ul.list-itm-wraP li a.active{
   border: 2px solid #fff;
 }
-
+h1.main-tittle.mb-5.text-light.digital-head.dig-nw p {
+  flex-direction: column !important;
+  display: flex;
+}
+li.nav-item.dropdown:hover a.nav-link.dropdown-toggle::after {
+  background: url(../img/arrowU.svg) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  transition: .3s;
+}
 
 
 /* web improvement styles end */
