@@ -72,7 +72,7 @@ function showCardBody(index) {
 
 		$('.card-header'+ index).removeClass('card-header-click');
 
-        cardBody.hide(2000).slideUp(); 
+        cardBody.hide("slow").slideUp(); 
 
 		// Slide up corresponding card body
 

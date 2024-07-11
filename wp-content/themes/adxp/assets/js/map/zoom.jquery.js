@@ -96,40 +96,40 @@
     $.fn.ZoomArea = function(options) {
 
         var settings = $.extend({
-            zoomLevel: 1,
-            minZoomLevel: 0.25,
-            maxZoomLevel: 3,
-            defaultUniqueValue: 'unique',
-            defaultUniqueClass: 'unique-option',
-            elementClass: '',
-            enableDrag: true,
-            enableBringToFront: false,
-            left: null,
-            top: null,
-            width: null,
-            height: null,
-            parentOverflow: 'visible',
-            mouseSensibleZoom: true,
-            usedAnimateMethod: 'css',
-            virtualScrollbars:true,
-            hideWhileAnimate: ['hideWhileAnimate'], /*classes to hide while animating, than again showing up*/
-            animateTime: 300,
-            parent_left: null,
-            parent_top: null,
-            parent_width: null,
-            parent_height: null,
-            exceptionsZoom: ['noZoom'], /*classes to ignore from zoom*/
-            exceptionsWholeZoom: ['overset-text'], /*classes to stop whole zoom*/
-            exceptionsDrag: ['noDrag'], /*classes to ignore from drag*/
-            externalIncrease: '#zoom-increase',
-            externalDecrease: '#zoom-decrease',
-            externalZoomLevel: '#zoom-level',
-            onBeforeLoad: null,
-            onAfterLoad: null,
-            onBeforeZoom: null,
-            onAfterZoom: null,
-            onBeforeDrag: null,
-            onAfterDrag: null
+            // zoomLevel: 1,
+            // minZoomLevel: 0.25,
+            // maxZoomLevel: 0.25,
+            // defaultUniqueValue: 'unique',
+            // defaultUniqueClass: 'unique-option',
+            // elementClass: '',
+             enableDrag: true,
+            // enableBringToFront: false,
+            // left: null,
+            // top: null,
+            // width: null,
+            // height: null,
+            // parentOverflow: 'visible',
+            // mouseSensibleZoom: true,
+            // usedAnimateMethod: 'css',
+            // virtualScrollbars:true,
+            // hideWhileAnimate: ['hideWhileAnimate'], /*classes to hide while animating, than again showing up*/
+            // animateTime: 300,
+            // parent_left: null,
+            // parent_top: null,
+            // parent_width: null,
+            // parent_height: null,
+            // exceptionsZoom: ['noZoom'], /*classes to ignore from zoom*/
+            // exceptionsWholeZoom: ['overset-text'], /*classes to stop whole zoom*/
+             exceptionsDrag: ['noDrag'], /*classes to ignore from drag*/
+            // externalIncrease: '#zoom-increase',
+            // externalDecrease: '#zoom-decrease',
+            // externalZoomLevel: '#zoom-level',
+            // onBeforeLoad: null,
+            // onAfterLoad: null,
+            // onBeforeZoom: null,
+            // onAfterZoom: null,
+             onBeforeDrag: null,
+            // onAfterDrag: null
         }, options);
 
         var _this = this;

@@ -2980,17 +2980,17 @@ h6.sub-hd-nw.fn {
 	font-family: "Hanken Grotesk", sans-serif !important;
 }
 h4.livable-desc.text-light {
-    /* display: flex; */
-    padding: 8px var(--Radius-Sharp, 0px) 8px 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    align-self: stretch;
-    border-left: var(--Spacing-xxs, 2px) solid var(--teal-3-ebdab, #3EBDAB);
-    margin-top: 32px;
-	line-height: 120%;
-	margin-bottom: 32px;
-	font-size: 20px;
+  /* display: flex; */
+  /* padding: 8px var(--Radius-Sharp, 0px) 8px 24px; */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  /* border-left: var(--Spacing-xxs, 2px) solid var(--teal-3-ebdab, #3EBDAB); */
+  margin-top: 32px;
+  line-height: 140%;
+  margin-bottom: 32px;
+  font-size: 20px;
 }
 h4.livable-desc.text-light em, h4.livable-desc.text-light i  {
 	color: var(--primary-color);
@@ -3016,7 +3016,7 @@ h1.main-tittle.live i, h1.main-tittle.live strong, h1.main-tittle.live em{
 }
 
 img.mb {
-    border-radius: 300px 0px 0px 300px;
+  border-radius: 500px 0px 0px 500px;
 }
 button.file_dwnD {
     font-size: 16px;
@@ -3319,7 +3319,7 @@ line-height: 120%; /* 16.8px */
 }
 .second-place.map-main-loc {
   top: 24%;
-  left: 27%;
+  left: 18%;
 }
 .fourth-place.map-main-loc {
   top: 24%;
@@ -3400,6 +3400,9 @@ li.nav-item.dropdown:hover a.nav-link.dropdown-toggle::after {
 }
 .form-group.phone-field span {
   margin-top: 2px !important;
+}
+.map-control {
+  display: none;
 }
 
 /* web improvement styles end */
