@@ -34,6 +34,10 @@ $facts_and_figure = get_field('facts_and_figure');
           }
 
           ?>
+          <!-- <video  width="600" height="360" controls>
+                             <source src="..\assets\images\x-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+          </video> -->
         </div>
       </div>
       <div class="col-lg-8 d-flex align-items-center">
