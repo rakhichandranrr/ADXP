@@ -406,59 +406,47 @@ function animateValue(obj, start, end, duration) {
 }
 
 // PHP part to generate the animation script
-
 document.addEventListener('DOMContentLoaded', function() {
-  const observer = new IntersectionObserver(function(entries) {
-	entries.forEach(entry => {
-	  if (entry.isIntersecting) {
-		animateValue(document.querySelector("#second_figure"), 0, <?php echo $right_block['second_figure'];?>, 1000);
-		observer.unobserve(entry.target); // Stop observing after animation starts
-	  }
-	});
-  }, { threshold: 0.1 });
-  
-  observer.observe(document.querySelector("#second_figure"));
-});
+  function animateValue(element, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      const currentValue = start + progress * (end - start);
+      element.textContent = currentValue.toFixed(2); // Use toFixed(2) to display two decimal places
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
 
-document.addEventListener('DOMContentLoaded', function() {
-  const observer = new IntersectionObserver(function(entries) {
-	entries.forEach(entry => {
-	  if (entry.isIntersecting) {
-		animateValue(document.querySelector("#fourth_figure"), 0, <?php echo $right_block['fourth_figure'];?>, 1000);
-		observer.unobserve(entry.target); // Stop observing after animation starts
-	  }
-	});
-  }, { threshold: 0.1 });
-  
-  observer.observe(document.querySelector("#fourth_figure"));
-});
+  const figures = [
+    { id: "#first_figure", value: <?php echo $right_block['first_figure'];?> },
+    { id: "#second_figure", value: <?php echo $right_block['second_figure'];?> },
+    { id: "#third_figure", value: <?php echo $right_block['third_figure'];?> },
+    { id: "#fourth_figure", value: <?php echo $right_block['fourth_figure'];?> }
+  ];
 
-document.addEventListener('DOMContentLoaded', function() {
   const observer = new IntersectionObserver(function(entries) {
-	entries.forEach(entry => {
-	  if (entry.isIntersecting) {
-		animateValue(document.querySelector("#third_figure"), 0, <?php echo $right_block['third_figure'];?>, 1000);
-		observer.unobserve(entry.target); // Stop observing after animation starts
-	  }
-	});
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const figure = figures.find(f => f.id === `#${entry.target.id}`);
+        if (figure) {
+          animateValue(entry.target, 0, figure.value, 1000);
+          observer.unobserve(entry.target); // Stop observing after animation starts
+        }
+      }
+    });
   }, { threshold: 0.1 });
-  
-  observer.observe(document.querySelector("#third_figure"));
-});
 
-document.addEventListener('DOMContentLoaded', function() {
-  const observer = new IntersectionObserver(function(entries) {
-	entries.forEach(entry => {
-	  if (entry.isIntersecting) {
-		animateValue(document.querySelector("#first_figure"), 0, <?php echo $right_block['first_figure'];?>, 1000);
-		observer.unobserve(entry.target); // Stop observing after animation starts
-	  }
-	});
-  }, { threshold: 0.1 });
-  
-  observer.observe(document.querySelector("#first_figure"));
-});
-        
+  figures.forEach(figure => {
+    const element = document.querySelector(figure.id);
+    if (element) {
+      observer.observe(element);
+    }
+  });
+});    
 
 </script>
 
