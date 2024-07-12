@@ -755,6 +755,14 @@ $(document.body).click(function(event) {
             $("#customDropdownButton1").removeClass("active");
         }
     });
+	
+	$(document.body).click(function(event) {
+        // Check if the click occurred outside of the dropdown buttons
+        if (!$(event.target).closest('#customDropdownButton3').length) {
+            // Remove active class from all dropdown buttons
+            $("#customDropdownButton3").removeClass("active");
+        }
+    });
     
 
 // document.addEventListener('DOMContentLoaded', function() {

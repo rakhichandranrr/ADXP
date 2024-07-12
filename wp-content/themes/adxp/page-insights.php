@@ -226,7 +226,7 @@ get_header();
           
           <div class="offcanvas-overlay3"></div>
           <div class="custom-dropdown custom-dropdown3 me-3">
-            <button class="custom-dropdown-toggle" type="button" id="customDropdownButton3"> Type
+            <button class="custom-dropdown-toggle " type="button" id="customDropdownButton3"> Type
             <?php if($_POST['type_filter']){?>
             <div class="Count-filter" >(<span><?php echo count($_POST['type_filter']);?></span>)</div>
             <?php
@@ -236,7 +236,7 @@ get_header();
 			 ?>
             <span class="dropdown-arrow3"> <i class="bi bi-chevron-down"></i></span> </button>
             <div class="custom-dropdown-menu custom-dropdown-menu3 me-3" aria-labelledby="customDropdownButton3">
-                <h4>Theme</h4>
+                <h4>Type</h4>
               <?php
 
                
