@@ -162,7 +162,7 @@ get_header();
           </div>
           <div class="offcanvas-overlay2"></div>
           <div class="custom-dropdown custom-dropdown2">
-            <button class="custom-dropdown-toggle" type="button" id="customDropdownButton2"> Services
+            <button class="custom-dropdown-toggle me-3" type="button" id="customDropdownButton2"> Services
             <?php if($_POST['services']){?>
             <div class="Count-filter" >(<span><?php echo count($_POST['services']);?></span>)</div>
             <?php } ?>
@@ -235,7 +235,7 @@ get_header();
 
 			 ?>
             <span class="dropdown-arrow3"> <i class="bi bi-chevron-down"></i></span> </button>
-            <div class="custom-dropdown-menu custom-dropdown-menu3" aria-labelledby="customDropdownButton3">
+            <div class="custom-dropdown-menu custom-dropdown-menu3 me-3" aria-labelledby="customDropdownButton3">
                 <h4>Theme</h4>
               <?php
 
@@ -266,7 +266,7 @@ get_header();
                     }
 
                 ?>
-              <label class="custom-dropdown-item custom-dropdown-item3">                  
+              <label class="custom-dropdown-item custom-dropdown-item1">                  
                 <input type="checkbox" value="<?php echo $types_res;?>" name="type_filter[]" class="check_t<?php echo $i;?> check" <?php echo $checked; ?>>
                 <?php echo $types_res;?><span class="checkmark"></span> </label>
                  
