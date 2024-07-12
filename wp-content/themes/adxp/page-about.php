@@ -25,19 +25,11 @@ $facts_and_figure = get_field('facts_and_figure');
     <div class="row pdl-1 pdr-1">
       <div class="col-lg-4">
         <div class="abt-lg">
-          <?php if ($about_adxp['about_adxp_image']['url']) {
-
-          ?>
-          <img src="<?php echo $about_adxp['about_adxp_image']['url']; ?>" alt="img">
-          <?php
-
-          }
-
-          ?>
-          <!-- <video  width="600" height="360" controls>
-                             <source src="..\assets\images\x-video.mp4" type="video/mp4">
+         
+           <video  width="600" height="360" autoplay muted loop >
+                             <source src="<?php echo $about_adxp['about_adxp_image']['url']; ?>" type="video/mp4">
                             Your browser does not support the video tag.
-          </video> -->
+          </video> 
         </div>
       </div>
       <div class="col-lg-8 d-flex align-items-center">
