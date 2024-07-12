@@ -1879,7 +1879,8 @@ span.dropdown-arrow2 i, span.dropdown-arrow3 i {
 }
 button.custom-dropdown-toggle.active .dropdown-arrow0,
 button.custom-dropdown-toggle.active .dropdown-arrow1,
-button.custom-dropdown-toggle.active .dropdown-arrow2 {
+button.custom-dropdown-toggle.active .dropdown-arrow2,
+button.custom-dropdown-toggle.active .dropdown-arrow3 {
   transform: rotate(180deg) !important;
 }
 /* The container */
@@ -1981,7 +1982,8 @@ span.dropdown-arrow2,span.dropdown-arrow3 {
 }
 span.dropdown-arrow1,
 span.dropdown-arrow2,
-span.dropdown-arrow0 {
+span.dropdown-arrow0,
+span.dropdown-arrow3 {
   border: 0 !important;
 }
 .filter-listing {
