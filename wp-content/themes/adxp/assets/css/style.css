@@ -142,8 +142,7 @@ a.nav-link {
   flex-grow: inherit !important;
 }
 section.banner-vw {
-  /* height: 100vh; */
-  height: 920px;
+  height: 100vh;
   /*	background: url(../img/banner.webp);*/
   background-position: center;
   background-size: cover;
