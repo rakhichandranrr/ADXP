@@ -20,9 +20,9 @@ get_header();
           
           <div class="offcanvas-overlay0"></div>
           <div class="custom-dropdown custom-dropdown0 me-3">
-            <button class="custom-dropdown-toggle" type="button" id="customDropdownButton1"> Type
-            <?php if($_POST['type_filter']){?>
-            <div class="Count-filter" >(<span><?php echo count($_POST['type_filter']);?></span>)</div>
+            <button class="custom-dropdown-toggle" type="button" id="customDropdownButton1"> Theme
+            <?php if($_POST['theme_filter']){?>
+            <div class="Count-filter" >(<span><?php echo count($_POST['theme_filter']);?></span>)</div>
             <?php
 
 			 }
@@ -30,14 +30,14 @@ get_header();
 			 ?>
             <span class="dropdown-arrow0"> <i class="bi bi-chevron-down"></i></span> </button>
             <div class="custom-dropdown-menu custom-dropdown-menu0" aria-labelledby="customDropdownButton">
-                <h4>Type</h4>
+                <h4>Theme</h4>
               <?php
 
                 $type_args = array(
 
                   'numberposts' => -1,
 
-                  'post_type'   => 'type',
+                  'post_type'   => 'theme_insight',
 
                   'order'       => 'ASC',
 
@@ -57,7 +57,7 @@ get_header();
 
 
 
-                    if (!empty($_POST['type_filter']) && in_array($types_res->ID, $_POST['type_filter'])) {
+                    if (!empty($_POST['theme_filter']) && in_array($types_res->ID, $_POST['theme_filter'])) {
 
 
 
@@ -72,7 +72,7 @@ get_header();
                 ?>
               <label class="custom-dropdown-item custom-dropdown-item0">
                   
-                <input type="checkbox" value="<?php echo $types_res->ID; ?>" name="type_filter[]" class="check_<?php echo $types_res->ID; ?> check" <?php echo $checked; ?>>
+                <input type="checkbox" value="<?php echo $types_res->ID; ?>" name="theme_filter[]" class="check_<?php echo $types_res->ID; ?> check" <?php echo $checked; ?>>
                 <?php echo $types_res->post_title; ?> <span class="checkmark"></span> </label>
               <?php
 
@@ -129,7 +129,7 @@ get_header();
                   foreach ($industries as $industries_res) {
 					  
 					  
-					  $ind_type = get_field('select_type', $industries_res->ID);
+					  $ind_type = get_field('select_theme', $industries_res->ID);
 
 
 
@@ -193,7 +193,7 @@ get_header();
 
                   foreach ($services as $services_res) {
 					  
-					  $serv_type = get_field('select_type', $services_res->ID);
+					  $serv_type = get_field('select_theme', $services_res->ID);
 
                     if (!empty($_POST['services']) && in_array($services_res->ID, $_POST['services'])) {
 
@@ -220,12 +220,80 @@ get_header();
               <button type="submit" name="submit" class="custom-button mt-2 custom-button2" id="customFilterButton">Apply Filter</button>
             </div>
           </div>
+          
+          
+           <!--Filter Type Starts-->
+          
+          <div class="offcanvas-overlay3"></div>
+          <div class="custom-dropdown custom-dropdown3 me-3">
+            <button class="custom-dropdown-toggle" type="button" id="customDropdownButton3"> Type
+            <?php if($_POST['type_filter']){?>
+            <div class="Count-filter" >(<span><?php echo count($_POST['type_filter']);?></span>)</div>
+            <?php
+
+			 }
+
+			 ?>
+            <span class="dropdown-arrow3"> <i class="bi bi-chevron-down"></i></span> </button>
+            <div class="custom-dropdown-menu custom-dropdown-menu3" aria-labelledby="customDropdownButton3">
+                <h4>Theme</h4>
+              <?php
+
+               
+
+                $type_tags = array('Case Study','White Paper','Blog/Pov');
+
+
+
+                if ($type_tags) {
+					$i=0;
+
+                  foreach ($type_tags as $types_res) {
+					  $i++;
+
+
+
+                    if (!empty($_POST['type_filter']) && in_array($types_res, $_POST['type_filter'])) {
+
+
+
+                      $checked = 'checked="checked"';
+
+                    } else {
+
+                      $checked = '';
+
+                    }
+
+                ?>
+              <label class="custom-dropdown-item custom-dropdown-item3">                  
+                <input type="checkbox" value="<?php echo $types_res;?>" name="type_filter[]" class="check_t<?php echo $i;?> check" <?php echo $checked; ?>>
+                <?php echo $types_res;?><span class="checkmark"></span> </label>
+                 
+              <?php
+
+                  }
+
+                }
+
+                ?>
+              <button type="submit" name="submit" class="custom-button mt-2 custom-button3" id="customFilterButton">Apply Filter</button>
+            </div>
+          </div>
+          
+          
+          <!--filter Type Ends-->
+          
+          
+          
+          
+          
         </div>
       </form>
     </div>
     <?php
 
-      if (!empty($_POST['industry']) || !empty($_POST['services']) || !empty($_POST['type_filter'])) {
+      if (!empty($_POST['industry']) || !empty($_POST['services']) || !empty($_POST['theme_filter']) || !empty($_POST['type_filter'])) {
 
       ?>
     <div class="col-lg-12 mb-4">
@@ -257,13 +325,29 @@ get_header();
               }
 
             }
-			if ($_POST['type_filter']) {
+			if ($_POST['theme_filter']) {
 
-              foreach ($_POST['type_filter'] as $typ) {
+              foreach ($_POST['theme_filter'] as $typ) {
 
               ?>
         <div class="filter-listing me-3"> <span><?php echo get_the_title($typ); ?></span>
-          <button onclick="refresh_search_type('<?php echo $typ; ?>')"><i class="bi bi-x"></i></button>
+          <button onclick="refresh_search_theme('<?php echo $typ; ?>')"><i class="bi bi-x"></i></button>
+        </div>
+        <?php
+
+              }
+
+            }
+			
+			if ($_POST['type_filter']) {
+
+$i=0;
+              foreach ($_POST['type_filter'] as $typ) {
+				  $i++;
+
+              ?>
+        <div class="filter-listing me-3"> <span><?php echo $typ; ?></span>
+          <button onclick="refresh_search_type('<?php echo $i; ?>')"><i class="bi bi-x"></i></button>
         </div>
         <?php
 
@@ -284,6 +368,7 @@ get_header();
 		 $industry_result_ids = array();
 		 $type_result_ids = array();
 		 $service_result_ids = array();
+		 $tag_type_ids = array();
 
           if ($_POST['industry']) {			  
 
@@ -394,9 +479,9 @@ get_header();
         
         <?php
 
-          if ($_POST['type_filter']) {
+          if ($_POST['theme_filter']) {
 
-            foreach ($_POST['type_filter'] as $type_f) {
+            foreach ($_POST['theme_filter'] as $type_f) {
 
 
               $search_type_args = array(
@@ -411,7 +496,7 @@ get_header();
 
                   array(
 
-                    'key' => 'select_type',
+                    'key' => 'select_theme',
 
                     'value' => $type_f,
 
@@ -444,11 +529,61 @@ get_header();
         
         <!--   TYPE SEARCH ENDS--> 
         
+        
+         <!--   TYPE SEARCH STARTS-->
+        
+        <?php
+
+          if ($_POST['type_filter']) {
+
+            foreach ($_POST['type_filter'] as $type_f) {
+				
+
+
+              $search_tag_type_args = array(
+
+                'post_type' => 'post-insights',
+
+                'post_status' => 'publish',
+
+				'suppress_filters' => false,
+
+                'tax_query' => array(
+					array(
+						'taxonomy' => 'post_tag',
+						'field'    => 'name',
+						'terms'    =>$type_f,
+					),
+				),
+
+              );
+
+
+              $search_tag_type_insights = get_posts($search_tag_type_args);
+
+              if ($search_tag_type_insights) {
+
+                foreach ($search_tag_type_insights as $search_tag_type_res) {
+					
+					$tag_type_ids[] = $search_tag_type_res->ID;
+
+                }
+
+              }
+
+            }
+
+          }
+
+          ?>
+        
+        <!--   TYPE SEARCH ENDS--> 
+        
       <!--DISPLAY SEARCH RESULTS STARTS HERE-->
       
       <div class="insights-list-wrapper paragraph search-result-box"> 
       <?php
-	  $result_ids = array_merge($industry_result_ids, $type_result_ids, $service_result_ids );
+	  $result_ids = array_merge($industry_result_ids, $type_result_ids, $service_result_ids, $tag_type_ids );
 	  $final_result_ids = array_unique($result_ids);
 	  if($final_result_ids)
 	  {
@@ -759,11 +894,19 @@ $('input:checkbox').change(function(){
   }
   
   
-  function refresh_search_type(val) {
+  function refresh_search_theme(val) {
 
     $('.check_' + val).prop('checked', false);
 
     $('.custom-button0').click();
+
+  }
+  
+   function refresh_search_type(val) {
+
+    $('.check_t' + val).prop('checked', false);
+
+    $('.custom-button3').click();
 
   }
 

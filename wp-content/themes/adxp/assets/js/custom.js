@@ -16,7 +16,7 @@ function myFunction() {
 
   if (window.pageYOffset > sticky) {
 
-    header.classList.add("sticky");
+    header.classList.add("sticky"); 
 
   } else {
 
@@ -450,6 +450,88 @@ document.addEventListener("DOMContentLoaded", function() {
       }
 
     });
+	
+	
+	
+	///////////////////////////////////////////////TYPE/////////////////////////////
+	
+	
+	
+	var dropdown3 = document.querySelector('.custom-dropdown3');
+
+    var dropdownMenu3 = document.querySelector('.custom-dropdown-menu3');
+
+    var filterButton3 = document.querySelector('.custom-button3');
+
+
+
+    // Toggle dropdown on button click
+
+    dropdown3.addEventListener('click', function() {
+
+      if (dropdownMenu3.style.display === 'none' || dropdownMenu3.style.display === '') {
+
+		$('.offcanvas-overlay3').css('display','block');
+
+        dropdownMenu3.style.display = 'block';
+
+        document.querySelector('.dropdown-arrow3').style.borderTopColor = 'transparent'; // Change arrow color
+
+      } else {
+
+        dropdownMenu3.style.display = 'none';
+
+		$('.offcanvas-overlay3').css('display','none');
+
+        document.querySelector('.dropdown-arrow3').style.borderTopColor = 'transparent'; // Change arrow color
+
+      }
+
+    });
+
+   
+
+    // Close dropdown on Apply Filter button click
+
+    filterButton3.addEventListener('click', function(e) {
+
+      e.stopPropagation(); // Prevents closing the dropdown when clicking Apply Filter
+
+      dropdownMenu3.style.display = 'none';
+
+	  $('.offcanvas-overlay3').css('display','none');
+
+      document.querySelector('.dropdown-arrow3').style.borderTopColor = 'transparent'; // Change arrow color
+
+    });
+
+
+
+    // Prevent dropdown menu from closing when clicking inside the dropdown menu
+
+    dropdownMenu3.addEventListener('click', function(e) {
+
+      e.stopPropagation();
+
+    });
+
+
+
+    // Close dropdown when clicking outside the dropdown menu
+
+    document.addEventListener('click', function(e) {
+
+      if (!dropdown3.contains(e.target)) {
+
+        dropdownMenu3.style.display = 'none';
+
+		$('.offcanvas-overlay3').css('display','none');
+
+        document.querySelector('.dropdown-arrow3').style.borderTopColor = 'transparent'; // Change arrow color
+
+      }
+
+    });
 
 	
 
@@ -616,6 +698,7 @@ $(document).ready(function() {
         // Remove active class from all dropdown buttons
         $("#customDropdownButton2").removeClass("active");
 		$("#customDropdownButton1").removeClass("active");
+		$("#customDropdownButton3").removeClass("active");
         // Add active class to the clicked button
         $(this).toggleClass("active");
     });
@@ -625,6 +708,7 @@ $(document).ready(function() {
         // Remove active class from all dropdown buttons
         $("#customDropdownButton").removeClass("active");
 		$("#customDropdownButton1").removeClass("active");
+		$("#customDropdownButton3").removeClass("active");
         // Add active class to the clicked button
         $(this).toggleClass("active");
     });
@@ -633,6 +717,16 @@ $(document).ready(function() {
         // Remove active class from all dropdown buttons
         $("#customDropdownButton").removeClass("active");
 		$("#customDropdownButton2").removeClass("active");
+		$("#customDropdownButton3").removeClass("active");
+        // Add active class to the clicked button
+        $(this).toggleClass("active");
+    });
+	
+	$("#customDropdownButton3").click(function() {
+        // Remove active class from all dropdown buttons
+        $("#customDropdownButton").removeClass("active");
+		$("#customDropdownButton2").removeClass("active");
+		$("#customDropdownButton1").removeClass("active");
         // Add active class to the clicked button
         $(this).toggleClass("active");
     });

@@ -41,8 +41,8 @@ if ($services) {
   <div class="container">
     <div class="row flexW">
       <div class="col-lg-7 col-md-7 imgsz livable-wrP">
-      <h1 class="main-tittle mb-5 text-light page-title"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo get_field('page_heading'); ?></h1>
-      <div class="paragraph text-light sub-desc mb-5 page-content"><?php echo get_field('page_description'); ?></div>
+      <h1 class="main-tittle mb-5 text-light page-title"><img class="head-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="img-icon"><?php echo get_field('livability_section_heading'); ?></h1>
+      <div class="paragraph text-light sub-desc mb-5 page-content"><?php echo get_field('livability_section_description'); ?></div>
        
 <h3 class="inner-heading mb-2 text-light">Liveability (adj./n.)</h3>
 <div class="height32" ></div>

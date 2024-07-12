@@ -252,22 +252,22 @@ $right_block = $cities_block['right_block'];
             <div class="second-place map-main-loc">
               <div class="badge-cons">
                 <h3>2nd</h3>
-                <span><?php echo $right_block['second_figure'];?></span> </div>
+                <span id="second_figure"><?php echo $right_block['second_figure'];?></span> </div>
               <span class="country-maps" ><?php echo $right_block['second_title'];?></span> </div>
             <div class="fourth-place map-main-loc">
               <div class="badge-cons">
                 <h3>4th</h3>
-                <span><?php echo $right_block['fourth_figure'];?></span> </div>
+                <span id="fourth_figure"><?php echo $right_block['fourth_figure'];?></span> </div>
               <span class="country-maps" ><?php echo $right_block['fourth_title'];?></span> </div>
             <div class="fist-place map-main-loc">
               <div class="badge-cons">
                 <h3>1st</h3>
-                <span><?php echo $right_block['first_figure'];?></span> </div>
+                <span id="first_figure"><?php echo $right_block['first_figure'];?></span> </div>
               <span class="country-maps" ><?php echo $right_block['first_title'];?></span> </div>
             <div class="third-place map-main-loc">
               <div class="badge-cons">
                 <h3>3rd</h3>
-                <span><?php echo $right_block['third_figure'];?></span> </div>
+                <span id="third_figure"><?php echo $right_block['third_figure'];?></span> </div>
               <span class="country-maps" ><?php echo $right_block['third_title'];?></span> </div>
           </div>
           <div class="paragraph"> <?php echo $right_block['source_description'];?> </div>
@@ -388,3 +388,77 @@ if ($home_people) {
 get_footer();
 
 ?>
+
+<script>
+  // Function to animate the value
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    const value = Math.floor(progress * (end - start) + start);
+    obj.innerHTML = `${value}`;
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+// PHP part to generate the animation script
+
+document.addEventListener('DOMContentLoaded', function() {
+  const observer = new IntersectionObserver(function(entries) {
+	entries.forEach(entry => {
+	  if (entry.isIntersecting) {
+		animateValue(document.querySelector("#second_figure"), 0, <?php echo $right_block['second_figure'];?>, 1000);
+		observer.unobserve(entry.target); // Stop observing after animation starts
+	  }
+	});
+  }, { threshold: 0.1 });
+  
+  observer.observe(document.querySelector("#second_figure"));
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const observer = new IntersectionObserver(function(entries) {
+	entries.forEach(entry => {
+	  if (entry.isIntersecting) {
+		animateValue(document.querySelector("#fourth_figure"), 0, <?php echo $right_block['fourth_figure'];?>, 1000);
+		observer.unobserve(entry.target); // Stop observing after animation starts
+	  }
+	});
+  }, { threshold: 0.1 });
+  
+  observer.observe(document.querySelector("#fourth_figure"));
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const observer = new IntersectionObserver(function(entries) {
+	entries.forEach(entry => {
+	  if (entry.isIntersecting) {
+		animateValue(document.querySelector("#third_figure"), 0, <?php echo $right_block['third_figure'];?>, 1000);
+		observer.unobserve(entry.target); // Stop observing after animation starts
+	  }
+	});
+  }, { threshold: 0.1 });
+  
+  observer.observe(document.querySelector("#third_figure"));
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const observer = new IntersectionObserver(function(entries) {
+	entries.forEach(entry => {
+	  if (entry.isIntersecting) {
+		animateValue(document.querySelector("#first_figure"), 0, <?php echo $right_block['first_figure'];?>, 1000);
+		observer.unobserve(entry.target); // Stop observing after animation starts
+	  }
+	});
+  }, { threshold: 0.1 });
+  
+  observer.observe(document.querySelector("#first_figure"));
+});
+        
+
+</script>
+
