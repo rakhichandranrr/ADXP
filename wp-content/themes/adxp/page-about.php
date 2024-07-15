@@ -26,12 +26,14 @@ $facts_and_figure = get_field('facts_and_figure');
       <div class="col-lg-4">
         <div class="abt-lg">
          
-       
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+        <dotlottie-player  src="<?php echo get_template_directory_uri(); ?>/assets/animation/ADXP_WebOption.json" 
+        background="transparent" 
+        speed="1" style="width: 600px; height: 360px;" 
+        autoplay=true and loop=false>
+      </dotlottie-player>
 
 
-      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-    <dotlottie-player src="https://lottie.host/1ed909ab-d2f6-4c3d-b0a5-1d005ff7d899/pwY9RuTvJ8.json" background="transparent" speed="1" style="width: 600px; height: 300px;" loop autoplay></dotlottie-player>
 
 
 
