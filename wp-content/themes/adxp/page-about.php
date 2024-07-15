@@ -27,7 +27,7 @@ $facts_and_figure = get_field('facts_and_figure');
         <div class="abt-lg">
          
         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-        <dotlottie-player src="<?php echo get_template_directory_uri(); ?>/assets/animation/ADXP_WebOption.lottie" 
+        <dotlottie-player id="lottie" src="<?php echo get_template_directory_uri(); ?>/assets/animation/ADXP_WebOption.lottie" 
         background="transparent" 
         speed="1" style="width: 600px; height: 360px;" 
         loop autoplay>
@@ -264,6 +264,14 @@ get_footer();
 
 ?>
 <script>
+  // Get the lottie-player element
+  var lottiePlayer = document.getElementById('lottie');
+
+// Add event listener for the 'complete' event
+lottiePlayer.addEventListener('complete', function() {
+    // Stop the animation after it completes one loop
+    lottiePlayer.pause();
+});
   // Function to animate the value
 function animateValue(obj, start, end, duration, figure_suffix) {
   let startTimestamp = null;
