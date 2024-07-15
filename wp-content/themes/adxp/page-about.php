@@ -26,7 +26,8 @@ $facts_and_figure = get_field('facts_and_figure');
       <div class="col-lg-4">
         <div class="abt-lg">
          
-        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.m=js" type="module"></script> 
+        
         <dotlottie-player  src="<?php echo get_template_directory_uri(); ?>/assets/animation/ADXP_WebOption.json" 
         background="transparent" 
         speed="1" style="width: 600px; height: 360px;" 
