@@ -27,10 +27,10 @@ $facts_and_figure = get_field('facts_and_figure');
         <div class="abt-lg">
          
         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-        <dotlottie-player id="lottie" src="<?php echo get_template_directory_uri(); ?>/assets/animation/ADXP_WebOption.lottie" 
+        <dotlottie-player id="lottie-player" src="<?php echo get_template_directory_uri(); ?>/assets/animation/ADXP_WebOption.json" 
         background="transparent" 
         speed="1" style="width: 600px; height: 360px;" 
-         autoplay>
+        loop autoplay>
       </dotlottie-player>
         </div>
       </div>
@@ -304,4 +304,13 @@ function animateValue(obj, start, end, duration, figure_suffix) {
  }
 ?>
 
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const lottiePlayer = document.getElementById('lottie-player');
+
+    lottiePlayer.addEventListener('complete', function () {
+      lottiePlayer.stop();
+    });
+  });
 </script>
