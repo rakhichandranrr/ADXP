@@ -27,7 +27,8 @@ $facts_and_figure = get_field('facts_and_figure');
         <div class="abt-lg">
          
            <video  width="600" height="360" playsinline="" autoplay="" muted="" loop="" >
-              <source src="https://adxp.stocker.team/wp-content/uploads/2024/07/ADXP_WebOption-vp9-chrome.mp4" type="video/mp4">
+              <source src="<?php echo $about_adxp['about_adxp_image']['url']; ?>" type="video/webm">
+              <!-- <source src="https://adxp.stocker.team/wp-content/uploads/2024/07/ADXP_WebOption-vp9-chrome.mp4" type="video/mp4"> -->
                             Your browser does not support the video tag.
           </video> 
         </div>
