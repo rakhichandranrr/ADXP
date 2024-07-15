@@ -264,14 +264,6 @@ get_footer();
 
 ?>
 <script>
-  // Get the lottie-player element
-  var lottiePlayer = document.getElementById('lottie');
-
-// Add event listener for the 'complete' event
-lottiePlayer.addEventListener('complete', function() {
-    // Stop the animation after it completes one loop
-    lottiePlayer.pause();
-});
   // Function to animate the value
 function animateValue(obj, start, end, duration, figure_suffix) {
   let startTimestamp = null;
