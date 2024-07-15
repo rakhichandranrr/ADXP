@@ -25,6 +25,8 @@ $facts_and_figure = get_field('facts_and_figure');
     <div class="row pdl-1 pdr-1">
       <div class="col-lg-4">
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <div class="abt-lg">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <div class="abt-lg">
     <lottie-player
         src="<?php echo get_template_directory_uri(); ?>/assets/animation/ADXP_WebOption.lottie"
