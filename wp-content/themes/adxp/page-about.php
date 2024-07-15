@@ -24,13 +24,19 @@ $facts_and_figure = get_field('facts_and_figure');
   <div class="container">
     <div class="row pdl-1 pdr-1">
       <div class="col-lg-4">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <div class="abt-lg">
+              <lottie-player
+              src="<?php echo get_template_directory_uri(); ?>/assets/animation/ADXP_WebOption.lottie"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 300px;"
+              loop
+              autoplay
+          ></lottie-player>
+
          
-           <video  width="600" height="360" playsinline="" autoplay="" muted="" loop="" >
-              <source src="<?php echo $about_adxp['about_adxp_image']['url']; ?>" type="video/webm">
-              <!-- <source src="https://adxp.stocker.team/wp-content/uploads/2024/07/ADXP_WebOption-vp9-chrome.mp4" type="video/mp4"> -->
-                            Your browser does not support the video tag.
-          </video> 
+           
         </div>
       </div>
       <div class="col-lg-8 d-flex align-items-center">
