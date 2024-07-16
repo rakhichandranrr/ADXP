@@ -20,14 +20,14 @@ $facts_and_figure = get_field('facts_and_figure');
 
 ?>
 
-<section class="abt-adxp common-padd">
+<section class="abt-adxp common-padd" id="animation-section">
   <div class="container">
     <div class="row pdl-1 pdr-1">
       <div class="col-lg-4">
         <div class="abt-lg">
          
         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-        <dotlottie-player src="<?php echo get_template_directory_uri(); ?>\assets\animation\ADXP_WebOption.lottie" 
+        <dotlottie-player id="dotlottie-player" src="<?php echo get_template_directory_uri(); ?>\assets\animation\ADXP_WebOption.lottie" 
         background="transparent" 
         speed="1" style="width: 600px; height: 360px;" 
         autoplay=true and loop=false>
@@ -316,4 +316,18 @@ function animateValue(obj, start, end, duration, figure_suffix) {
  }
 ?>
 
+
+document.addEventListener('DOMContentLoaded', () => {
+            const player = document.getElementById('dotlottie-player');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        player.play();
+                        observer.unobserve(player);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            observer.observe(player);
+        });
 </script>
