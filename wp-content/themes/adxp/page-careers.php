@@ -113,7 +113,7 @@ if ($career_development) {
     <h1 class="inner-headingmb-4"><?php echo get_field('job_openings_title'); ?></h1>
     <div class="paragraph mb-3 mt-3 dark-para"><?php echo get_field('job_openings_content'); ?></div>
     <div class="row">
-    <div class="job-itm"><?php echo get_field('recruit_zoho_embed_code'); ?></div>
+    <div class="jobs-wrapper"><?php echo get_field('recruit_zoho_embed_code'); ?></div>
     </div>
     <?php
     /*$args = array('child_of' => 11, 'hide_empty' => false);
