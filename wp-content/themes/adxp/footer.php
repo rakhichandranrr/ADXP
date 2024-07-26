@@ -44,7 +44,7 @@ $image = wp_get_attachment_image_src($custom_logo_id, 'full');
             <?php the_field('newsletter_description', 'option'); ?>
           </p>
           <div class="subscrive-sec mt-4">
-            <div class="form-group d-flex"> <?php echo do_shortcode(' [mailpoet_form id="1"]'); ?> </div>
+            <div class="form-group d-flex"> <?php //echo do_shortcode(' [mailpoet_form id="1"]'); ?><?php echo do_shortcode(' [contact-form-7 id="5a2a803" title="Newsletter"]'); ?> </div>
           </div>
         </div>
       </div>
