@@ -43,7 +43,6 @@ get_header();
 
                   'suppress_filters' => false,
 
-                  'orderby'     => 'title'
 
                 );
 
