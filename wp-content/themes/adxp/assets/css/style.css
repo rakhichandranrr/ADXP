@@ -1870,7 +1870,7 @@ a.clear-all {
   font-weight: 400;
 }
 span.dropdown-arrow1 i,
-span.dropdown-arrow2 i, span.dropdown-arrow3 i {
+span.dropdown-arrow2 i, span.dropdown-arrow3 i, span.dropdown-arrow0 i {
   color: var(--primary-color);
   
 }
