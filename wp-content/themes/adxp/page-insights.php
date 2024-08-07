@@ -537,7 +537,38 @@ $i=0;
 
             foreach ($_POST['type_filter'] as $type_f) {
 				
+				
+				if($type_f == 'Blog/Pov')
+				{
+					$exp = explode("/", "Blog/Pov");					
+					
+					$search_tag_type_args = array(
 
+                'post_type' => 'post-insights',
+
+                'post_status' => 'publish',
+
+				'suppress_filters' => false,
+
+                 'tax_query' => array(
+					'relation' => 'OR',
+						array(
+						   'taxonomy' => 'post_tag',
+							'field'    => 'name',
+							'terms'    => $exp[0],
+							),
+						array(
+							'taxonomy' => 'post_tag',
+							'field'    => 'name',
+							'terms'    => $exp[1],
+							),
+						),
+
+              );
+				}
+				
+               else
+			   {
 
               $search_tag_type_args = array(
 
@@ -556,6 +587,7 @@ $i=0;
 				),
 
               );
+			   }
 
 
               $search_tag_type_insights = get_posts($search_tag_type_args);
